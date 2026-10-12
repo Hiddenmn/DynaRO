@@ -1,0 +1,6 @@
+# Numerical arrays and model states are in the versioned release asset.
+*.npy
+*.npz
+*.pt
+__pycache__/
+*.pyc

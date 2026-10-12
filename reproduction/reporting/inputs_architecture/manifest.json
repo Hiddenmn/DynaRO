@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "figure": "main Figure 2",
+  "stem": "figure1_statefront_dataflow_v9_unified",
+  "scope": "Saved DEV feature and probability tensors; no model/checkpoint/simulator access",
+  "files": {
+    "figure1_features_fixed_dev_v5.npz": {
+      "sha256": "4a962796641bb002cea492806d74dbb5ecb434eb5886b25929113155e99ace2a",
+      "bytes": 58540201,
+      "source": "figures/figure1_features_fixed_dev_v5.npz",
+      "operation": "unchanged copy"
+    },
+    "figure1_features_fixed_dev_v5.source.json": {
+      "sha256": "88844f0aabc9aea3043fc9d3007723fb8d773662d89b0489c13b5339e100698d",
+      "bytes": 3010,
+      "source": "figures/figure1_features_fixed_dev_v5.source.json",
+      "operation": "unchanged copy"
+    },
+    "expected_architecture_source.json": {
+      "sha256": "e04a3f8dfad8d9a9a9ff0d86bcb497e8ee1e7df6fbfb3877ca968dee8f8db256",
+      "bytes": 9949,
+      "source": "figures/figure1_statefront_dataflow_v9_unified.source.json",
+      "operation": "unchanged copy"
+    },
+    "expected_architecture_insets.json": {
+      "sha256": "add1d089bbb885a238d6dcca721d6d486d492d709af1eaf5db18806953342cbd",
+      "bytes": 2296,
+      "source": "figures/figure1_statefront_phase_insets_v8_unified.source.json",
+      "operation": "unchanged copy"
+    },
+    "expected_objects.csv": {
+      "sha256": "ed21bc94cd4f23541ad9e0b7a4a2b9f26135563b430f5d1e54a7f443d487492a",
+      "bytes": 8086,
+      "source": "figures/figure1_statefront_dataflow_v9_unified.objects.csv",
+      "operation": "unchanged copy"
+    },
+    "expected_edges.csv": {
+      "sha256": "70ee67294d7ac1767756d03930a0ab3ecdc90cff33fec22a7746ba7d22f31dd0",
+      "bytes": 5794,
+      "source": "figures/figure1_statefront_dataflow_v9_unified.edges.csv",
+      "operation": "unchanged copy"
+    }
+  },
+  "contract": {
+    "pair_id": "z0_y256_x256|Oil|P1-22-DEV-B|S2~S3",
+    "step": 100,
+    "seed": 20260811,
+    "schedule": "S2x20 -> S3x80",
+    "objects": 73,
+    "edges": 24,
+    "display_step_transition": [
+      99,
+      100
+    ],
+    "native_feature_z": 64,
+    "regional_feature_z": 4,
+    "encoder_hidden_channels": [
+      0,
+      1,
+      2
+    ],
+    "class_logit_channels": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "front_projection_nonzero_pixels": 488,
+    "front_magnified_xy_bounds": [
+      0,
+      40,
+      0,
+      40
+    ],
+    "initial_oil_voxels": 460312,
+    "thresholded_output_oil_voxels": 457150,
+    "new_selection": false,
+    "new_inference": false
+  }
+}

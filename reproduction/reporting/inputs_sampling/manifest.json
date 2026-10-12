@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "figure": "main Figure 1",
+  "stem": "figure13_sampling_hierarchy_v3",
+  "scope": "Fixed semantic stack and nested DEV input; no training, inference, simulation or TEST access",
+  "files": {
+    "NPI-012_label_uint8.npy": {
+      "sha256": "964932bad9743649955ce9e1cd29056da40985c587185a6752a3469dd425023b",
+      "bytes": 221511808,
+      "source": "NPI-012_label_uint8.npy",
+      "operation": "unchanged copy"
+    },
+    "NPI-012-Reconstructed0000.filtered000_semantic_8bit_palette.tif": {
+      "sha256": "aeb69dacea29a3e064acbf978179c4b3f86d74a40338b77f3f4758539e25ce15",
+      "bytes": 1050246,
+      "source": "NPI-012-Reconstructed0000.filtered000_semantic_8bit_palette.tif",
+      "operation": "unchanged copy"
+    },
+    "expected_sampling_source.json": {
+      "sha256": "915652ac6c93a7787b24aa551754ab6a0541c6bba729224c42c12a1c6f339f46",
+      "bytes": 4378,
+      "source": "figure13_sampling_hierarchy_v3.source.json",
+      "operation": "unchanged copy"
+    }
+  },
+  "shared_files": {
+    "dev_parent_prediction.npz": {
+      "sha256": "a938cd5e8f4b5a36182a7829b41804ac8881d5c69a4447abcf8c3727b7870a4f",
+      "bytes": 3434058,
+      "source": "figure8_dev_max_mobilization_prediction_v1.npz",
+      "operation": "reuse unchanged inputs_3d copy"
+    }
+  },
+  "contract": {
+    "full_shape_zyx": [
+      845,
+      512,
+      512
+    ],
+    "parent_origin_zyx": [
+      0,
+      256,
+      256
+    ],
+    "parent_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "interior_parent_bounds_zyx": [
+      [
+        32,
+        96
+      ],
+      [
+        32,
+        96
+      ],
+      [
+        32,
+        96
+      ]
+    ],
+    "original_slice_size_xy": [
+      1024,
+      1024
+    ],
+    "full_display_spacing_zyx": [
+      1,
+      2,
+      2
+    ],
+    "subvolume_spacing_zyx": [
+      1,
+      1,
+      1
+    ],
+    "physical_units_calibrated": false,
+    "new_selection": false,
+    "full_class_colours": true,
+    "subvolume_oil_pooled_display_only": true
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "scope": "local saved-output reproduction",
+  "files": {
+    "expected_table_displays.json": {
+      "sha256": "dd46017420bd85f9cf681b5c4eda9145d9c87e8cf6d5b20d8e6a2250d7e4ea0a",
+      "bytes": 2329
+    },
+    "exposure_ablation.json": {
+      "sha256": "145ebd9d08d6b2df9432737b094e0e4f177ddff7456a17a3b8a82421557abc7f",
+      "bytes": 61582
+    },
+    "learning_dev.json": {
+      "sha256": "40f1dd21f9ce0bb375ebbde016e8d6d43a396e186fa1364ee93c01cf509e8e17",
+      "bytes": 12111
+    },
+    "learning_test.json": {
+      "sha256": "64dcc1ec5b45146320f19c1431e916e6ca06d0fd5ed819f5bba2e0ad608ad644",
+      "bytes": 115912
+    },
+    "long_horizon.json": {
+      "sha256": "fc0378dc6f91aff61a23bbe58853875a4a4b0405edc29f2253296082a360ac0a",
+      "bytes": 4620875
+    },
+    "paired_scores_51_100.csv": {
+      "sha256": "3a52aed187a5c98f82434b8ee95a653d46e25180c903183e3b1fb308aa5989fd",
+      "bytes": 759509
+    }
+  },
+  "sources": {
+    "long_horizon.json": {
+      "source": "runs/statefront_long_horizon_test_20261005/analysis_20261006/test_summary.json",
+      "sha256": "fc0378dc6f91aff61a23bbe58853875a4a4b0405edc29f2253296082a360ac0a",
+      "operation": "unchanged copy"
+    },
+    "exposure_ablation.json": {
+      "source": "runs/coarsefront_three_seed_test_20261006/analysis_20261007/ablation_summary.json",
+      "sha256": "145ebd9d08d6b2df9432737b094e0e4f177ddff7456a17a3b8a82421557abc7f",
+      "operation": "unchanged copy"
+    },
+    "learning_test.json": {
+      "source": "runs/stateguard_locked_test_13checkpoints_20260927/summary.json",
+      "sha256": "a2ca1d38a90b97c5572889b8a9849858208d152d59b56c2df4772aea23822ac1",
+      "operation": "unchanged copy"
+    },
+    "learning_dev.json": {
+      "source": "runs/stateguard_three_seed_adaptive_dev_aggregate_20260922/summary.json",
+      "sha256": "85922f43875d8bc70e909e84f7d86238b5cbcce67295dd7b5936c7ad25acfc76",
+      "operation": "unchanged copy"
+    },
+    "paired_scores_51_100.csv": {
+      "operation": "Exact extraction of saved 100-step unseen site/response scores; no averaging or rounding",
+      "rows": 7200,
+      "pairs": 600,
+      "blocks": 5,
+      "seeds": [
+        20260811,
+        20260812,
+        20260813
+      ],
+      "interval": [
+        51,
+        100
+      ],
+      "sources": [
+        {
+          "source": "runs/statefront_long_horizon_test_20261005/retrieved_20261006/server_144/main-fno_seed20260811/per_pair.jsonl",
+          "sha256": "ca7b57597c907874ad4bc875eac4b4aa480f4a5f02a8089286ded48af8595a57"
+        },
+        {
+          "source": "runs/statefront_long_horizon_test_20261005/retrieved_20261006/server_249/rtu_seed20260811/per_pair.jsonl",
+          "sha256": "080c0870c5daab1d87338dfb53aea66b7c6925e8cbe3b8ca298b2249bb0447e7"
+        },
+        {
+          "source": "runs/statefront_long_horizon_test_20261005/retrieved_20261006/server_144/main-fno_seed20260812/per_pair.jsonl",
+          "sha256": "995d3f8fac5a4563cafb4eac49d4090d186d2cfe4cee645ef5ddf8909f614cb3"
+        },
+        {
+          "source": "runs/statefront_long_horizon_test_20261005/retrieved_20261006/server_249/rtu_seed20260812/per_pair.jsonl",
+          "sha256": "7e3ebd5ee5a562800a9155bf523806f133f6df6090fb567aa0559c77dbb6ffe5"
+        },
+        {
+          "source": "runs/statefront_long_horizon_test_20261005/retrieved_20261006/server_144/main-fno_seed20260813/per_pair.jsonl",
+          "sha256": "201fea72cfa56f8f9be24ea9b4a0bd5c14902646f90215439d90689c2ae403eb"
+        },
+        {
+          "source": "runs/statefront_long_horizon_test_20261005/retrieved_20261006/server_249/rtu_seed20260813/per_pair.jsonl",
+          "sha256": "8b7376e40220d424fc6bb6461ff3067f04ac8f3468065d8f9329bf7201be3a26"
+        }
+      ]
+    },
+    "expected_table_displays.json": {
+      "source": "StateGuard_RO_ESWA.tex",
+      "sha256": "d62524faf784f2ef7b2ede73f8c0cbcf41d5a426d3550104514b9d13c31ba3ce",
+      "operation": "Decimal tokens used only as an independent expected-output check"
+    }
+  }
+}

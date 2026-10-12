@@ -1,0 +1,29 @@
+{
+  "dtype": "uint8",
+  "axis_order": [
+    "z",
+    "y",
+    "x"
+  ],
+  "shape": [
+    128,
+    128,
+    128
+  ],
+  "classes": {
+    "0": "background",
+    "1": "rock",
+    "2": "water",
+    "3": "film oil",
+    "4": "corner oil",
+    "5": "droplet oil",
+    "6": "columnar oil",
+    "7": "cluster oil"
+  },
+  "upstream_images_doi": "10.6084/m9.figshare.c.4190738",
+  "dataset_descriptor_doi": "10.1038/sdata.2019.4",
+  "annotation_origin": "project-generated, expert-reviewed; distinct from upstream grayscale images",
+  "coordinate_unit": "model-grid voxel index; no absolute length calibration",
+  "sampling_unit": "20 spatial blocks at four source stages of one core",
+  "stages_time_registered": false
+}

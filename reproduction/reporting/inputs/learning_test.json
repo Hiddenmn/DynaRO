@@ -1,0 +1,2928 @@
+{
+  "status": "COMPLETE_FROZEN_LOCKED_TEST",
+  "protocol": {
+    "status": "RUNNING_FROZEN_LOCKED_TEST",
+    "index": "runs/patent22_conservative_dynamic_surrogate_v1_20260811/data/canonical_locked_test_full128/trajectory_index.jsonl",
+    "index_sha256": "7b1ce5d894b146ed9dff1ae873b51b83d888b7052a1e7f8b30bcf2aad81d68a7",
+    "model_panel": {
+      "response0/20260811": {
+        "checkpoint": "runs/pairdiff_response0_train800_e1_seed20260811_20260921/checkpoint_final.pt",
+        "checkpoint_file_sha256": "0c702075ec2bb4d2a09e709945c0f9e3ac9d9131858be2443ee8ec514489dac6",
+        "checkpoint_parameter_sha256": "2e0a4e690065c5c0afd63349f2bb89972932374c7fe0258dd98fc1ff406a0325",
+        "training_summary": "runs/pairdiff_response0_train800_e1_seed20260811_20260921/summary.json",
+        "training_summary_sha256": "b36fdc3fd83b32e01aa4a4ef2bb790acd67b436a6b2a19077051b00a114dec9a"
+      },
+      "response50/20260811": {
+        "checkpoint": "runs/regional_direct_train800_e1_seed20260811_20260921/checkpoint_final.pt",
+        "checkpoint_file_sha256": "d9b9c9f303419c3cc0ae9f254640cb11e9d7269c4c9b3e9288982fb5645c642f",
+        "checkpoint_parameter_sha256": "c3623e01fa6c5d50539700a93ddb27a4afdef2e342b5ed91181be5dcbcdb521b",
+        "training_summary": "runs/regional_direct_train800_e1_seed20260811_20260921/summary.json",
+        "training_summary_sha256": "59267082eafd038e468af758c26bdec3bed83bd54a38def0e36c266098822799"
+      },
+      "du_gradcos/20260811": {
+        "checkpoint": "runs/du_gradcos_ro_train800_e1_seed20260811_20260923/checkpoint_final.pt",
+        "checkpoint_file_sha256": "180898590d18aff20f6edcd07ccbedaac204d4aef347f57fd54acf679e7aee09",
+        "checkpoint_parameter_sha256": "133285c405e6a30beb58f7f160883ce67066d6fa1e4c07ea049bab2aca854544",
+        "training_summary": "runs/du_gradcos_ro_train800_e1_seed20260811_20260923/summary.json",
+        "training_summary_sha256": "795e4ef40e7a25bc7730e573080b5fa043d62cacd8d91dd9f7ed9392abaab01d"
+      },
+      "stateguard/20260811": {
+        "checkpoint": "runs/stateguard_ro_train800_e1_seed20260811_20260921_r1/checkpoint_final.pt",
+        "checkpoint_file_sha256": "5c08fa3caf031274a11c4190b4e317ac3aaa2c29fee53dcad72202d396eb8f21",
+        "checkpoint_parameter_sha256": "79cdb668c6ce73ca75f433eb5d269661ba83434d6849eb46fa4162fd2933db52",
+        "training_summary": "runs/stateguard_ro_train800_e1_seed20260811_20260921_r1/summary.json",
+        "training_summary_sha256": "76d8aa0267e591ec259f48b95225fde57934c3ef1afefe64c2e1754cb4c3ddf1"
+      },
+      "response0/20260812": {
+        "train_run": "runs/stateguard_multiseed_response0_train800_e1_seed20260812_20260922",
+        "train_summary": "runs/stateguard_multiseed_response0_train800_e1_seed20260812_20260922/summary.json",
+        "train_config": "runs/stateguard_multiseed_response0_train800_e1_seed20260812_20260922/run_config.json",
+        "checkpoint": "runs/stateguard_multiseed_response0_train800_e1_seed20260812_20260922/checkpoint_final.pt",
+        "checkpoint_sha256": "b6ced11efb220be1d008700cd4978ff7363f0cb2c13734b6121e381614f22b22",
+        "checkpoint_parameter_sha256": "2c472e0be776ba553f981bac13d3f2057aaec2c037479e47a493ca45cfa369aa",
+        "initial_parameter_sha256": "c6809ec84b7ec5f48e6f394cfcba83795e5fc189a10f4d4029b7b37717b7bb7c",
+        "train_pair_order_sha256": "e6dd52bce1f7e2c12f5040f5ffc766f2c022ee88e48f441d7e9cd1205edf3508"
+      },
+      "response50/20260812": {
+        "train_run": "runs/stateguard_multiseed_response50_train800_e1_seed20260812_20260922",
+        "train_summary": "runs/stateguard_multiseed_response50_train800_e1_seed20260812_20260922/summary.json",
+        "train_config": "runs/stateguard_multiseed_response50_train800_e1_seed20260812_20260922/run_config.json",
+        "checkpoint": "runs/stateguard_multiseed_response50_train800_e1_seed20260812_20260922/checkpoint_final.pt",
+        "checkpoint_sha256": "740bab4a95eef6ae9aae35fab4a3a6f55f5f93219417759a219ed115013acd64",
+        "checkpoint_parameter_sha256": "9584def80987ec2150051b90e3befe723e6eaecbc186a19da39062fcf11129ad",
+        "initial_parameter_sha256": "c6809ec84b7ec5f48e6f394cfcba83795e5fc189a10f4d4029b7b37717b7bb7c",
+        "train_pair_order_sha256": "e6dd52bce1f7e2c12f5040f5ffc766f2c022ee88e48f441d7e9cd1205edf3508"
+      },
+      "du_gradcos/20260812": {
+        "train_run": "runs/du_gradcos_ro_train800_e1_seed20260812_20260923",
+        "train_summary": "runs/du_gradcos_ro_train800_e1_seed20260812_20260923/summary.json",
+        "train_summary_sha256": "8719dcdefa0f43a02a2010154a326792c6c403004e7d66bd5b775330aa95b1ee",
+        "checkpoint": "runs/du_gradcos_ro_train800_e1_seed20260812_20260923/checkpoint_final.pt",
+        "checkpoint_sha256": "0c3589e701c3d80dc2287ee47e80a8adaeb9fb275d336e0594a3b79362299050",
+        "checkpoint_parameter_sha256": "871519eeaaa10cb760eadfdc6814ba08535bf6b11cf06ffa961ed29a3e6217c8",
+        "initial_parameter_sha256": "c6809ec84b7ec5f48e6f394cfcba83795e5fc189a10f4d4029b7b37717b7bb7c",
+        "train_pair_order_sha256": "e6dd52bce1f7e2c12f5040f5ffc766f2c022ee88e48f441d7e9cd1205edf3508"
+      },
+      "stateguard/20260812": {
+        "train_run": "runs/stateguard_multiseed_train800_e1_seed20260812_20260922",
+        "train_summary": "runs/stateguard_multiseed_train800_e1_seed20260812_20260922/summary.json",
+        "train_config": "runs/stateguard_multiseed_train800_e1_seed20260812_20260922/run_config.json",
+        "checkpoint": "runs/stateguard_multiseed_train800_e1_seed20260812_20260922/checkpoint_final.pt",
+        "checkpoint_sha256": "b0624e2a4e268d7069ae009db55f885a1cae45cfccd2bd49f7815af7acd5d5ad",
+        "checkpoint_parameter_sha256": "946382eb4e2654cbd35085547b2ee660ab4ef2959746443b15a5dd76cda976ed",
+        "initial_parameter_sha256": "c6809ec84b7ec5f48e6f394cfcba83795e5fc189a10f4d4029b7b37717b7bb7c",
+        "train_pair_order_sha256": "e6dd52bce1f7e2c12f5040f5ffc766f2c022ee88e48f441d7e9cd1205edf3508"
+      },
+      "response0/20260813": {
+        "train_run": "runs/stateguard_multiseed_response0_train800_e1_seed20260813_20260922",
+        "train_summary": "runs/stateguard_multiseed_response0_train800_e1_seed20260813_20260922/summary.json",
+        "train_config": "runs/stateguard_multiseed_response0_train800_e1_seed20260813_20260922/run_config.json",
+        "checkpoint": "runs/stateguard_multiseed_response0_train800_e1_seed20260813_20260922/checkpoint_final.pt",
+        "checkpoint_sha256": "0f191289cbcb10032b0eb664ad57b3c32a485fb59919d7f90460a4e4bb66931e",
+        "checkpoint_parameter_sha256": "d5f3bb0561426e510eaf106df6e6ae313c9a2df0e18bc0f59935ab821dbde7db",
+        "initial_parameter_sha256": "d0f61594497115f035f666a1029eb6b2991f2115222706a1e3213d07b3ad21e7",
+        "train_pair_order_sha256": "7594d361cdff9dfe0e0254c1f22d957abba8529e6eac48ca663a1b53ce771970"
+      },
+      "response50/20260813": {
+        "train_run": "runs/stateguard_multiseed_response50_train800_e1_seed20260813_20260922",
+        "train_summary": "runs/stateguard_multiseed_response50_train800_e1_seed20260813_20260922/summary.json",
+        "train_config": "runs/stateguard_multiseed_response50_train800_e1_seed20260813_20260922/run_config.json",
+        "checkpoint": "runs/stateguard_multiseed_response50_train800_e1_seed20260813_20260922/checkpoint_final.pt",
+        "checkpoint_sha256": "54d5e0119316becd467f3ceb864ccb77ddaefe5859b957a9858b5829a5431f0c",
+        "checkpoint_parameter_sha256": "2ef7d2af9e6f1920ae9f395dd94792a3e849e7088b7e4c3638d8662b9370c5ae",
+        "initial_parameter_sha256": "d0f61594497115f035f666a1029eb6b2991f2115222706a1e3213d07b3ad21e7",
+        "train_pair_order_sha256": "7594d361cdff9dfe0e0254c1f22d957abba8529e6eac48ca663a1b53ce771970"
+      },
+      "du_gradcos/20260813": {
+        "train_run": "runs/du_gradcos_ro_train800_e1_seed20260813_20260923",
+        "train_summary": "runs/du_gradcos_ro_train800_e1_seed20260813_20260923/summary.json",
+        "train_summary_sha256": "5abc4eda5e9bec9bf4c196615792db9c8c4828c0f25d12e0d363d575eec91b19",
+        "checkpoint": "runs/du_gradcos_ro_train800_e1_seed20260813_20260923/checkpoint_final.pt",
+        "checkpoint_sha256": "4985036daf24c3f728ff33ce7a222ac21d817b858804ea61d8ca2589ecb6525b",
+        "checkpoint_parameter_sha256": "e7ab52f83489848230f5994bcacb100ca46658710c3555a0f7331eefd1765e30",
+        "initial_parameter_sha256": "d0f61594497115f035f666a1029eb6b2991f2115222706a1e3213d07b3ad21e7",
+        "train_pair_order_sha256": "7594d361cdff9dfe0e0254c1f22d957abba8529e6eac48ca663a1b53ce771970"
+      },
+      "stateguard/20260813": {
+        "train_run": "runs/stateguard_multiseed_train800_e1_seed20260813_20260922",
+        "train_summary": "runs/stateguard_multiseed_train800_e1_seed20260813_20260922/summary.json",
+        "train_config": "runs/stateguard_multiseed_train800_e1_seed20260813_20260922/run_config.json",
+        "checkpoint": "runs/stateguard_multiseed_train800_e1_seed20260813_20260922/checkpoint_final.pt",
+        "checkpoint_sha256": "c63a6eda8957acf4f411569dc9c041468300271a86c6df8b5530f853e12215ba",
+        "checkpoint_parameter_sha256": "c1e40a5423f1c70b4c4e6b2d1d4708a90e8237fd3b8114079fd58592815a8e5f",
+        "initial_parameter_sha256": "d0f61594497115f035f666a1029eb6b2991f2115222706a1e3213d07b3ad21e7",
+        "train_pair_order_sha256": "7594d361cdff9dfe0e0254c1f22d957abba8529e6eac48ca663a1b53ce771970"
+      },
+      "pcgrad/20260811": {
+        "checkpoint": "runs/pcgrad_ro_train800_e1_seed20260811_20260922/checkpoint_final.pt",
+        "checkpoint_file_sha256": "39bd06e8f04b42baeb480fed727078ee6f44361caa96523b3a10b6f5baef6d5f",
+        "checkpoint_parameter_sha256": "9ab66a9a9e3e96ff8f9aae8b2170465c4f08ccc10b5810ec5b913543cd7ff7e2",
+        "training_summary": "runs/pcgrad_ro_train800_e1_seed20260811_20260922/summary.json",
+        "training_summary_sha256": "678feef0b605a4020f9afb8fd2694e0db997202e7d10919b5b3d77231b35a46f"
+      }
+    },
+    "model_order": [
+      "response0/20260811",
+      "response50/20260811",
+      "du_gradcos/20260811",
+      "stateguard/20260811",
+      "response0/20260812",
+      "response50/20260812",
+      "du_gradcos/20260812",
+      "stateguard/20260812",
+      "response0/20260813",
+      "response50/20260813",
+      "du_gradcos/20260813",
+      "stateguard/20260813",
+      "pcgrad/20260811"
+    ],
+    "pairs": 600,
+    "trajectories": 1200,
+    "spatial_blocks": 5,
+    "horizon_steps": 25,
+    "aggregation": "25-step pair mean; 120-pair block mean; equal five-block then three-seed mean",
+    "endpoint": "site-state Brier and signed regional paired-response MSE",
+    "checkpoint_selection": "saved final-update checkpoints only; no TEST selection",
+    "gpu_memory_fraction": 0.1,
+    "maximum_peak_reserved_mib": 1100
+  },
+  "per_checkpoint": {
+    "response0/20260811": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.014287126353786638,
+          "region": 0.002541233237813382,
+          "response": 0.0009513678568479615,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.004111796400781411,
+          "region": 0.0007211395470343026,
+          "response": 0.00035762533892049457,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.012142728754940133,
+          "region": 0.002142260155039063,
+          "response": 0.0011639323066477423,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.021519188925158233,
+          "region": 0.0038502531097037718,
+          "response": 0.0010356746743885499,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.015051350354527433,
+            "region": 0.005065209309880932,
+            "response": 0.001864486162958201,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.00459595745196566,
+            "region": 0.0018021921573866469,
+            "response": 0.0007967886968193246,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.013094961790678402,
+            "region": 0.004493633688737949,
+            "response": 0.0023623596562780827,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.022235435247421265,
+            "region": 0.00726829341535146,
+            "response": 0.0019004614484098663,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.027829665318131448,
+            "region": 0.003392700175754726,
+            "response": 0.0013248013019619975,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.0077440370495120685,
+            "region": 0.000750104403171766,
+            "response": 0.00046819088849285134,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.023627665421615044,
+            "region": 0.0027252945030340923,
+            "response": 0.0015811466446393752,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.042074479162693024,
+            "region": 0.005381403589854017,
+            "response": 0.001496761148882797,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.020981298487943906,
+            "region": 0.0028555822335571673,
+            "response": 0.0011307327115597824,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.005828533861010025,
+            "region": 0.000628291821461365,
+            "response": 0.00032957055783905767,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.01776651507243514,
+            "region": 0.0021891710949906457,
+            "response": 0.0013133771054829899,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.03177246442064643,
+            "region": 0.00463563856901601,
+            "response": 0.00134866939818797,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.007573317608330399,
+            "region": 0.0013926744698740852,
+            "response": 0.00043681910775982636,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.002390453641419299,
+            "region": 0.0004251093531517351,
+            "response": 0.00019357655145123924,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.0062245014899720745,
+            "region": 0.0013032014884326296,
+            "response": 0.000562778126838263,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.011513565795030444,
+            "region": 0.001965929974297372,
+            "response": 0.0004324813764621164,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    },
+    "response50/20260811": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.01452739149176826,
+          "region": 0.0025393929909720706,
+          "response": 0.0007213613311038595,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.004143529096036218,
+          "region": 0.0007075866324036421,
+          "response": 0.0002795451676102326,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.012259463598020374,
+          "region": 0.002060663839220069,
+          "response": 0.0007300040574894713,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.02198725044572105,
+          "region": 0.003934025326161645,
+          "response": 0.0009336266927099738,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.015105915543002387,
+            "region": 0.004819897269286836,
+            "response": 0.001382735367466618,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.0046201317066637175,
+            "region": 0.001737718437895334,
+            "response": 0.0006089482325478457,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.013127264908204477,
+            "region": 0.004140128773481896,
+            "response": 0.001440914011982386,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.022327458090148865,
+            "region": 0.007040755198492358,
+            "response": 0.0017114503158760879,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.028243998639906447,
+            "region": 0.0034675176818079003,
+            "response": 0.001002708168986525,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.007789897724675635,
+            "region": 0.000750174691711436,
+            "response": 0.0003726634665933185,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.023820155447659395,
+            "region": 0.002701215329580009,
+            "response": 0.0009901840960083064,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.042894891913359365,
+            "region": 0.005592491483548656,
+            "response": 0.0013302545949651782,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.021485837595537304,
+            "region": 0.0030106997922606147,
+            "response": 0.0008679224699638629,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.0058715716353617605,
+            "region": 0.0006220819110239973,
+            "response": 0.0002530636035620167,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.018018115715434154,
+            "region": 0.002186872362411426,
+            "response": 0.0008244019369764525,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.03276069229468703,
+            "region": 0.005028836180766424,
+            "response": 0.0012188724473768768,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.007801205680395166,
+            "region": 0.001398850211505002,
+            "response": 0.0003534406491022916,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.0024360444134799764,
+            "region": 0.0004279581213874432,
+            "response": 0.00016305053534798237,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.006331781918803851,
+            "region": 0.0012751027306270165,
+            "response": 0.0003945202424802119,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.011953209930409988,
+            "region": 0.002008043768000789,
+            "response": 0.00040755610533172636,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    },
+    "du_gradcos/20260811": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.014369663811909655,
+          "region": 0.002500474956565692,
+          "response": 0.0007274762596898654,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.0041285816203647605,
+          "region": 0.0007105486919681426,
+          "response": 0.0002865854821021685,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.01219650439141939,
+          "region": 0.00207183764699342,
+          "response": 0.0007384173073266235,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.021663364331858854,
+          "region": 0.003824075392330997,
+          "response": 0.0009369806072451563,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.014840362352939944,
+            "region": 0.004751148612316077,
+            "response": 0.0013848583696623488,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.00459839520820727,
+            "region": 0.0017457335040186688,
+            "response": 0.0006236917612113757,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.012987205983760457,
+            "region": 0.0041634618576305606,
+            "response": 0.0014366119713182949,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.021814502178070447,
+            "region": 0.006841542940431585,
+            "response": 0.001713688051677309,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.027901091364522776,
+            "region": 0.0033502554491860793,
+            "response": 0.00101217073679436,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.0077715688928340874,
+            "region": 0.0007492928741460977,
+            "response": 0.0003807659517254554,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.023703313331740597,
+            "region": 0.002680564286614147,
+            "response": 0.001006712568171982,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.04216363059046368,
+            "region": 0.005320427910191938,
+            "response": 0.0013333313140416673,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.02137947934679687,
+            "region": 0.00300071232583529,
+            "response": 0.0008812368960207095,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.005860852570428203,
+            "region": 0.0006336450864182552,
+            "response": 0.0002610386437027046,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.018026810325682163,
+            "region": 0.002239126229445295,
+            "response": 0.00084338050049458,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.03249146194818119,
+            "region": 0.004945831998096158,
+            "response": 0.0012291924455591168,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.00772738599528869,
+            "region": 0.0014002583954910127,
+            "response": 0.0003591152959719087,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.0024120914303542426,
+            "region": 0.000424071995257691,
+            "response": 0.00016743105387130678,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.006265192315913737,
+            "region": 0.0012760358612770991,
+            "response": 0.0004053814966482605,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.011847226942578951,
+            "region": 0.002012574112935302,
+            "response": 0.00040869122494768817,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    },
+    "stateguard/20260811": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.014004776623720924,
+          "region": 0.0022690673523660127,
+          "response": 0.000711286316488137,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.004100228459186231,
+          "region": 0.0007007902231877475,
+          "response": 0.00027823447206912986,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.011928856483039756,
+          "region": 0.0019134534848853945,
+          "response": 0.0007114417700571114,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.021032970804565898,
+          "region": 0.003408819792093709,
+          "response": 0.0009276567914639599,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.014444785037388405,
+            "region": 0.0043443641974590715,
+            "response": 0.0013578962008371795,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.004574219420707474,
+            "region": 0.0017318552871680973,
+            "response": 0.0006026650105620016,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.012713354317626605,
+            "region": 0.0038802479723623645,
+            "response": 0.0013964465693182622,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.021111498850708208,
+            "region": 0.006114734860602766,
+            "response": 0.001696961452398682,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.027263357040161886,
+            "region": 0.003021954446254919,
+            "response": 0.0009904698519676459,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.007713299974178274,
+            "region": 0.0007238059478064921,
+            "response": 0.00037125615719257134,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.023220586668079097,
+            "region": 0.0024568989106531565,
+            "response": 0.0009688698891598808,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.041081155324354766,
+            "region": 0.004736084300869455,
+            "response": 0.0013216766787081725,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.020658636131944755,
+            "region": 0.002656400188182791,
+            "response": 0.000855849858392806,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.005819060882398238,
+            "region": 0.0006242000410566107,
+            "response": 0.0002533537957181882,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.017533295834437013,
+            "region": 0.002013303430188292,
+            "response": 0.000798510541608266,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.03120376424243053,
+            "region": 0.004315596998397572,
+            "response": 0.0012144372033314236,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.007657104909109573,
+            "region": 0.0013226179299332822,
+            "response": 0.0003522156712430539,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.002394562018647169,
+            "region": 0.00042408983990753767,
+            "response": 0.00016389739687288813,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.006177045595056067,
+            "region": 0.00121681711122316,
+            "response": 0.00039338185019914816,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.01176843560533598,
+            "region": 0.001877682800598753,
+            "response": 0.0004052086228815218,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    },
+    "response0/20260812": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.014321276939784487,
+          "region": 0.0025658399945435425,
+          "response": 0.0008692706231552923,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.00410020110643624,
+          "region": 0.0007023044147111552,
+          "response": 0.00032342901360304195,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.012211187224214276,
+          "region": 0.0021530805904573453,
+          "response": 0.0010087112103898713,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.021541904595990976,
+          "region": 0.003910367231971274,
+          "response": 0.0010027508383912693,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.014953945484012365,
+            "region": 0.0051184929111817235,
+            "response": 0.0016878507405635901,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.004575050903561835,
+            "region": 0.0017349081768770701,
+            "response": 0.0007151887232187922,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.013082973468893517,
+            "region": 0.004482502612518147,
+            "response": 0.0020277480224952646,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.022014365321956574,
+            "region": 0.007446275686379522,
+            "response": 0.0018342845088530643,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.027837834414094688,
+            "region": 0.003337779212354993,
+            "response": 0.0012173435198443864,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.007721403745623926,
+            "region": 0.0007375444445642642,
+            "response": 0.00042551174233267374,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.023705341511716445,
+            "region": 0.002722587124056493,
+            "response": 0.0013817489184778727,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.04202854221997162,
+            "region": 0.005253088726506879,
+            "response": 0.0014488539768838867,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.020968501937265197,
+            "region": 0.0028984112073279296,
+            "response": 0.0010406563329524942,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.00581790969784682,
+            "region": 0.0006332262203310771,
+            "response": 0.00029768775117797,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.01788619809473554,
+            "region": 0.0022559251369481596,
+            "response": 0.0011424689403914574,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.031626101955771445,
+            "region": 0.004673489829292521,
+            "response": 0.0013103280005452688,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.007846102863550187,
+            "region": 0.0014745166418530667,
+            "response": 0.00040050252241599085,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.002386641185148619,
+            "region": 0.0004058432317833649,
+            "response": 0.00017875685128577364,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.0063814230457258725,
+            "region": 0.0013043880787639258,
+            "response": 0.0004915901705847621,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.01204051348225524,
+            "region": 0.002178981917677447,
+            "response": 0.0004202877056741272,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    },
+    "response50/20260812": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.014578462383554628,
+          "region": 0.0026071520396120226,
+          "response": 0.000714893704204466,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.004094330427081634,
+          "region": 0.0006825019870060108,
+          "response": 0.00026950853581676407,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.012245068887714296,
+          "region": 0.0020502916803040233,
+          "response": 0.0007205986366110058,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.022153922016732396,
+          "region": 0.004126337419923705,
+          "response": 0.0009318813605599037,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.01511727556741486,
+            "region": 0.0049441551052344344,
+            "response": 0.0013655618791138598,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.004572414618451148,
+            "region": 0.0016524509759619833,
+            "response": 0.0005826033551481184,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.013060184273247918,
+            "region": 0.004080714886852851,
+            "response": 0.0014074556240908957,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.022446797555312516,
+            "region": 0.007453447405714542,
+            "response": 0.0017151473797033152,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.028309524183471997,
+            "region": 0.003509845557467391,
+            "response": 0.000994736296282402,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.007692108889265607,
+            "region": 0.0007346220865050175,
+            "response": 0.0003611988288563831,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.023712173833822212,
+            "region": 0.002668130172727009,
+            "response": 0.0009834138767473633,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.04321558255081375,
+            "region": 0.005739172681933269,
+            "response": 0.0013228274590801447,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.021570991926516094,
+            "region": 0.003129659212815265,
+            "response": 0.0008662082906084834,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.005820727969209353,
+            "region": 0.0006194530216210599,
+            "response": 0.000247489077779998,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.01805315524494896,
+            "region": 0.0022425589117726,
+            "response": 0.0008256846573810132,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.03296396085061133,
+            "region": 0.0052718625733784085,
+            "response": 0.0012160915618248207,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.007894520240370184,
+            "region": 0.0014521003225430225,
+            "response": 0.0003479620550175847,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.0023864006584820648,
+            "region": 0.0004059838509419933,
+            "response": 0.00015625141729932088,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.006399831086552391,
+            "region": 0.0012600544301676563,
+            "response": 0.00038643902483575707,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.012143269126924375,
+            "region": 0.0021672044385923073,
+            "response": 0.00040534040219123807,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    },
+    "du_gradcos/20260812": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.014511154432936262,
+          "region": 0.0025515402702149,
+          "response": 0.0007244329823424778,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.004102585991301263,
+          "region": 0.000683475829064264,
+          "response": 0.0002722338053100278,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.012283391004117827,
+          "region": 0.0020618082827422767,
+          "response": 0.000725043135823095,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.021943202179390938,
+          "region": 0.003975304502722187,
+          "response": 0.0009499224178580334,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.015004179168802997,
+            "region": 0.004887835231299201,
+            "response": 0.0013939791436617572,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.004576985761135196,
+            "region": 0.0016559856541183157,
+            "response": 0.0005900747525932578,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.013125242517950634,
+            "region": 0.004137051716679707,
+            "response": 0.0014272152988269227,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.02209671223536134,
+            "region": 0.0072545436404955884,
+            "response": 0.001762695173601969,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.028053638183822234,
+            "region": 0.0033957238658331333,
+            "response": 0.0010038176416856004,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.007716636774906267,
+            "region": 0.000735915112212145,
+            "response": 0.00036331424710927727,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.023757925947817664,
+            "region": 0.0027063373670292395,
+            "response": 0.0009864810072637434,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.04251785171218216,
+            "region": 0.005415014767398437,
+            "response": 0.0013414059519467022,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.021241955598816274,
+            "region": 0.0029662128867736707,
+            "response": 0.0008685814371953408,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.005822962033562362,
+            "region": 0.0006218007570472158,
+            "response": 0.0002499802827514941,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.01800465921405703,
+            "region": 0.002211847330909222,
+            "response": 0.0008205999477164975,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.032188748894259336,
+            "region": 0.00489278450064982,
+            "response": 0.0012258635278461346,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.008255999213239799,
+            "region": 0.001507929367168496,
+            "response": 0.00035578668916969036,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.002396345386902491,
+            "region": 0.0004036776219436433,
+            "response": 0.00015779974409610987,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.006529127340763807,
+            "region": 0.0012538049990932147,
+            "response": 0.00039091942530831145,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.01291269805515185,
+            "region": 0.0023141796050670867,
+            "response": 0.0004196474358953613,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    },
+    "stateguard/20260812": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.014086502066347747,
+          "region": 0.0023933405742476072,
+          "response": 0.000711400370391857,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.004107258264363433,
+          "region": 0.0006994525885117279,
+          "response": 0.000267220960074989,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.01201932631044959,
+          "region": 0.002005556433383996,
+          "response": 0.0007027402106389975,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.021143299570151916,
+          "region": 0.0036280687203786026,
+          "response": 0.0009421502246762732,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.014559277845546604,
+            "region": 0.0046908074815291915,
+            "response": 0.001372293940827755,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.00463546933606267,
+            "region": 0.0017444086392060854,
+            "response": 0.0005777614543755286,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.012916641177920003,
+            "region": 0.004174228930302585,
+            "response": 0.001387074458640806,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.021163818527323505,
+            "region": 0.006680585428451498,
+            "response": 0.0017547796401534772,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.027392226286853352,
+            "region": 0.003106173390794235,
+            "response": 0.0009823746482046166,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.007700461886512736,
+            "region": 0.000731666291297491,
+            "response": 0.00035704817604103787,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.023282904511628053,
+            "region": 0.0025218901137122884,
+            "response": 0.0009493600916054371,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.0413474302738905,
+            "region": 0.004877710233752926,
+            "response": 0.0013280524053698173,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.020789969138180216,
+            "region": 0.0027685370402953896,
+            "response": 0.000854955536306079,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.00581040009468173,
+            "region": 0.000620798936142819,
+            "response": 0.0002457176616189827,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.01766159483231604,
+            "region": 0.0021087928345271695,
+            "response": 0.0007958504090008015,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.03140812744386494,
+            "region": 0.004502150367867822,
+            "response": 0.0012186796075790577,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.007691037061158567,
+            "region": 0.0014011849586192209,
+            "response": 0.0003473777266208344,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.0023899600045600286,
+            "region": 0.0004003890759122442,
+            "response": 0.00015557750833939584,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.006235491030383855,
+            "region": 0.001222870288377938,
+            "response": 0.0003814160939479431,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.011797121605680635,
+            "region": 0.002079897571820766,
+            "response": 0.000409239470279014,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    },
+    "response0/20260813": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.014859176241637517,
+          "region": 0.002820219651524288,
+          "response": 0.0008312065471333578,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.0041257340107889225,
+          "region": 0.0007066432049759897,
+          "response": 0.00031892003357010404,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.012586393322174748,
+          "region": 0.002299927809314492,
+          "response": 0.000935602010307169,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.02249868047578881,
+          "region": 0.004397299722768366,
+          "response": 0.0009829543455422633,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.015352992170179883,
+            "region": 0.005615710042184219,
+            "response": 0.0016003422753177196,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.004594296376065662,
+            "region": 0.0017475647046618784,
+            "response": 0.0007008076305282884,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.013401019984545808,
+            "region": 0.0048129430176535,
+            "response": 0.001857685907574099,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.02268431185899923,
+            "region": 0.00835254970782747,
+            "response": 0.0017927659580891486,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.028750470497955878,
+            "region": 0.0035853317832030976,
+            "response": 0.0011668194024120264,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.00776578172420462,
+            "region": 0.0007443598815977263,
+            "response": 0.00042133052565986875,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.024322466381515067,
+            "region": 0.002824499134051924,
+            "response": 0.0012898481071412485,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.043670819606631994,
+            "region": 0.0057666504076526815,
+            "response": 0.0014165351415916423,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.02170716921488444,
+            "region": 0.0031268537713913247,
+            "response": 0.0009946046597178793,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.005854180781170726,
+            "region": 0.0006214198102194739,
+            "response": 0.0002932127697022224,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.01841133600876977,
+            "region": 0.002343391419465964,
+            "response": 0.0010577055583780748,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.032929497336347896,
+            "region": 0.0051630331164536376,
+            "response": 0.0012821997216330297,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.008485249325167388,
+            "region": 0.0017732026608427987,
+            "response": 0.00039426639821916375,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.0024144111725036056,
+            "region": 0.0004198716284008697,
+            "response": 0.00017924924196014065,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.006797144236043095,
+            "region": 0.0015188054754010712,
+            "response": 0.00047277047844242285,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.013208773576964934,
+            "region": 0.0027042653819080442,
+            "response": 0.00042327090639749564,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    },
+    "response50/20260813": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.014631567587299893,
+          "region": 0.002668519246799406,
+          "response": 0.0007161599199541038,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.0041523638016466675,
+          "region": 0.0007180410416791952,
+          "response": 0.00027490458279468536,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.012481444098521024,
+          "region": 0.0022180694986794454,
+          "response": 0.0007218718058932912,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.022021292869467288,
+          "region": 0.004094208113189476,
+          "response": 0.0009310757108172159,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.015218485627944272,
+            "region": 0.005337108079887306,
+            "response": 0.0013717434084052607,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.004612716260210922,
+            "region": 0.0017311605295011153,
+            "response": 0.0005930442710450734,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.013308077810021739,
+            "region": 0.004550947755342349,
+            "response": 0.0014187502884548545,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.02243177768153449,
+            "region": 0.007926242232012251,
+            "response": 0.0017140861150740723,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.02809421056881547,
+            "region": 0.0033527253874732804,
+            "response": 0.0009921733801699399,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.007827923904793957,
+            "region": 0.0007962647071205235,
+            "response": 0.00036704308960603765,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.024066023877821863,
+            "region": 0.002817660619621165,
+            "response": 0.0009749966480740113,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.04225554051809013,
+            "region": 0.005166020535398275,
+            "response": 0.0013219152625727779,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.02153190937824547,
+            "region": 0.0030009089270606635,
+            "response": 0.0008602261762765314,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.00591691645871227,
+            "region": 0.0006499883804887455,
+            "response": 0.00025202944442147176,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.0183820459448422,
+            "region": 0.002326842750577877,
+            "response": 0.0008156335560367249,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.032489269195745386,
+            "region": 0.0048504353365084775,
+            "response": 0.0012089171786404526,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.008313232361494253,
+            "region": 0.0016518538395757787,
+            "response": 0.00035665663491878753,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.002404262384516187,
+            "region": 0.0004127915912855921,
+            "response": 0.00016240610890084402,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.00665107285991932,
+            "region": 0.0013948963678558357,
+            "response": 0.00039997853690086534,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.012929876951966434,
+            "region": 0.0025283424620283768,
+            "response": 0.000410459997798777,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    },
+    "du_gradcos/20260813": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.014710062529581288,
+          "region": 0.002631145882963513,
+          "response": 0.0007242784734201753,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.004136284925237608,
+          "region": 0.0006968184750439832,
+          "response": 0.0002799375032981288,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.012465183520689607,
+          "region": 0.002140831304520058,
+          "response": 0.0007349563417301397,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.022241830293399593,
+          "region": 0.0040886241401312876,
+          "response": 0.0009357711038683192,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.01518624967429787,
+            "region": 0.005173102954480176,
+            "response": 0.001382658006332349,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.004589224201239025,
+            "region": 0.0016958736775753399,
+            "response": 0.0006057584652201816,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.013241872777386258,
+            "region": 0.004366192947297047,
+            "response": 0.0014403047640371368,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.022429139508555334,
+            "region": 0.007718627515714616,
+            "response": 0.0017134610466503848,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.02821572885538141,
+            "region": 0.003312462154038561,
+            "response": 0.0010065716363897082,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.007798053250492861,
+            "region": 0.0007545197021196752,
+            "response": 0.00037298509781370136,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.024044108437374236,
+            "region": 0.002697961074106085,
+            "response": 0.0009992282604798675,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.04259618689926962,
+            "region": 0.005205934378318488,
+            "response": 0.0013307083270774455,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.021597241004928946,
+            "region": 0.0029878847621148453,
+            "response": 0.0008710241377533142,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.0058873951512699325,
+            "region": 0.0006237833653964723,
+            "response": 0.00025661660594475204,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.018372043066968522,
+            "region": 0.0022615579548679915,
+            "response": 0.0008324122381357786,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.03267736160196364,
+            "region": 0.0048962622880935665,
+            "response": 0.0012168398102706608,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.008551093113298217,
+            "region": 0.0016822795441839844,
+            "response": 0.00036113858662550533,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.002406752023186224,
+            "region": 0.00040991563012842866,
+            "response": 0.00016432734751200921,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.006667893321719021,
+            "region": 0.001378444546329168,
+            "response": 0.00040283644599791536,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.013506463457209369,
+            "region": 0.0026222965185297652,
+            "response": 0.0004178463353431046,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    },
+    "stateguard/20260813": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.014366271803155542,
+          "region": 0.0024451084374838197,
+          "response": 0.0007129661409938611,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.0041167990857502446,
+          "region": 0.0006798281567777546,
+          "response": 0.00027470065324147676,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.012249764035611102,
+          "region": 0.0020265008623634156,
+          "response": 0.0007157120173784885,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.021607515941529223,
+          "region": 0.0037463561311597005,
+          "response": 0.0009293530024388019,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.014830037881620229,
+            "region": 0.004780085604094589,
+            "response": 0.0013628524854235973,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.004583347375349452,
+            "region": 0.001676729047903791,
+            "response": 0.000591488950188553,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.013029593811370432,
+            "region": 0.004137449166349446,
+            "response": 0.0014031388781101364,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.02175382721082618,
+            "region": 0.006974400308293601,
+            "response": 0.001708247870071015,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.027726571618889768,
+            "region": 0.0031036940519697962,
+            "response": 0.000988678654236234,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.007755784833958993,
+            "region": 0.0007155525760026649,
+            "response": 0.0003685940955620026,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.023721200382957854,
+            "region": 0.002550740002576883,
+            "response": 0.000967263108032057,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.04171733632683754,
+            "region": 0.004850718728266657,
+            "response": 0.0013201364564641457,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.02114340621046722,
+            "region": 0.002795024972874671,
+            "response": 0.0008589874258177587,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.005850398676314702,
+            "region": 0.0005986033442847353,
+            "response": 0.00025255600218467104,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.018061178262966375,
+            "region": 0.002131951883105406,
+            "response": 0.0008140280647542871,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.0318721377911667,
+            "region": 0.004556308904041847,
+            "response": 0.0012071624843277581,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.008131343304800491,
+            "region": 0.0015467375584800418,
+            "response": 0.00035431213949171556,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.0023944645431280757,
+            "region": 0.00040825581569758164,
+            "response": 0.0001608642182721572,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.006436847720760852,
+            "region": 0.001312363259785343,
+            "response": 0.0003941300359959617,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.0126942783788157,
+            "region": 0.002350352715196398,
+            "response": 0.00041121820133109094,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    },
+    "pcgrad/20260811": {
+      "overall_equal_block_mean": {
+        "all_25": {
+          "site": 0.014464261319953948,
+          "region": 0.0025262812737491913,
+          "response": 0.0007251115939925512,
+          "zero_response": 0.0009971046875155783,
+          "unchanged_site": 0.024109133603051305,
+          "unchanged_region": 0.011169317584717647
+        },
+        "steps_1_5": {
+          "site": 0.00414013239981917,
+          "region": 0.0007146029946064422,
+          "response": 0.0002811784268127819,
+          "zero_response": 0.00037232555407077446,
+          "unchanged_site": 0.0049145460260721545,
+          "unchanged_region": 0.0013543327041649414
+        },
+        "steps_6_15": {
+          "site": 0.012209598146534214,
+          "region": 0.0020584299547287323,
+          "response": 0.0007369190161534789,
+          "zero_response": 0.0012498200428156755,
+          "unchanged_site": 0.018499088653673727,
+          "unchanged_region": 0.0075787753140321
+        },
+        "steps_16_25": {
+          "site": 0.021880988898531843,
+          "region": 0.0038999717228580264,
+          "response": 0.0009352707513153292,
+          "zero_response": 0.0010567789141229392,
+          "unchanged_site": 0.03931647253067543,
+          "unchanged_region": 0.019667352279260135
+        }
+      },
+      "per_block": {
+        "z128_y384_x256": {
+          "all_25": {
+            "site": 0.015014786676814159,
+            "region": 0.004795675210577125,
+            "response": 0.0013902337092683108,
+            "zero_response": 0.0019530471639882308,
+            "unchanged_site": 0.02593457876549413,
+            "unchanged_region": 0.023237180531335375
+          },
+          "steps_1_5": {
+            "site": 0.004614106899437805,
+            "region": 0.001760327463853173,
+            "response": 0.0006138691985446106,
+            "zero_response": 0.0008277258335814016,
+            "unchanged_site": 0.005510972576060643,
+            "unchanged_region": 0.0033243024488911034
+          },
+          "steps_6_15": {
+            "site": 0.013056865241378546,
+            "region": 0.004147698714708288,
+            "response": 0.0014543192940133546,
+            "zero_response": 0.002528663905347154,
+            "unchanged_site": 0.020220827784699698,
+            "unchanged_region": 0.016496180075531205
+          },
+          "steps_16_25": {
+            "site": 0.022173048090189697,
+            "region": 0.00696132561036696,
+            "response": 0.0017143303602400314,
+            "zero_response": 0.001940091159728278,
+            "unchanged_site": 0.04186013309905926,
+            "unchanged_region": 0.039934620074927804
+          }
+        },
+        "z256_y0_x128": {
+          "all_25": {
+            "site": 0.028169917222112418,
+            "region": 0.0034492889943066986,
+            "response": 0.001008783475299424,
+            "zero_response": 0.0013943361894538004,
+            "unchanged_site": 0.04549971094044546,
+            "unchanged_region": 0.015131022253384193
+          },
+          "steps_1_5": {
+            "site": 0.00778355331470569,
+            "region": 0.0007519593901330761,
+            "response": 0.00037367961479806887,
+            "zero_response": 0.00048798084071677295,
+            "unchanged_site": 0.009112234440787384,
+            "unchanged_region": 0.0015043259983940516
+          },
+          "steps_6_15": {
+            "site": 0.02374922582724442,
+            "region": 0.0026865960797294976,
+            "response": 0.0010019267028231601,
+            "zero_response": 0.0017109590972419634,
+            "unchanged_site": 0.034746918532376485,
+            "unchanged_region": 0.009678647542993227
+          },
+          "steps_16_25": {
+            "site": 0.042783790330092115,
+            "region": 0.005560646733889977,
+            "response": 0.0013331921699621793,
+            "zero_response": 0.0015308909769373713,
+            "unchanged_site": 0.07444624199221532,
+            "unchanged_region": 0.02739674486995985
+          }
+        },
+        "z384_y0_x128": {
+          "all_25": {
+            "site": 0.02139034781915446,
+            "region": 0.002984350940096192,
+            "response": 0.0008728457953717831,
+            "zero_response": 0.0011844641842496154,
+            "unchanged_site": 0.03482078912978371,
+            "unchanged_region": 0.01246445815001304
+          },
+          "steps_1_5": {
+            "site": 0.005865596836277594,
+            "region": 0.0006275922117007819,
+            "response": 0.00025479585283392223,
+            "zero_response": 0.00034514881804170727,
+            "unchanged_site": 0.006898034643381834,
+            "unchanged_region": 0.0012345345202144622
+          },
+          "steps_6_15": {
+            "site": 0.017946532593729594,
+            "region": 0.0021693794677654903,
+            "response": 0.0008328671061462956,
+            "zero_response": 0.0014144309411979823,
+            "unchanged_site": 0.026545840268954634,
+            "unchanged_region": 0.007919634704012423
+          },
+          "steps_16_25": {
+            "site": 0.03259653844870627,
+            "region": 0.004977701698468688,
+            "response": 0.0012218494638849128,
+            "zero_response": 0.0013741551022879623,
+            "unchanged_site": 0.05705711559082071,
+            "unchanged_region": 0.02262424350871394
+          }
+        },
+        "z384_y384_x0": {
+          "all_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_1_5": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_6_15": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          },
+          "steps_16_25": {
+            "site": 0.0,
+            "region": 0.0,
+            "response": 0.0,
+            "zero_response": 0.0,
+            "unchanged_site": 0.0,
+            "unchanged_region": 0.0
+          }
+        },
+        "z512_y256_x256": {
+          "all_25": {
+            "site": 0.007746254881688704,
+            "region": 0.0014020912237659407,
+            "response": 0.00035369499002323813,
+            "zero_response": 0.00045367589988624485,
+            "unchanged_site": 0.014290589179533223,
+            "unchanged_region": 0.005013926988855625
+          },
+          "steps_1_5": {
+            "site": 0.002437404948674763,
+            "region": 0.0004331359073451798,
+            "response": 0.0001635474678873076,
+            "zero_response": 0.0002007722780139905,
+            "unchanged_site": 0.0030514884701309105,
+            "unchanged_region": 0.0007085005533250902
+          },
+          "steps_6_15": {
+            "site": 0.00629536707031851,
+            "region": 0.0012884755114403864,
+            "response": 0.00039548197778458414,
+            "zero_response": 0.0005950462702912773,
+            "unchanged_site": 0.01098185668233782,
+            "unchanged_region": 0.0037994142476236448
+          },
+          "steps_16_25": {
+            "site": 0.011851567623671145,
+            "region": 0.002000184571564508,
+            "response": 0.0004069817624895222,
+            "zero_response": 0.0004387573316610845,
+            "unchanged_site": 0.023218871971281866,
+            "unchanged_region": 0.00838115294269907
+          }
+        }
+      },
+      "pair_count": 600,
+      "spatial_block_count": 5
+    }
+  },
+  "frozen_comparisons": {
+    "three_seed_equal_block_then_equal_seed_mean": {
+      "response0": {
+        "site": 0.01448919317840288,
+        "response": 0.0008839483423788705
+      },
+      "response50": {
+        "site": 0.014579140487540927,
+        "response": 0.0007174716517541431
+      },
+      "du_gradcos": {
+        "site": 0.014530293591475734,
+        "response": 0.0007253959051508395
+      },
+      "stateguard": {
+        "site": 0.014152516831074737,
+        "response": 0.0007118842759579517
+      }
+    },
+    "vs_response0": {
+      "response_relative_reduction": 0.1946539839170491,
+      "site_relative_degradation": -0.02323637646228513,
+      "favourable_response_seeds": 3,
+      "pass": true
+    },
+    "vs_response50": {
+      "site_relative_reduction": 0.029262606861548156,
+      "response_relative_degradation": -0.007787591025416624,
+      "seeds_meeting_both_conditions": 3,
+      "pass": true
+    },
+    "vs_du_gradcos": {
+      "site_relative_reduction": 0.02599925170284389,
+      "response_relative_reduction": 0.018626558403411694,
+      "seeds_better_on_both": 3,
+      "pass": true
+    },
+    "pcgrad_seed20260811_descriptive_only": {
+      "site": 0.00045948469623302395,
+      "response": 1.3825277504414166e-05
+    }
+  },
+  "pair_count": 600,
+  "test_trajectories_accessed": 1200,
+  "elapsed_seconds_this_invocation": 4528.272646400001,
+  "peak_cuda_reserved_mib": 466.0,
+  "scope": "independent spatial blocks from the same lightweight simulator; not physical transfer"
+}

@@ -1,0 +1,126 @@
+{
+  "pair_id": "z0_y256_x256|NPI-012|P1-22-DEV-A|S3~S5",
+  "split": "DEV",
+  "seed": 20260811,
+  "human_approval": "2026-10-05: user approved this fixed NPI-012 31.53% case for one local visualization forward, including its disclosed z=0 stack-end location",
+  "case_selection": "Maximum simulator mobilized-site count at step 100; maximum mobilized fraction gives the same winner",
+  "earlier_pair_selection": "Not reused; existing illustrations preserved",
+  "volume_shape": [
+    128,
+    128,
+    128
+  ],
+  "steps": [
+    0,
+    25,
+    50,
+    75,
+    100
+  ],
+  "crop_zyx": [
+    [
+      0,
+      128
+    ],
+    [
+      0,
+      128
+    ],
+    [
+      0,
+      128
+    ]
+  ],
+  "crop_selection": "Entire background-free 128^3 model input; no further spatial crop",
+  "checkpoint": "runs\\statefront_mixed_train_seed20260811_20260930\\checkpoint_final.pt",
+  "checkpoint_sha256": "60108cd3fa6c77acd0ccf0c5ab7a72903b2ca8f7a4cddd1ef083efb071e428d9",
+  "inputs": [
+    {
+      "path": "runs\\statefront_dev100_extension_seed20260811_20261001\\data\\dev100_NPI-012_z0_y256_x256_streamA_S530_then_S370.npz",
+      "sha256": "e4cab413af422b5d0a59ade92ebb4784c6c64a03d3c5b4dfaaef9fbd28cad809"
+    }
+  ],
+  "model": "RegionalStateFrontSurrogate direct readout",
+  "parameters": 90991,
+  "precision": "float32; cuDNN TF32 allowed as in original evaluator; matmul TF32 disabled",
+  "cpu_threads": 2,
+  "initial_export_attempt": "Original fine-front evaluator precision preserved from the outset",
+  "device": "NVIDIA GeForce RTX 5070",
+  "peak_cuda_reserved_mib": 568.0,
+  "elapsed_seconds": 20.967110699999466,
+  "maximum_site_curve_difference_from_saved_case": null,
+  "schedules": {
+    "a": {
+      "schedule": "S5x30 -> S3x70",
+      "remaining_voxels_at_displayed_steps": [
+        295851,
+        289662,
+        272539,
+        240918,
+        202570
+      ],
+      "predicted_expected_voxels_at_displayed_steps": [
+        295851.0,
+        287088.8447265625,
+        265629.4440917969,
+        230299.0634765625,
+        191007.98999023438
+      ],
+      "site_brier_at_displayed_steps": [
+        0.012414714321494102,
+        0.04174213483929634,
+        0.07458140701055527,
+        0.08842594176530838
+      ]
+    }
+  },
+  "full_volume_saved": true,
+  "optimizer_updates": 0,
+  "new_data_generated": false,
+  "formal_evaluation_restarted": false,
+  "test_accessed": false,
+  "interpretation": "illustrative single-pair prediction, not a new aggregate performance estimate",
+  "initial_geometry_selection": {
+    "rule": "Maximum simulator mobilized-site count at step 100; maximum mobilized fraction gives the same winner",
+    "human_approval": "2026-10-05: user approved this fixed NPI-012 31.53% case for one local visualization forward, including its disclosed z=0 stack-end location",
+    "selected": {
+      "file": "dev100_NPI-012_z0_y256_x256_streamA_S530_then_S370.npz",
+      "block": "z0_y256_x256",
+      "source_sha256": "e4cab413af422b5d0a59ade92ebb4784c6c64a03d3c5b4dfaaef9fbd28cad809"
+    },
+    "truth_only_selection": {
+      "eligible": "Existing DEV; complete 128-cubed block with zero exterior-background voxels",
+      "candidate_trajectories": 800,
+      "eligible_trajectories": 240,
+      "candidate_block": "z0_y256_x256",
+      "origin_zyx": [
+        0,
+        256,
+        256
+      ],
+      "rule": "Maximum simulator mobilized-site count at step 100; maximum mobilized fraction gives the same winner",
+      "selected_stage": "NPI-012",
+      "selected_stream": "P1-22-DEV-A",
+      "schedule": "S5 x 30 -> S3 x 70",
+      "prediction_errors_used": false,
+      "case_is_representative": false,
+      "full_stack_face_contact": true,
+      "boundary_note": "No rock-exterior outline or background inside the displayed volume; the block touches the beginning of the acquired slice stack (z=0). It is not described as away from every acquisition boundary."
+    },
+    "display_steps": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "checkpoint_sha256": "60108cd3fa6c77acd0ccf0c5ab7a72903b2ca8f7a4cddd1ef083efb071e428d9",
+    "predictions_inspected_for_selection": false
+  },
+  "network_forward_calls": 1,
+  "schedules_evaluated": [
+    "S5x30 -> S3x70"
+  ],
+  "cuda_reserved_cap_mib": 1024,
+  "saved_pair_score_comparison": "Not recomputed: this visualisation exports only one of the two action schedules"
+}

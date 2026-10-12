@@ -1,0 +1,155 @@
+{
+  "role": "Actual intermediate features for architecture illustration",
+  "human_approval": "2026-10-05: approved local single-sample feature export",
+  "pair_id": "z0_y256_x256|Oil|P1-22-DEV-B|S2~S3",
+  "split": "DEV",
+  "seed": 20260811,
+  "schedule": "S2x20 -> S3x80",
+  "step": 100,
+  "network_forward_calls": 1,
+  "checkpoint_sha256": "60108cd3fa6c77acd0ccf0c5ab7a72903b2ca8f7a4cddd1ef083efb071e428d9",
+  "source_sha256": "9b4316f7e5a45bd9e53e380e6f80b0941c7883d5dc5afcfb893170c12a67fe6b",
+  "source": "runs\\statefront_dev100_extension_seed20260811_20261001\\data\\dev100_Oil_z0_y256_x256_streamB_S220_then_S380.npz",
+  "checkpoint": "runs\\statefront_mixed_train_seed20260811_20260930\\checkpoint_final.pt",
+  "model": "RegionalStateFrontSurrogate(readout_mode=direct)",
+  "parameters": 90991,
+  "precision": "float32; cuDNN TF32 on, matmul TF32 off",
+  "device": "NVIDIA GeForce RTX 5070",
+  "cpu_threads": 2,
+  "gpu_cap_mib": 1024,
+  "peak_cuda_reserved_mib": 658.0,
+  "forward_and_readout_seconds": 20.402367599999707,
+  "max_difference_from_existing_prediction": 0.0,
+  "max_readout_reconstruction_error": 0.0,
+  "predeclared_display_rule": "Channels 0, 1, 2; z=64 for native tensors and z=4 for 8-cubed tensors. No activation-based channel/case selection.",
+  "tensor_shapes": {
+    "initial_labels": [
+      128,
+      128,
+      128
+    ],
+    "connected": [
+      128,
+      128,
+      128
+    ],
+    "display_step": [],
+    "inlet": [
+      128,
+      128,
+      128
+    ],
+    "conv1_gelu": [
+      8,
+      128,
+      128,
+      128
+    ],
+    "encoder_E": [
+      8,
+      128,
+      128,
+      128
+    ],
+    "pooled_S": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "initial_hidden": [
+      24,
+      8,
+      8,
+      8
+    ],
+    "local_logit": [
+      1,
+      128,
+      128,
+      128
+    ],
+    "previous_hidden": [
+      24,
+      8,
+      8,
+      8
+    ],
+    "context": [
+      18,
+      8,
+      8,
+      8
+    ],
+    "hidden": [
+      24,
+      8,
+      8,
+      8
+    ],
+    "class_logits": [
+      5,
+      8,
+      8,
+      8
+    ],
+    "cell_bias": [
+      1,
+      8,
+      8,
+      8
+    ],
+    "initial_group_inventory": [
+      2560
+    ],
+    "group_inventory": [
+      2560
+    ],
+    "previous_occupancy": [
+      128,
+      128,
+      128
+    ],
+    "occupancy": [
+      128,
+      128,
+      128
+    ],
+    "front_weight": [
+      128,
+      128,
+      128
+    ],
+    "propensity": [
+      128,
+      128,
+      128
+    ],
+    "hazard": [
+      128,
+      128,
+      128
+    ],
+    "reachable_support": [
+      128,
+      128,
+      128
+    ],
+    "action": [
+      4
+    ],
+    "time": [
+      1
+    ],
+    "site_index": [
+      460312
+    ],
+    "group_id": [
+      460312
+    ]
+  },
+  "no_future_target_loaded": true,
+  "optimizer_updates": 0,
+  "formal_evaluation": false,
+  "test_accessed": false
+}

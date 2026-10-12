@@ -1,0 +1,40 @@
+DynaRO data sources and transformations
+
+Upstream images
+Pak, T.; Archilha, N. L.; Mantovani, I. F.; Moreira, A. C.; Butler, I. B.
+X-ray computed micro-tomography dataset for nanoparticle-based oil removal
+from porous media. Figshare (2019).
+https://doi.org/10.6084/m9.figshare.c.4190738
+
+Related dataset descriptor:
+https://doi.org/10.1038/sdata.2019.4
+
+The collection's DataCite DOI record identifies CC BY 4.0:
+https://api.datacite.org/dois/10.6084/m9.figshare.c.4190738
+https://creativecommons.org/licenses/by/4.0/
+
+The original grayscale CT files are not included here. Obtain them through
+the provider's record and preserve any applicable file-specific notices.
+
+Author-generated resources
+The eight-class annotations are project-generated and expert-reviewed; the
+upstream collection did not supply this study's eight-class classifications.
+Resizing, crop coordinates, class dictionary, stages and spatial splits are
+recorded in reproduction/inputs. The data package also includes the semantic
+and feature inputs required to reproduce the figure views.
+
+Simulated trajectories and model outputs are generated records, not measured
+future flow fields. The fixed simulator action/transition definitions, random
+streams and trajectory identities are supplied with the input component.
+Original saved results retain their split, seed, checkpoint and aggregation
+identities. The package contains no newly trained or newly evaluated result.
+
+Software
+The numerical model definitions and preserved renderer functions come from
+the project's recorded implementations. Comparison models are identified as
+project adaptations, not as unmodified official repositories. Runtime
+dependencies are not vendored; their own licence terms continue to apply.
+No borrowed published figure image or copied layout helper is distributed.
+
+The providers are credited for their original data. This acknowledgement does
+not imply endorsement of DynaRO by the original data providers.

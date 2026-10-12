@@ -1,0 +1,91 @@
+{
+  "format": "dynaro-training-candidate-v1",
+  "public_release": false,
+  "licence": null,
+  "sources": {
+    "train_statefront_mixed_paired.py": {
+      "sha256": "2e5c6dba48f8c3261ddd94854ed5969c62979e431e92ebc9701ac42b90e3d1c6",
+      "definitions": {
+        "ACCUMULATION": "6e00d34f0a1ead46857c8743f25d33395471f6fc08d7b19a43cdf5e80e91cb09",
+        "STATE_WEIGHTS": "23b00b71a7839ce88f98c5e94edfdfc8a2bf312911aa6989e360946b3d81dfe8",
+        "RESPONSE_WEIGHTS": "0bd5b70fb899b98ac7324120b985a1a399b97eac9e03fe94eff43b6a8a6aeae3",
+        "_accumulate": "57e9537c748a9faafacac5168a801df45417def5104020804177ee57a324a452"
+      }
+    },
+    "autodl_joint_pair_gradients.py": {
+      "sha256": "92ac605c8c8a07a5e073d5c00ae4fbf1310c25fff11a05e59fa8becffa6ace8b",
+      "definitions": {
+        "joint_pair_gradients": "02d3a7aba4a7bbeddea1e60a63dac7e1dce5d7cda98c97ab2106c521499ca5de",
+        "_add_buffer": "d878c4e498d994a28a0cf2a89161ca8538da9b3c76677d351f118d705360eaee"
+      }
+    },
+    "autodl_tnnls_resource_probe.py": {
+      "sha256": "0c8500e206d065d136e84423f7b387ba48186037fab7ac3318b4d7b5586239c3",
+      "definitions": {
+        "ServerFNO": "d5d63c80a66a059048fb395cd73ecdb9ab6d145b34353baa89221f813cdf3130",
+        "ServerRTU": "102946ee2fcecfe9156bf6f97de9c91b265c9d347167b407d28b24de5dff5738",
+        "server_model": "b2b5f66854be87210d21eff9a280c818443a56bd15e60c9c5b8919431c34f0e3"
+      }
+    },
+    "train_tnnls_autodl_mixed_paired.py": {
+      "sha256": "fea20b108b6f957330b572e4978229cbc0be57c164e85491638f3d33b98660cc",
+      "definitions": {
+        "model_hash": "97a6c06be55137e2ba13bafb45561b053b09efe21c852d57f71aff761f9f47e7"
+      }
+    },
+    "regional_du_gradcos.py": {
+      "sha256": "00b9bfc8e5d8c9750f79d6f2004174b8f545ad4e01763f9492c7c3c9356b14ec",
+      "whole_file_unchanged": true
+    },
+    "regional_pcgrad.py": {
+      "sha256": "1a3b69656f99a21b2cb88e1e4b36b810ee48576de85983766e3b1aa83040f19e",
+      "whole_file_unchanged": true
+    }
+  },
+  "files": {
+    "regional_du_gradcos.py": {
+      "bytes": 6148,
+      "sha256": "00b9bfc8e5d8c9750f79d6f2004174b8f545ad4e01763f9492c7c3c9356b14ec"
+    },
+    "regional_pcgrad.py": {
+      "bytes": 9356,
+      "sha256": "1a3b69656f99a21b2cb88e1e4b36b810ee48576de85983766e3b1aa83040f19e"
+    },
+    "numerics.py": {
+      "bytes": 5807,
+      "sha256": "7f94ace7c4702615ac7639a96a261ccd9f3c65d46a2d294eea70cbd2bf7d8e12"
+    },
+    "initialization/coarse_front_20260812.pt": {
+      "bytes": 375088,
+      "sha256": "2e0a5c723f1c6de33ddcd0ece8fc83f2c40aa3c3891f25bf730104c5d1f480f4"
+    },
+    "initialization/coarse_front_20260813.pt": {
+      "bytes": 375088,
+      "sha256": "87d56e1073539453dcf22700e60f158415cdee0f497d89b37fbca241c9222e7e"
+    },
+    "protocol.json": {
+      "bytes": 850324,
+      "sha256": "40efbf9c10fdf287d473e551bd4e7188e12b645f74cd995ba9cce78ae208c98c"
+    },
+    "train.py": {
+      "bytes": 8387,
+      "sha256": "d1ca94298036c34d1ea6b0b37d52574318fc65c6bf70781d08dac6b48fcf9685"
+    },
+    "training_runtime.py": {
+      "bytes": 12250,
+      "sha256": "fe265966e099d70cae7b353339564da61c66d419d49bcb84389657bfc0abcbdf"
+    },
+    "training_engine.py": {
+      "bytes": 5303,
+      "sha256": "96ff6cfcf3b4ed837de217f5916c98f44aa9e190f99da306ae2b7f81d4633c25"
+    },
+    "verify_training.py": {
+      "bytes": 2243,
+      "sha256": "4bf67e81f742115f3dc5b623295270c9209309c84ce0c90cabd6557cd8095450"
+    },
+    "README.txt": {
+      "bytes": 4425,
+      "sha256": "0dc79d53ae381ee84d56c224f230a86e43fc176d551d934094a7da690e213117"
+    }
+  }
+}

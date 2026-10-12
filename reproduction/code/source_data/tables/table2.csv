@@ -1,0 +1,10 @@
+Steps,Metric,Regional-mean,DynaRO reduction
+1-25,Site Brier,14.176 +/- 0.095,10.18%
+1-50,Site Brier,22.827 +/- 0.456,20.19%
+51-75,Site Brier,40.720 +/- 2.586,37.05%
+51-100,Site Brier,43.582 +/- 3.271,41.93%
+1-25,Response MSE,0.702 +/- 0.011,1.93%
+1-50,Response MSE,1.238 +/- 0.036,5.94%
+51-75,Response MSE,2.730 +/- 0.158,16.88%
+51-100,Response MSE,3.902 +/- 0.374,31.11%
+100,Inventory MAE (pp),4.384 +/- 0.846,66.08%

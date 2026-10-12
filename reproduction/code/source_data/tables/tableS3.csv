@@ -1,0 +1,5 @@
+Interval,Metric,Static front,DynaRO,Reduction
+51-75,Site-state Brier,48.528 +/- 1.243,29.287 +/- 0.793,39.65%
+51-100,Site-state Brier,52.005 +/- 1.105,29.378 +/- 1.160,43.51%
+51-75,Regional response MSE,3.146 +/- 0.076,2.693 +/- 0.010,14.39%
+51-100,Regional response MSE,4.152 +/- 0.101,3.272 +/- 0.048,21.21%

@@ -1,0 +1,27 @@
+{
+  "format": "dynaro-retrained-evaluation-candidate-v1",
+  "public_release": false,
+  "licence": null,
+  "files": {
+    "retrained_runtime.py": {
+      "bytes": 4063,
+      "sha256": "6120cdc6471d071c0a0be504f6c59e335f6ce144871cb543f9eb2059715e71d9"
+    },
+    "evaluate_retrained.py": {
+      "bytes": 11201,
+      "sha256": "5544584c31dacc339f991794f483b9efcd017992d6dc1344bfdf42e4781571aa"
+    },
+    "verify_bridge.py": {
+      "bytes": 2111,
+      "sha256": "0828502b2b357aecafa30df3d6fd11a0f69fc27270c247ddfad51e60769c2514"
+    },
+    "README.txt": {
+      "bytes": 2737,
+      "sha256": "bf7d8148a374a48a5ec77237944326fd83ad97c7c1c8c121c5234b43a50edd83"
+    },
+    "protocol.json": {
+      "bytes": 2852,
+      "sha256": "8095c2b7e5c71c74a04e3b395bf79e4269e78c9a5aa5dc776a5ad527bd2f7358"
+    }
+  }
+}

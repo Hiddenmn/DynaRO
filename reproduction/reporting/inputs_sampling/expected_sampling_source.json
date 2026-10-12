@@ -1,0 +1,183 @@
+{
+  "scientific_question": "How do the complete semantic volume, model input and interior region correspond?",
+  "full_source": "NPI-012_label_uint8.npy",
+  "full_source_sha256": "964932bad9743649955ce9e1cd29056da40985c587185a6752a3469dd425023b",
+  "cached_case": "figure8_dev_max_mobilization_prediction_v1.npz",
+  "case_sha256": "a938cd5e8f4b5a36182a7829b41804ac8881d5c69a4447abcf8c3727b7870a4f",
+  "exact_parent_match": true,
+  "parent_origin_zyx": [
+    0,
+    256,
+    256
+  ],
+  "parent_shape_zyx": [
+    128,
+    128,
+    128
+  ],
+  "interior_parent_bounds_zyx": [
+    [
+      32,
+      96
+    ],
+    [
+      32,
+      96
+    ],
+    [
+      32,
+      96
+    ]
+  ],
+  "interior_stack_bounds_zyx": [
+    [
+      32,
+      96
+    ],
+    [
+      288,
+      352
+    ],
+    [
+      288,
+      352
+    ]
+  ],
+  "original_slice_size_xy": [
+    1024,
+    1024
+  ],
+  "coordinate_note": "Overview display spacing z:y:x=1:2:2 accounts for verified in-plane resizing. Subvolumes use isotropic model indices. Separate magnification; no physical-unit calibration.",
+  "camera": {
+    "azimuth": -55.0,
+    "elevation": 20.0,
+    "projection": "orthographic"
+  },
+  "panels": {
+    "a": {
+      "source_shape_zyx": [
+        845,
+        512,
+        512
+      ],
+      "display_grid_shape_zyx": [
+        106,
+        128,
+        128
+      ],
+      "display_stride_zyx": [
+        8,
+        4,
+        4
+      ],
+      "surface_additional_stride": 2,
+      "water_additional_stride": 2,
+      "coordinate_spacing_zyx": [
+        1.0,
+        2.0,
+        2.0
+      ],
+      "oil_alpha": 0.94,
+      "oil_point_alpha": 0.35,
+      "water_alpha": 0.045,
+      "phase_records": {
+        "Cluster oil": {
+          "display_grid_voxels": 76630,
+          "surface_vertices": 36715,
+          "surface_faces": 69678,
+          "render_points": 25584
+        },
+        "Columnar oil": {
+          "display_grid_voxels": 8783,
+          "surface_vertices": 5653,
+          "surface_faces": 9192,
+          "render_points": 2905
+        },
+        "Droplet oil": {
+          "display_grid_voxels": 23545,
+          "surface_vertices": 14883,
+          "surface_faces": 22750,
+          "render_points": 7891
+        },
+        "Corner oil": {
+          "display_grid_voxels": 11466,
+          "surface_vertices": 8586,
+          "surface_faces": 12222,
+          "render_points": 3892
+        },
+        "Film oil": {
+          "display_grid_voxels": 5104,
+          "surface_vertices": 3384,
+          "surface_faces": 4872,
+          "render_points": 1646
+        },
+        "Water": {
+          "display_grid_voxels": 13169,
+          "surface_vertices": 55799,
+          "surface_faces": 104592
+        }
+      }
+    },
+    "b": {
+      "source_shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "display_shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "native_oil_voxels": 295851,
+      "native_oil_triangles": 371004,
+      "oil_classes_pooled_for_display": true,
+      "oil_opacity": 1.0,
+      "water_opacity": 0.12,
+      "surface_grid_stride": 1,
+      "isosurface": 0.5,
+      "geometry_smoothing": false,
+      "lighting": "Smooth-normal depth-buffered light and contact shading on the native mask",
+      "coordinate_spacing_zyx": [
+        1,
+        1,
+        1
+      ]
+    },
+    "c": {
+      "source_shape_zyx": [
+        128,
+        128,
+        128
+      ],
+      "display_shape_zyx": [
+        64,
+        64,
+        64
+      ],
+      "native_oil_voxels": 35740,
+      "native_oil_triangles": 54572,
+      "oil_classes_pooled_for_display": true,
+      "oil_opacity": 1.0,
+      "water_opacity": 0.12,
+      "surface_grid_stride": 1,
+      "isosurface": 0.5,
+      "geometry_smoothing": false,
+      "lighting": "Smooth-normal depth-buffered light and contact shading on the native mask",
+      "coordinate_spacing_zyx": [
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "figure_size_mm": [
+    180.0,
+    73.0
+  ],
+  "rock_hidden_display_only": true,
+  "source_labels_modified": false,
+  "new_inference": false,
+  "test_accessed": false,
+  "full_reference_renderer_sha256": "e61d0129189601a560835173d97be888c154be5f5dd30be51555cb97810f3653"
+}

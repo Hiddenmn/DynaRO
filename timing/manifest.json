@@ -1,0 +1,53 @@
+{
+  "prepared_on": "2026-10-13",
+  "published": false,
+  "scope": "Inference timing reported in Results 4.1 and Supplement S8/Table S5",
+  "parent_reproduction_snapshot_unchanged": true,
+  "files": [
+    {
+      "path": "benchmark_inference.py",
+      "bytes": 13084,
+      "sha256": "17ce7e1a40de111e45666289cdc81cf5836b74a6cdce0dd24b5cf49d5c8670f6"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 3221,
+      "sha256": "eefb0e7e11c548581061930f331cf69f784ff944c5ad85d53448ef3f958ed437"
+    },
+    {
+      "path": "results/comparison.json",
+      "bytes": 440,
+      "sha256": "880ba64578f7b9c6e15663cde1f41eca91966bfe335378b3b738a3f4c6565143"
+    },
+    {
+      "path": "results/summary.csv",
+      "bytes": 1242,
+      "sha256": "38f5b0a21535a9a6c3e99aae6deacb38295740fd3134ad26bcae7e81b1bcc887"
+    },
+    {
+      "path": "results/table_rows.tex",
+      "bytes": 167,
+      "sha256": "915db41627ae7587f47cfcf46b25f61c4c7cb5a6c15e03ba74cecd59ea02dd73"
+    },
+    {
+      "path": "results/timed_repetitions.csv",
+      "bytes": 26883,
+      "sha256": "30a8b1896e462fdb2f572df8d48c9d25b3228557e6137926678dc75e36b43d85"
+    },
+    {
+      "path": "summarize_timing.py",
+      "bytes": 3753,
+      "sha256": "9a050291ccdf0bbe83b182cba598284fbbcce1ad0d53cf9c380a00eeda763e62"
+    },
+    {
+      "path": "test_benchmark_inference.py",
+      "bytes": 1770,
+      "sha256": "a9932c79e9cc5fda25748e407718a9f321028bb62b655a9abd99f5e0f5bfc972"
+    },
+    {
+      "path": "timing.json",
+      "bytes": 112199,
+      "sha256": "05b9da95f03429a95f930a4ba68624899d61a77203666b36c31e1097dc414600"
+    }
+  ]
+}

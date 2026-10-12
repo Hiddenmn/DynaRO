@@ -1,0 +1,11 @@
+{
+  "timing_source_sha256": "05b9da95f03429a95f930a4ba68624899d61a77203666b36c31e1097dc414600",
+  "native_100_step_latency_ratio_comparator_over_dynaro": {
+    "static_front": 0.6658073440678002,
+    "rtu": 39.674390121065606,
+    "fno": 18.716782656565
+  },
+  "dynaro_over_static_latency_ratio": 1.5019359712832614,
+  "aggregation": "mean over five block-specific medians of five timed calls",
+  "training_or_test_rerun": false
+}

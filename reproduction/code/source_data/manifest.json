@@ -1,0 +1,1714 @@
+{
+  "schema_version": 1,
+  "status": "local_candidate_not_published",
+  "title": "DynaRO manuscript table and quantitative-figure source data",
+  "version": "2026-10-09-candidate",
+  "licence": null,
+  "files": [
+    {
+      "path": "tables/table1.csv",
+      "panel": "Table 1",
+      "rows": 9,
+      "columns": [
+        "Steps",
+        "Metric",
+        "DynaRO",
+        "Static front",
+        "RTU",
+        "FNO"
+      ],
+      "description": "TEST; 25/50-step mixed training; site, response and terminal inventory errors.",
+      "kind": "display",
+      "definitions": {
+        "Steps": {
+          "type": "text",
+          "unit": "step index/interval",
+          "description": "Inclusive scored interval or terminal inventory step, as indicated by Metric.",
+          "missing": "not allowed"
+        },
+        "Metric": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Endpoint name; determines units in model columns.",
+          "missing": "not allowed"
+        },
+        "DynaRO": {
+          "type": "text",
+          "unit": "10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        },
+        "Static front": {
+          "type": "text",
+          "unit": "10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        },
+        "RTU": {
+          "type": "text",
+          "unit": "10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        },
+        "FNO": {
+          "type": "text",
+          "unit": "10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "db198025152ab5752619b0ac91956ab8c0a1c9739972d244795fdf3c9fab192f",
+      "bytes": 808
+    },
+    {
+      "path": "tables/table1_values.csv",
+      "panel": "Table 1",
+      "rows": 36,
+      "columns": [
+        "steps",
+        "metric",
+        "model",
+        "n_seeds",
+        "raw_mean",
+        "raw_sample_sd",
+        "display_multiplier",
+        "display_mean",
+        "display_sample_sd"
+      ],
+      "description": "TEST; 25/50-step mixed training; site, response and terminal inventory errors.",
+      "kind": "values",
+      "definitions": {
+        "steps": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Inclusive scored interval. A single step denotes a terminal endpoint; in Table S1 terminal_class_mae uses horizon, not the R2 scored interval.",
+          "missing": "not allowed"
+        },
+        "metric": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.",
+          "missing": "not allowed"
+        },
+        "model": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.",
+          "missing": "not allowed"
+        },
+        "n_seeds": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Number of matched training seeds, 1 or 3.",
+          "missing": "not allowed"
+        },
+        "raw_mean": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "not allowed"
+        },
+        "raw_sample_sd": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "empty only for raw_sample_sd in single-seed rows"
+        },
+        "display_multiplier": {
+          "type": "number",
+          "unit": "multiplier",
+          "description": "Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",
+          "missing": "not allowed"
+        },
+        "display_mean": {
+          "type": "number",
+          "unit": "display units",
+          "description": "Rounded raw_mean times display_multiplier.",
+          "missing": "not allowed"
+        },
+        "display_sample_sd": {
+          "type": "number",
+          "unit": "display units",
+          "description": "Rounded raw_sample_sd times display_multiplier.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "d0aff935225b32c3b1a676e77ff27b730b81c4f31ac14c7440b37f153610aa9f",
+      "bytes": 3155
+    },
+    {
+      "path": "tables/table2.csv",
+      "panel": "Table 2",
+      "rows": 9,
+      "columns": [
+        "Steps",
+        "Metric",
+        "Regional-mean",
+        "DynaRO reduction"
+      ],
+      "description": "TEST; regional-mean versus voxelwise exposure after matched mixed training.",
+      "kind": "display",
+      "definitions": {
+        "Steps": {
+          "type": "text",
+          "unit": "step index/interval",
+          "description": "Inclusive scored interval or terminal inventory step, as indicated by Metric.",
+          "missing": "not allowed"
+        },
+        "Metric": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Endpoint name; determines units in model columns.",
+          "missing": "not allowed"
+        },
+        "Regional-mean": {
+          "type": "text",
+          "unit": "10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        },
+        "DynaRO reduction": {
+          "type": "text",
+          "unit": "percent",
+          "description": "Rounded 100*(comparator mean-proposed mean)/comparator mean, including the % sign.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "da954e6e19a451ed1434d06db998e3659cf3f9defe68b6d8416878ed95216707",
+      "bytes": 428
+    },
+    {
+      "path": "tables/table2_values.csv",
+      "panel": "Table 2",
+      "rows": 9,
+      "columns": [
+        "steps",
+        "metric",
+        "n_seeds",
+        "coarse_raw_mean",
+        "coarse_raw_sample_sd",
+        "fine_raw_mean",
+        "display_multiplier",
+        "reduction_percent",
+        "display_reduction_percent"
+      ],
+      "description": "TEST; regional-mean versus voxelwise exposure after matched mixed training.",
+      "kind": "values",
+      "definitions": {
+        "steps": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Inclusive scored interval. A single step denotes a terminal endpoint; in Table S1 terminal_class_mae uses horizon, not the R2 scored interval.",
+          "missing": "not allowed"
+        },
+        "metric": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.",
+          "missing": "not allowed"
+        },
+        "n_seeds": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Number of matched training seeds, 1 or 3.",
+          "missing": "not allowed"
+        },
+        "coarse_raw_mean": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "not allowed"
+        },
+        "coarse_raw_sample_sd": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "not allowed"
+        },
+        "fine_raw_mean": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "not allowed"
+        },
+        "display_multiplier": {
+          "type": "number",
+          "unit": "multiplier",
+          "description": "Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",
+          "missing": "not allowed"
+        },
+        "reduction_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "100*(comparator mean-proposed mean)/comparator mean; Table 2 uses regional-mean exposure, Table S3 static front. Display field is rounded.",
+          "missing": "not allowed"
+        },
+        "display_reduction_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "100*(comparator mean-proposed mean)/comparator mean; Table 2 uses regional-mean exposure, Table S3 static front. Display field is rounded.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "099b58843b12295e2ab92404178f7c8f8fc66a42b997666f396d9c685c4c413a",
+      "bytes": 1123
+    },
+    {
+      "path": "tables/table3.csv",
+      "panel": "Table 3",
+      "rows": 6,
+      "columns": [
+        "Summary",
+        "Training rule",
+        "Site Brier",
+        "Response MSE"
+      ],
+      "description": "TEST; separate 25-step static-front learning-rule comparison.",
+      "kind": "display",
+      "definitions": {
+        "Summary": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Three-seed mean +/- sample SD or single seed 20260811.",
+          "missing": "not allowed"
+        },
+        "Training rule": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Learning rule used with the separate static-front predictor.",
+          "missing": "not allowed"
+        },
+        "Site Brier": {
+          "type": "text",
+          "unit": "10^-3 error units",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        },
+        "Response MSE": {
+          "type": "text",
+          "unit": "10^-3 error units",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "106185d24404a172fa7c7d8a2e640ac4d04beb60a12036df4fb429e933c492df",
+      "bytes": 460
+    },
+    {
+      "path": "tables/table3_values.csv",
+      "panel": "Table 3",
+      "rows": 12,
+      "columns": [
+        "group",
+        "arm",
+        "metric",
+        "n_seeds",
+        "seeds",
+        "raw_mean",
+        "raw_sample_sd",
+        "display_multiplier",
+        "seed_values"
+      ],
+      "description": "TEST; separate 25-step static-front learning-rule comparison.",
+      "kind": "values",
+      "definitions": {
+        "group": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "three_seed or single_seed; the latter is the seed-20260811 PCGrad/state-prioritized comparison.",
+          "missing": "not allowed"
+        },
+        "arm": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "All are static-front predictors: response0, response50, du_gradcos, stateguard (state-prioritized), pcgrad.",
+          "missing": "not allowed"
+        },
+        "metric": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.",
+          "missing": "not allowed"
+        },
+        "n_seeds": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Number of matched training seeds, 1 or 3.",
+          "missing": "not allowed"
+        },
+        "seeds": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Semicolon-separated ordered model-training seeds, not simulator streams.",
+          "missing": "not allowed"
+        },
+        "raw_mean": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "not allowed"
+        },
+        "raw_sample_sd": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "empty only for raw_sample_sd in single-seed rows"
+        },
+        "display_multiplier": {
+          "type": "number",
+          "unit": "multiplier",
+          "description": "Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",
+          "missing": "not allowed"
+        },
+        "seed_values": {
+          "type": "number_list",
+          "unit": "raw metric units",
+          "description": "Semicolon-separated unrounded scores aligned with seeds; metric defines raw units.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "d3d53d0d9f2b48f9c62eeb3e016e1d9fc00e2a50e8e6f4b3055e1887cf839b9b",
+      "bytes": 1811
+    },
+    {
+      "path": "tables/tableS1.csv",
+      "panel": "Table S1",
+      "rows": 16,
+      "columns": [
+        "Horizon",
+        "Scored interval",
+        "Model",
+        "Site R2",
+        "Regional R2",
+        "Terminal class-inventory MAE (pp)"
+      ],
+      "description": "DEV; state R2 and terminal inventory errors after mixed training.",
+      "kind": "display",
+      "definitions": {
+        "Horizon": {
+          "type": "text",
+          "unit": "step index",
+          "description": "Trajectory endpoint, not physical time.",
+          "missing": "not allowed"
+        },
+        "Scored interval": {
+          "type": "text",
+          "unit": "step interval",
+          "description": "Inclusive interval for state-error/R2 scoring; inventory is evaluated at the Horizon/Endpoint.",
+          "missing": "not allowed"
+        },
+        "Model": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Displayed model name; see study mapping in README.",
+          "missing": "not allowed"
+        },
+        "Site R2": {
+          "type": "text",
+          "unit": "dimensionless R2",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        },
+        "Regional R2": {
+          "type": "text",
+          "unit": "dimensionless R2",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        },
+        "Terminal class-inventory MAE (pp)": {
+          "type": "text",
+          "unit": "percentage points",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "4b53f4ca272de780b5dcba90738047ae731b6414554a798954ecc793b0880bae",
+      "bytes": 1189
+    },
+    {
+      "path": "tables/tableS1_values.csv",
+      "panel": "Table S1",
+      "rows": 48,
+      "columns": [
+        "split",
+        "horizon",
+        "steps",
+        "model",
+        "metric",
+        "n_seeds",
+        "seeds",
+        "raw_mean",
+        "raw_sample_sd",
+        "display_multiplier",
+        "display_decimals"
+      ],
+      "description": "DEV; state R2 and terminal inventory errors after mixed training.",
+      "kind": "values",
+      "definitions": {
+        "split": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "DEV/Development or TEST/Locked test; see file-specific description.",
+          "missing": "not allowed"
+        },
+        "horizon": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Trajectory endpoint; not necessarily the start of the scored interval.",
+          "missing": "not allowed"
+        },
+        "steps": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Inclusive scored interval. A single step denotes a terminal endpoint; in Table S1 terminal_class_mae uses horizon, not the R2 scored interval.",
+          "missing": "not allowed"
+        },
+        "model": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.",
+          "missing": "not allowed"
+        },
+        "metric": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.",
+          "missing": "not allowed"
+        },
+        "n_seeds": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Number of matched training seeds, 1 or 3.",
+          "missing": "not allowed"
+        },
+        "seeds": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Semicolon-separated ordered model-training seeds, not simulator streams.",
+          "missing": "not allowed"
+        },
+        "raw_mean": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "not allowed"
+        },
+        "raw_sample_sd": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "empty only for raw_sample_sd in single-seed rows"
+        },
+        "display_multiplier": {
+          "type": "number",
+          "unit": "multiplier",
+          "description": "Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",
+          "missing": "not allowed"
+        },
+        "display_decimals": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Decimal places used in the printed table.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "6a11faccc1761d807b0a328e28d3e6c50ed29c1abd3fa521e016b348a21bfa95",
+      "bytes": 5326
+    },
+    {
+      "path": "tables/tableS2.csv",
+      "panel": "Table S2",
+      "rows": 20,
+      "columns": [
+        "Endpoint",
+        "Scored interval",
+        "Model",
+        "Regional-state MSE (x1000)",
+        "Inventory MAE (pp)"
+      ],
+      "description": "TEST; regional-state and terminal inventory errors after mixed training.",
+      "kind": "display",
+      "definitions": {
+        "Endpoint": {
+          "type": "text",
+          "unit": "step index",
+          "description": "Trajectory endpoint, not physical time.",
+          "missing": "not allowed"
+        },
+        "Scored interval": {
+          "type": "text",
+          "unit": "step interval",
+          "description": "Inclusive interval for state-error/R2 scoring; inventory is evaluated at the Horizon/Endpoint.",
+          "missing": "not allowed"
+        },
+        "Model": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Displayed model name; see study mapping in README.",
+          "missing": "not allowed"
+        },
+        "Regional-state MSE (x1000)": {
+          "type": "text",
+          "unit": "10^-3 error units",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        },
+        "Inventory MAE (pp)": {
+          "type": "text",
+          "unit": "percentage points",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "49abf4f09e08dd934e33ad5e1b1b7aa6e8b8d2336dd3727161306c7df47c2d26",
+      "bytes": 1129
+    },
+    {
+      "path": "tables/tableS2_values.csv",
+      "panel": "Table S2",
+      "rows": 40,
+      "columns": [
+        "split",
+        "horizon",
+        "steps",
+        "model",
+        "metric",
+        "n_seeds",
+        "seeds",
+        "seed_values",
+        "raw_mean",
+        "raw_sample_sd",
+        "display_multiplier"
+      ],
+      "description": "TEST; regional-state and terminal inventory errors after mixed training.",
+      "kind": "values",
+      "definitions": {
+        "split": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "DEV/Development or TEST/Locked test; see file-specific description.",
+          "missing": "not allowed"
+        },
+        "horizon": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Trajectory endpoint; not necessarily the start of the scored interval.",
+          "missing": "not allowed"
+        },
+        "steps": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Inclusive scored interval. A single step denotes a terminal endpoint; in Table S1 terminal_class_mae uses horizon, not the R2 scored interval.",
+          "missing": "not allowed"
+        },
+        "model": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.",
+          "missing": "not allowed"
+        },
+        "metric": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.",
+          "missing": "not allowed"
+        },
+        "n_seeds": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Number of matched training seeds, 1 or 3.",
+          "missing": "not allowed"
+        },
+        "seeds": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Semicolon-separated ordered model-training seeds, not simulator streams.",
+          "missing": "not allowed"
+        },
+        "seed_values": {
+          "type": "number_list",
+          "unit": "raw metric units",
+          "description": "Semicolon-separated unrounded scores aligned with seeds; metric defines raw units.",
+          "missing": "not allowed"
+        },
+        "raw_mean": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "not allowed"
+        },
+        "raw_sample_sd": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "empty only for raw_sample_sd in single-seed rows"
+        },
+        "display_multiplier": {
+          "type": "number",
+          "unit": "multiplier",
+          "description": "Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "27f6ab0df0f3490ddb0f8414c5bdf568072a3ebfc94e33fd9fb25bca34e8528f",
+      "bytes": 6917
+    },
+    {
+      "path": "tables/tableS3.csv",
+      "panel": "Table S3",
+      "rows": 4,
+      "columns": [
+        "Interval",
+        "Metric",
+        "Static front",
+        "DynaRO",
+        "Reduction"
+      ],
+      "description": "DEV; unseen-horizon static versus predicted exposure after mixed training.",
+      "kind": "display",
+      "definitions": {
+        "Interval": {
+          "type": "text",
+          "unit": "step interval",
+          "description": "Inclusive scored interval.",
+          "missing": "not allowed"
+        },
+        "Metric": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Endpoint name; determines units in model columns.",
+          "missing": "not allowed"
+        },
+        "Static front": {
+          "type": "text",
+          "unit": "10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        },
+        "DynaRO": {
+          "type": "text",
+          "unit": "10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        },
+        "Reduction": {
+          "type": "text",
+          "unit": "percent",
+          "description": "Rounded 100*(comparator mean-proposed mean)/comparator mean, including the % sign.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "f2c35487caf7ba56a266ca8d9bd9efda198dee00c359d351f6f33f43aadc7ffe",
+      "bytes": 315
+    },
+    {
+      "path": "tables/tableS3_values.csv",
+      "panel": "Table S3",
+      "rows": 4,
+      "columns": [
+        "split",
+        "horizon",
+        "steps",
+        "metric",
+        "n_seeds",
+        "static_raw_mean",
+        "static_raw_sample_sd",
+        "dynaro_raw_mean",
+        "dynaro_raw_sample_sd",
+        "display_multiplier",
+        "reduction_percent"
+      ],
+      "description": "DEV; unseen-horizon static versus predicted exposure after mixed training.",
+      "kind": "values",
+      "definitions": {
+        "split": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "DEV/Development or TEST/Locked test; see file-specific description.",
+          "missing": "not allowed"
+        },
+        "horizon": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Trajectory endpoint; not necessarily the start of the scored interval.",
+          "missing": "not allowed"
+        },
+        "steps": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Inclusive scored interval. A single step denotes a terminal endpoint; in Table S1 terminal_class_mae uses horizon, not the R2 scored interval.",
+          "missing": "not allowed"
+        },
+        "metric": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.",
+          "missing": "not allowed"
+        },
+        "n_seeds": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Number of matched training seeds, 1 or 3.",
+          "missing": "not allowed"
+        },
+        "static_raw_mean": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "not allowed"
+        },
+        "static_raw_sample_sd": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "not allowed"
+        },
+        "dynaro_raw_mean": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "not allowed"
+        },
+        "dynaro_raw_sample_sd": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "not allowed"
+        },
+        "display_multiplier": {
+          "type": "number",
+          "unit": "multiplier",
+          "description": "Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",
+          "missing": "not allowed"
+        },
+        "reduction_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "100*(comparator mean-proposed mean)/comparator mean; Table 2 uses regional-mean exposure, Table S3 static front. Display field is rounded.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "c821b5156e2fad649391a96012ae5f695819988ea9c04e24404d8faa9e232d8b",
+      "bytes": 679
+    },
+    {
+      "path": "tables/tableS4.csv",
+      "panel": "Table S4",
+      "rows": 6,
+      "columns": [
+        "Summary",
+        "Training rule",
+        "Site Brier (x1000)",
+        "Response MSE (x1000)"
+      ],
+      "description": "DEV; separate 25-step static-front learning-rule comparison.",
+      "kind": "display",
+      "definitions": {
+        "Summary": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Three-seed mean +/- sample SD or single seed 20260811.",
+          "missing": "not allowed"
+        },
+        "Training rule": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Learning rule used with the separate static-front predictor.",
+          "missing": "not allowed"
+        },
+        "Site Brier (x1000)": {
+          "type": "text",
+          "unit": "10^-3 error units",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        },
+        "Response MSE (x1000)": {
+          "type": "text",
+          "unit": "10^-3 error units",
+          "description": "Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "7379b4f5e9c0788f41ceec71f4977c5556754dd732631bfb8bcba9afde37479b",
+      "bytes": 476
+    },
+    {
+      "path": "tables/tableS4_values.csv",
+      "panel": "Table S4",
+      "rows": 12,
+      "columns": [
+        "split",
+        "group",
+        "arm",
+        "metric",
+        "n_seeds",
+        "seeds",
+        "seed_values",
+        "raw_mean",
+        "raw_sample_sd",
+        "display_multiplier"
+      ],
+      "description": "DEV; separate 25-step static-front learning-rule comparison.",
+      "kind": "values",
+      "definitions": {
+        "split": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "DEV/Development or TEST/Locked test; see file-specific description.",
+          "missing": "not allowed"
+        },
+        "group": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "three_seed or single_seed; the latter is the seed-20260811 PCGrad/state-prioritized comparison.",
+          "missing": "not allowed"
+        },
+        "arm": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "All are static-front predictors: response0, response50, du_gradcos, stateguard (state-prioritized), pcgrad.",
+          "missing": "not allowed"
+        },
+        "metric": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.",
+          "missing": "not allowed"
+        },
+        "n_seeds": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Number of matched training seeds, 1 or 3.",
+          "missing": "not allowed"
+        },
+        "seeds": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Semicolon-separated ordered model-training seeds, not simulator streams.",
+          "missing": "not allowed"
+        },
+        "seed_values": {
+          "type": "number_list",
+          "unit": "raw metric units",
+          "description": "Semicolon-separated unrounded scores aligned with seeds; metric defines raw units.",
+          "missing": "not allowed"
+        },
+        "raw_mean": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "not allowed"
+        },
+        "raw_sample_sd": {
+          "type": "number",
+          "unit": "raw metric units",
+          "description": "Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.",
+          "missing": "empty only for raw_sample_sd in single-seed rows"
+        },
+        "display_multiplier": {
+          "type": "number",
+          "unit": "multiplier",
+          "description": "Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "4ece4616865ec27bcf681407c0154b5c590e3eecda985620392ce110268d4773",
+      "bytes": 1857
+    },
+    {
+      "path": "figures/figure3_ab_curves.csv",
+      "panel": "Figure 3a-b",
+      "rows": 800,
+      "columns": [
+        "model",
+        "metric",
+        "step",
+        "mean_x1000",
+        "sample_sd_x1000"
+      ],
+      "description": "TEST; 100-step trajectories; each step, four models, two metrics; three-seed moments.",
+      "kind": "curves",
+      "definitions": {
+        "model": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.",
+          "missing": "not allowed"
+        },
+        "metric": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.",
+          "missing": "not allowed"
+        },
+        "step": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Simulator state index, not calibrated physical time.",
+          "missing": "not allowed"
+        },
+        "mean_x1000": {
+          "type": "number",
+          "unit": "10^-3 error units",
+          "description": "Mean error times 1000 across three matched seeds.",
+          "missing": "not allowed"
+        },
+        "sample_sd_x1000": {
+          "type": "number",
+          "unit": "10^-3 error units",
+          "description": "Sample SD times 1000 across three matched seeds (ddof=1).",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "4aa7dc02ce071ba72f32782d1d6802dd15c471f858060d83118b3b5ffb6e7826",
+      "bytes": 45950
+    },
+    {
+      "path": "figures/figure3_c_continuation.csv",
+      "panel": "Figure 3c",
+      "rows": 4,
+      "columns": [
+        "model",
+        "mean_percent",
+        "sample_sd_percent"
+      ],
+      "description": "TEST; steps 51-100; continuing versus holding each model's step-50 field; within-seed gains then moments.",
+      "kind": "continuation",
+      "definitions": {
+        "model": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.",
+          "missing": "not allowed"
+        },
+        "mean_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Mean or sample SD of within-seed continuation reductions against holding the model's step-50 field, over steps 51-100.",
+          "missing": "not allowed"
+        },
+        "sample_sd_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Mean or sample SD of within-seed continuation reductions against holding the model's step-50 field, over steps 51-100.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "87c4d4667b7e3a4f61ac3d981e74a4f2711f348b9ddbab80299ebb0cf094ab30",
+      "bytes": 222
+    },
+    {
+      "path": "figures/figure3_d_blocks.csv",
+      "panel": "Figure 3d",
+      "rows": 20,
+      "columns": [
+        "model",
+        "block",
+        "site_mean_x1000",
+        "site_sample_sd_x1000"
+      ],
+      "description": "TEST; steps 51-100; four models and all five blocks, including zero-error B4.",
+      "kind": "blocks",
+      "definitions": {
+        "model": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.",
+          "missing": "not allowed"
+        },
+        "block": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Spatial block's voxel-index origin zN_yN_xN; B1-B5 mapping is in README.",
+          "missing": "not allowed"
+        },
+        "site_mean_x1000": {
+          "type": "number",
+          "unit": "10^-3 Brier units",
+          "description": "Block-specific site Brier mean across seeds, times 1000.",
+          "missing": "not allowed"
+        },
+        "site_sample_sd_x1000": {
+          "type": "number",
+          "unit": "10^-3 Brier units",
+          "description": "Block-specific sample SD across seeds, times 1000.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "dc0a4ba0c48551a27251ecca4759cd3d2a378e3d1fac1106c29d18f7c1f3c0bf",
+      "bytes": 1128
+    },
+    {
+      "path": "figures/figure4_learning.csv",
+      "panel": "Figure 4a-b",
+      "rows": 6,
+      "columns": [
+        "split",
+        "seed",
+        "pairs",
+        "fixed50_site",
+        "stateguard_site",
+        "fixed50_response",
+        "stateguard_response",
+        "site_reduction_pct",
+        "response_reduction_pct"
+      ],
+      "description": "Separate 25-step static-front study; DEV (a) and TEST (b); matched single-seed scores and relative reductions.",
+      "kind": "learning",
+      "definitions": {
+        "split": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "DEV/Development or TEST/Locked test; see file-specific description.",
+          "missing": "not allowed"
+        },
+        "seed": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Model-training seed: 20260811, 20260812 or 20260813.",
+          "missing": "not allowed"
+        },
+        "pairs": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Number of schedule pairs: 400 DEV or 600 TEST, in five blocks.",
+          "missing": "not allowed"
+        },
+        "fixed50_site": {
+          "type": "number",
+          "unit": "dimensionless squared error",
+          "description": "Equal-block score in the separate 25-step static-front learning study. stateguard denotes the state-prioritized rule, not the dynamic-front architecture.",
+          "missing": "not allowed"
+        },
+        "stateguard_site": {
+          "type": "number",
+          "unit": "dimensionless squared error",
+          "description": "Equal-block score in the separate 25-step static-front learning study. stateguard denotes the state-prioritized rule, not the dynamic-front architecture.",
+          "missing": "not allowed"
+        },
+        "fixed50_response": {
+          "type": "number",
+          "unit": "dimensionless squared error",
+          "description": "Equal-block score in the separate 25-step static-front learning study. stateguard denotes the state-prioritized rule, not the dynamic-front architecture.",
+          "missing": "not allowed"
+        },
+        "stateguard_response": {
+          "type": "number",
+          "unit": "dimensionless squared error",
+          "description": "Equal-block score in the separate 25-step static-front learning study. stateguard denotes the state-prioritized rule, not the dynamic-front architecture.",
+          "missing": "not allowed"
+        },
+        "site_reduction_pct": {
+          "type": "number",
+          "unit": "percent",
+          "description": "100*(fixed-weight error-state-prioritized error)/fixed-weight error in the separate static-front study.",
+          "missing": "not allowed"
+        },
+        "response_reduction_pct": {
+          "type": "number",
+          "unit": "percent",
+          "description": "100*(fixed-weight error-state-prioritized error)/fixed-weight error in the separate static-front study.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "d075a01b48d75d72e6fcf421ab606bf0f2c8b4a1d8f85c8d42e85f9c040658b1",
+      "bytes": 1016
+    },
+    {
+      "path": "figures/figure5_e_time.csv",
+      "panel": "Figure 5e",
+      "rows": 5,
+      "columns": [
+        "step",
+        "initial_oil",
+        "simulator_mobilized_voxels",
+        "predicted_expected_mobilized_voxels",
+        "simulator_percent",
+        "prediction_percent"
+      ],
+      "description": "Selected NPI-012 DEV central 64^3 region; five saved states, not a dense time series.",
+      "kind": "interior_time",
+      "definitions": {
+        "step": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Simulator state index, not calibrated physical time.",
+          "missing": "not allowed"
+        },
+        "initial_oil": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Initial regional oil count; common denominator for cumulative mobilization.",
+          "missing": "not allowed"
+        },
+        "simulator_mobilized_voxels": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Initial oil voxels converted by the saved endpoint.",
+          "missing": "not allowed"
+        },
+        "predicted_expected_mobilized_voxels": {
+          "type": "number",
+          "unit": "expected voxel count",
+          "description": "Sum of 1-p over initial oil; continuous prediction, not thresholded count.",
+          "missing": "not allowed"
+        },
+        "simulator_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial regional oil.",
+          "missing": "not allowed"
+        },
+        "prediction_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial regional oil.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "da72605db7f88daccd595d86f9dfabd2203b3fdac52c9239d7b6b3bdf913bb14",
+      "bytes": 423
+    },
+    {
+      "path": "figures/figure5_f_contact.csv",
+      "panel": "Figure 5f and auxiliary cohort",
+      "rows": 3,
+      "columns": [
+        "cohort",
+        "baseline_step",
+        "followup_step",
+        "simulator_baseline_oil_sites",
+        "simulator_converted_sites",
+        "prediction_expected_oil_at_baseline",
+        "prediction_expected_oil_at_followup",
+        "prediction_expected_converted_sites",
+        "simulator_mobilized_percent",
+        "prediction_mobilized_percent",
+        "prediction_baseline_remaining_percent",
+        "initial_class_3_sites",
+        "initial_class_4_sites",
+        "initial_class_5_sites",
+        "initial_class_6_sites",
+        "initial_class_7_sites"
+      ],
+      "description": "Fixed simulator-oil cohorts at step 50, followed to step 75; only the two inlet-connected cohorts are plotted; the disconnected cohort completes the partition.",
+      "kind": "contact",
+      "definitions": {
+        "cohort": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "water_contact or no_water_contact in inlet-connected pores; not_inlet_connected is an unplotted third group. Groups use simulator oil at step 50.",
+          "missing": "not allowed"
+        },
+        "baseline_step": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Fixed cohort definition at simulator step 50.",
+          "missing": "not allowed"
+        },
+        "followup_step": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Follow-up simulator step 75 under unchanged S3.",
+          "missing": "not allowed"
+        },
+        "simulator_baseline_oil_sites": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Fixed count of simulator-oil sites defining this cohort at step 50; denominator for both methods.",
+          "missing": "not allowed"
+        },
+        "simulator_converted_sites": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Sites in the fixed cohort converted between steps 50 and 75.",
+          "missing": "not allowed"
+        },
+        "prediction_expected_oil_at_baseline": {
+          "type": "number",
+          "unit": "expected voxel count",
+          "description": "Sum of p50 over the fixed simulator-oil cohort.",
+          "missing": "not allowed"
+        },
+        "prediction_expected_oil_at_followup": {
+          "type": "number",
+          "unit": "expected voxel count",
+          "description": "Sum of p75 over the same fixed cohort.",
+          "missing": "not allowed"
+        },
+        "prediction_expected_converted_sites": {
+          "type": "number",
+          "unit": "expected voxel count",
+          "description": "Sum of p50-p75 over the fixed cohort, not a count from 0.5 thresholding.",
+          "missing": "not allowed"
+        },
+        "simulator_mobilized_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Cumulative mobilization or cohort-follow-up conversion; 100*numerator/fixed simulator_baseline_oil_sites at step 50.",
+          "missing": "not allowed"
+        },
+        "prediction_mobilized_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Cumulative mobilization or cohort-follow-up conversion; 100*numerator/fixed simulator_baseline_oil_sites at step 50.",
+          "missing": "not allowed"
+        },
+        "prediction_baseline_remaining_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Predicted remaining amount at baseline; 100*numerator/fixed simulator_baseline_oil_sites at step 50.",
+          "missing": "not allowed"
+        },
+        "initial_class_3_sites": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Fixed cohort's initial class count; codes 3=Film, 4=Corner, 5=Droplet, 6=Columnar, 7=Cluster.",
+          "missing": "not allowed"
+        },
+        "initial_class_4_sites": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Fixed cohort's initial class count; codes 3=Film, 4=Corner, 5=Droplet, 6=Columnar, 7=Cluster.",
+          "missing": "not allowed"
+        },
+        "initial_class_5_sites": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Fixed cohort's initial class count; codes 3=Film, 4=Corner, 5=Droplet, 6=Columnar, 7=Cluster.",
+          "missing": "not allowed"
+        },
+        "initial_class_6_sites": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Fixed cohort's initial class count; codes 3=Film, 4=Corner, 5=Droplet, 6=Columnar, 7=Cluster.",
+          "missing": "not allowed"
+        },
+        "initial_class_7_sites": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Fixed cohort's initial class count; codes 3=Film, 4=Corner, 5=Droplet, 6=Columnar, 7=Cluster.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "ee2781dd89b4008c9bfef3ed2ffcfc6692c06566d029f3d3c255fe7c129a7e82",
+      "bytes": 817
+    },
+    {
+      "path": "figures/figure5_auxiliary_depth.csv",
+      "panel": "Auxiliary to Figure 5 (not plotted)",
+      "rows": 4,
+      "columns": [
+        "x_start",
+        "x_stop_exclusive",
+        "initial_slab_oil",
+        "simulator_mobilized_voxels",
+        "predicted_expected_mobilized_voxels",
+        "simulator_percent",
+        "prediction_percent"
+      ],
+      "description": "Step-100 central-region slab totals from the same saved export; not an additional published panel.",
+      "kind": "interior_depth",
+      "definitions": {
+        "x_start": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Inclusive x index in the parent grid; central crop uses 32-95.",
+          "missing": "not allowed"
+        },
+        "x_stop_exclusive": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Exclusive x index in the parent grid.",
+          "missing": "not allowed"
+        },
+        "initial_slab_oil": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Initial oil count in this central-region slab.",
+          "missing": "not allowed"
+        },
+        "simulator_mobilized_voxels": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Initial oil voxels converted by the saved endpoint.",
+          "missing": "not allowed"
+        },
+        "predicted_expected_mobilized_voxels": {
+          "type": "number",
+          "unit": "expected voxel count",
+          "description": "Sum of 1-p over initial oil; continuous prediction, not thresholded count.",
+          "missing": "not allowed"
+        },
+        "simulator_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial slab oil.",
+          "missing": "not allowed"
+        },
+        "prediction_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial slab oil.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "45295ceb7a1c70b45d41477c89a2c07907d4b8b5605cbc39a4291333867f7053",
+      "bytes": 428
+    },
+    {
+      "path": "figures/figureS1_e_conversion.csv",
+      "panel": "Figure S1a-e counts and curve",
+      "rows": 51,
+      "columns": [
+        "step",
+        "remaining_voxels",
+        "converted_voxels",
+        "remaining_fraction"
+      ],
+      "description": "Selected TRAIN crop; curve e is 100*(1-remaining_fraction); counts at 0,20,50 support a-d.",
+      "kind": "train_time",
+      "definitions": {
+        "step": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Simulator state index, not calibrated physical time.",
+          "missing": "not allowed"
+        },
+        "remaining_voxels": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Simulator oil voxels remaining in the fixed TRAIN crop.",
+          "missing": "not allowed"
+        },
+        "converted_voxels": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Initial oil voxels converted in the fixed TRAIN crop.",
+          "missing": "not allowed"
+        },
+        "remaining_fraction": {
+          "type": "number",
+          "unit": "fraction",
+          "description": "remaining_voxels divided by initial crop oil; plot conversion as 100*(1-this value).",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "1b4eb869b00bb2805e3245d42db1d2771134034ad1126c98ebef417b9e228ea2",
+      "bytes": 1728
+    },
+    {
+      "path": "figures/figureS2_g_time.csv",
+      "panel": "Figure S2g",
+      "rows": 101,
+      "columns": [
+        "step",
+        "simulator_mobilized_percent",
+        "prediction_expected_mobilized_percent"
+      ],
+      "description": "Full 128^3 parent of Figure 5; all saved 0-100 states; initial parent oil is the denominator.",
+      "kind": "parent_time",
+      "definitions": {
+        "step": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Simulator state index, not calibrated physical time.",
+          "missing": "not allowed"
+        },
+        "simulator_mobilized_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial regional oil.",
+          "missing": "not allowed"
+        },
+        "prediction_expected_mobilized_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial regional oil.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "eb700aada247a85df2e31081bde15beba33adc00fa6b0012d0ef3d52d6cadaa7",
+      "bytes": 4193
+    },
+    {
+      "path": "figures/figureS2_h_depth.csv",
+      "panel": "Figure S2h",
+      "rows": 8,
+      "columns": [
+        "x_start_inclusive",
+        "x_stop_exclusive",
+        "x_center",
+        "initial_oil_voxels",
+        "simulator_mobilized_percent",
+        "prediction_expected_mobilized_percent"
+      ],
+      "description": "Step 100; eight axial slabs of width 16; each slab's initial oil is its denominator.",
+      "kind": "parent_depth",
+      "definitions": {
+        "x_start_inclusive": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Inclusive x index in the parent grid.",
+          "missing": "not allowed"
+        },
+        "x_stop_exclusive": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Exclusive x index in the parent grid.",
+          "missing": "not allowed"
+        },
+        "x_center": {
+          "type": "number",
+          "unit": "voxel index",
+          "description": "Center of slab indices; (inclusive_start+exclusive_stop-1)/2.",
+          "missing": "not allowed"
+        },
+        "initial_oil_voxels": {
+          "type": "integer",
+          "unit": "voxel count",
+          "description": "Initial oil count in this full-parent slab.",
+          "missing": "not allowed"
+        },
+        "simulator_mobilized_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial slab oil.",
+          "missing": "not allowed"
+        },
+        "prediction_expected_mobilized_percent": {
+          "type": "number",
+          "unit": "percent",
+          "description": "Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial slab oil.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "6537cf10279b55f96bc50c0cec28bf58e62e83c1b376d7000823e5644769aab3",
+      "bytes": 571
+    },
+    {
+      "path": "figures/figureS2_i_brier.csv",
+      "panel": "Figure S2i",
+      "rows": 100,
+      "columns": [
+        "step",
+        "site_brier_raw",
+        "site_brier_display_x1000"
+      ],
+      "description": "Full-parent case-specific site Brier error, steps 1-100; not the aggregate TEST curve.",
+      "kind": "parent_brier",
+      "definitions": {
+        "step": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Simulator state index, not calibrated physical time.",
+          "missing": "not allowed"
+        },
+        "site_brier_raw": {
+          "type": "number",
+          "unit": "dimensionless squared error",
+          "description": "Case-specific Brier error on initial oil sites.",
+          "missing": "not allowed"
+        },
+        "site_brier_display_x1000": {
+          "type": "number",
+          "unit": "10^-3 Brier units",
+          "description": "site_brier_raw times 1000.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "f6d4e4c9b6dff12038e9e21cad4170d501ac1e4072ef66c804fe751ae2bb5f23",
+      "bytes": 4306
+    },
+    {
+      "path": "figures/figureS3_ab_pairs.csv",
+      "panel": "Figure S3a-b",
+      "rows": 3600,
+      "columns": [
+        "endpoint",
+        "comparator",
+        "pair_id",
+        "block_id",
+        "seed_count",
+        "comparator_error",
+        "stateguard_error",
+        "gain"
+      ],
+      "description": "TEST; steps 51-100; 600 pairs x three comparators x two metrics, averaged over three matched seeds within pair.",
+      "kind": "pairs",
+      "definitions": {
+        "endpoint": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "site or response; both scored over steps 51-100.",
+          "missing": "not allowed"
+        },
+        "comparator": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "static_front, rtu or fno; all compared against DynaRO.",
+          "missing": "not allowed"
+        },
+        "pair_id": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Stable spatial-block|stage|simulator-stream|action-pair identifier. Pairs are nested in spatial blocks.",
+          "missing": "not allowed"
+        },
+        "block_id": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Spatial block's voxel-index origin zN_yN_xN; not an independent rock core.",
+          "missing": "not allowed"
+        },
+        "seed_count": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Number of seeds averaged within this pair: 3.",
+          "missing": "not allowed"
+        },
+        "comparator_error": {
+          "type": "number",
+          "unit": "dimensionless squared error",
+          "description": "Steps 51-100; stateguard denotes DynaRO here. gain=comparator_error-stateguard_error; multiply by 1000 for the figure. Positive gain favours DynaRO.",
+          "missing": "not allowed"
+        },
+        "stateguard_error": {
+          "type": "number",
+          "unit": "dimensionless squared error",
+          "description": "Steps 51-100; stateguard denotes DynaRO here. gain=comparator_error-stateguard_error; multiply by 1000 for the figure. Positive gain favours DynaRO.",
+          "missing": "not allowed"
+        },
+        "gain": {
+          "type": "number",
+          "unit": "dimensionless squared error",
+          "description": "Steps 51-100; stateguard denotes DynaRO here. gain=comparator_error-stateguard_error; multiply by 1000 for the figure. Positive gain favours DynaRO.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "8819aaa4f3cbadd9a7d3872191c0bd91f44c1878b359c74bc5b1cfb80e5e20d3",
+      "bytes": 440138
+    },
+    {
+      "path": "figures/figureS3_ab_seeds.csv",
+      "panel": "Figure S3a-b underlying repeats",
+      "rows": 10800,
+      "columns": [
+        "endpoint",
+        "comparator",
+        "seed",
+        "pair_id",
+        "block_id",
+        "comparator_error",
+        "stateguard_error",
+        "gain"
+      ],
+      "description": "TEST; corresponding per-seed errors and paired differences; retains all zero-error B4 pairs.",
+      "kind": "seeds",
+      "definitions": {
+        "endpoint": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "site or response; both scored over steps 51-100.",
+          "missing": "not allowed"
+        },
+        "comparator": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "static_front, rtu or fno; all compared against DynaRO.",
+          "missing": "not allowed"
+        },
+        "seed": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Model-training seed: 20260811, 20260812 or 20260813.",
+          "missing": "not allowed"
+        },
+        "pair_id": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Stable spatial-block|stage|simulator-stream|action-pair identifier. Pairs are nested in spatial blocks.",
+          "missing": "not allowed"
+        },
+        "block_id": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Spatial block's voxel-index origin zN_yN_xN; not an independent rock core.",
+          "missing": "not allowed"
+        },
+        "comparator_error": {
+          "type": "number",
+          "unit": "dimensionless squared error",
+          "description": "Steps 51-100; stateguard denotes DynaRO here. gain=comparator_error-stateguard_error; multiply by 1000 for the figure. Positive gain favours DynaRO.",
+          "missing": "not allowed"
+        },
+        "stateguard_error": {
+          "type": "number",
+          "unit": "dimensionless squared error",
+          "description": "Steps 51-100; stateguard denotes DynaRO here. gain=comparator_error-stateguard_error; multiply by 1000 for the figure. Positive gain favours DynaRO.",
+          "missing": "not allowed"
+        },
+        "gain": {
+          "type": "number",
+          "unit": "dimensionless squared error",
+          "description": "Steps 51-100; stateguard denotes DynaRO here. gain=comparator_error-stateguard_error; multiply by 1000 for the figure. Positive gain favours DynaRO.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "cc78c965efbcea93de9f2c91c8a21fea1ff3b9da1443dd098828c27decf389a9",
+      "bytes": 1395849
+    },
+    {
+      "path": "figures/figureS3_c_classes.csv",
+      "panel": "Figure S3c",
+      "rows": 60,
+      "columns": [
+        "model",
+        "seed",
+        "initial_class",
+        "inventory_mae_pp"
+      ],
+      "description": "TEST; step 100; four models x three seeds x five fixed initial oil classes; stored in percentage points.",
+      "kind": "classes",
+      "definitions": {
+        "model": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.",
+          "missing": "not allowed"
+        },
+        "seed": {
+          "type": "integer",
+          "unit": "integer/index",
+          "description": "Model-training seed: 20260811, 20260812 or 20260813.",
+          "missing": "not allowed"
+        },
+        "initial_class": {
+          "type": "text",
+          "unit": "identifier",
+          "description": "Film, Corner, Droplet, Columnar or Cluster; fixed initial class, not a predicted new class.",
+          "missing": "not allowed"
+        },
+        "inventory_mae_pp": {
+          "type": "number",
+          "unit": "percentage points",
+          "description": "Class-specific absolute remaining-amount error divided by initial class amount, times 100; already in pp.",
+          "missing": "not allowed"
+        }
+      },
+      "sha256": "65bcbc7a61939d86ce2ff9e6aa9b4a218faa6a5c85e717d6930c88c5cdda9ddf",
+      "bytes": 2683
+    }
+  ],
+  "support_files": {
+    "README.txt": {
+      "sha256": "1a59492f689ad7dff339ad9d90464b2f81c206d76a8ca36e10c3b187e6d8bc64"
+    },
+    "data_dictionary.csv": {
+      "sha256": "3d1d1d332a75878ccc2f35c2526fb939706930cdcfc4e78f8b841ef156d3dcaa"
+    },
+    "verify_source_data.py": {
+      "sha256": "a7e8251d3d6fc5bf962bc28498b6efde74297f0ea4b6aff34df2b348360f60e2"
+    }
+  }
+}

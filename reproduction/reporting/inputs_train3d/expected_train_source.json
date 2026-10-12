@@ -1,0 +1,643 @@
+{
+  "role": "illustrative simulator-content-selected TRAIN targets",
+  "horizon": 50,
+  "source": "workflow_full_audit_20260717\\paper1_workspace\\runs\\stateguard_horizon50_train_data_20260928\\data\\train50_NPI-012_z384_y384_x256_streamA_S320_then_S530.npz",
+  "source_sha256": "f0d193ecf0ea7094a8ac6509b9dad207796e8046b2ca5717ebf747e3db970ac0",
+  "crop_start_zyx": [
+    40,
+    16,
+    16
+  ],
+  "crop_shape": [
+    64,
+    64,
+    64
+  ],
+  "source_shape": [
+    51,
+    128,
+    128,
+    128
+  ],
+  "selection": {
+    "role": "simulator-content-selected illustrative TRAIN case",
+    "source_directory": "runs\\stateguard_horizon50_train_data_20260928\\data",
+    "schedule": "Two measures, 20 then 30 steps",
+    "scope": "strongest-per-geometry",
+    "shortlist_rule": "For each of 40 initial TRAIN geometries, take the stream A, 20/30 schedule with maximum manifest total conversion; ties by filename. Then compare interior crops.",
+    "shortlisted_trajectories": [
+      {
+        "stage": "NPI-006",
+        "block_id": "z0_y0_x128",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-006_z0_y0_x128_streamA_S320_then_S530.npz",
+        "mobilized_total": 45006,
+        "status": "existing"
+      },
+      {
+        "stage": "NPI-006",
+        "block_id": "z0_y256_x128",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-006_z0_y256_x128_streamA_S320_then_S530.npz",
+        "mobilized_total": 18218,
+        "status": "existing"
+      },
+      {
+        "stage": "NPI-006",
+        "block_id": "z0_y384_x384",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-006_z0_y384_x384_streamA_S320_then_S530.npz",
+        "mobilized_total": 25107,
+        "status": "existing"
+      },
+      {
+        "stage": "NPI-006",
+        "block_id": "z128_y256_x256",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-006_z128_y256_x256_streamA_S320_then_S530.npz",
+        "mobilized_total": 14560,
+        "status": "existing"
+      },
+      {
+        "stage": "NPI-006",
+        "block_id": "z256_y256_x128",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-006_z256_y256_x128_streamA_S320_then_S530.npz",
+        "mobilized_total": 4711,
+        "status": "generated"
+      },
+      {
+        "stage": "NPI-006",
+        "block_id": "z384_y0_x384",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-006_z384_y0_x384_streamA_S320_then_S530.npz",
+        "mobilized_total": 25407,
+        "status": "generated"
+      },
+      {
+        "stage": "NPI-006",
+        "block_id": "z384_y128_x0",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-006_z384_y128_x0_streamA_S120_then_S230.npz",
+        "mobilized_total": 0,
+        "status": "generated"
+      },
+      {
+        "stage": "NPI-006",
+        "block_id": "z384_y256_x384",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-006_z384_y256_x384_streamA_S320_then_S530.npz",
+        "mobilized_total": 15287,
+        "status": "generated"
+      },
+      {
+        "stage": "NPI-006",
+        "block_id": "z384_y384_x256",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-006_z384_y384_x256_streamA_S320_then_S530.npz",
+        "mobilized_total": 45110,
+        "status": "generated"
+      },
+      {
+        "stage": "NPI-006",
+        "block_id": "z640_y128_x0",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-006_z640_y128_x0_streamA_S120_then_S230.npz",
+        "mobilized_total": 0,
+        "status": "generated"
+      },
+      {
+        "stage": "NPI-012",
+        "block_id": "z0_y0_x128",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-012_z0_y0_x128_streamA_S320_then_S530.npz",
+        "mobilized_total": 45600,
+        "status": "existing"
+      },
+      {
+        "stage": "NPI-012",
+        "block_id": "z0_y256_x128",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-012_z0_y256_x128_streamA_S220_then_S330.npz",
+        "mobilized_total": 11173,
+        "status": "existing"
+      },
+      {
+        "stage": "NPI-012",
+        "block_id": "z0_y384_x384",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-012_z0_y384_x384_streamA_S320_then_S530.npz",
+        "mobilized_total": 36835,
+        "status": "existing"
+      },
+      {
+        "stage": "NPI-012",
+        "block_id": "z128_y256_x256",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-012_z128_y256_x256_streamA_S320_then_S530.npz",
+        "mobilized_total": 14894,
+        "status": "existing"
+      },
+      {
+        "stage": "NPI-012",
+        "block_id": "z256_y256_x128",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-012_z256_y256_x128_streamA_S320_then_S530.npz",
+        "mobilized_total": 3509,
+        "status": "generated"
+      },
+      {
+        "stage": "NPI-012",
+        "block_id": "z384_y0_x384",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-012_z384_y0_x384_streamA_S320_then_S530.npz",
+        "mobilized_total": 16188,
+        "status": "generated"
+      },
+      {
+        "stage": "NPI-012",
+        "block_id": "z384_y128_x0",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-012_z384_y128_x0_streamA_S120_then_S230.npz",
+        "mobilized_total": 0,
+        "status": "generated"
+      },
+      {
+        "stage": "NPI-012",
+        "block_id": "z384_y256_x384",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-012_z384_y256_x384_streamA_S320_then_S530.npz",
+        "mobilized_total": 7764,
+        "status": "generated"
+      },
+      {
+        "stage": "NPI-012",
+        "block_id": "z384_y384_x256",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-012_z384_y384_x256_streamA_S320_then_S530.npz",
+        "mobilized_total": 41754,
+        "status": "generated"
+      },
+      {
+        "stage": "NPI-012",
+        "block_id": "z640_y128_x0",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_NPI-012_z640_y128_x0_streamA_S120_then_S230.npz",
+        "mobilized_total": 0,
+        "status": "generated"
+      },
+      {
+        "stage": "Oil",
+        "block_id": "z0_y0_x128",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_Oil_z0_y0_x128_streamA_S320_then_S530.npz",
+        "mobilized_total": 14100,
+        "status": "existing"
+      },
+      {
+        "stage": "Oil",
+        "block_id": "z0_y256_x128",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_Oil_z0_y256_x128_streamA_S320_then_S530.npz",
+        "mobilized_total": 8887,
+        "status": "existing"
+      },
+      {
+        "stage": "Oil",
+        "block_id": "z0_y384_x384",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_Oil_z0_y384_x384_streamA_S320_then_S530.npz",
+        "mobilized_total": 30522,
+        "status": "existing"
+      },
+      {
+        "stage": "Oil",
+        "block_id": "z128_y256_x256",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_Oil_z128_y256_x256_streamA_S320_then_S530.npz",
+        "mobilized_total": 8777,
+        "status": "existing"
+      },
+      {
+        "stage": "Oil",
+        "block_id": "z256_y256_x128",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_Oil_z256_y256_x128_streamA_S320_then_S530.npz",
+        "mobilized_total": 2570,
+        "status": "existing"
+      },
+      {
+        "stage": "Oil",
+        "block_id": "z384_y0_x384",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_Oil_z384_y0_x384_streamA_S320_then_S530.npz",
+        "mobilized_total": 18873,
+        "status": "generated"
+      },
+      {
+        "stage": "Oil",
+        "block_id": "z384_y128_x0",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_Oil_z384_y128_x0_streamA_S120_then_S230.npz",
+        "mobilized_total": 0,
+        "status": "generated"
+      },
+      {
+        "stage": "Oil",
+        "block_id": "z384_y256_x384",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_Oil_z384_y256_x384_streamA_S320_then_S530.npz",
+        "mobilized_total": 17890,
+        "status": "generated"
+      },
+      {
+        "stage": "Oil",
+        "block_id": "z384_y384_x256",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_Oil_z384_y384_x256_streamA_S320_then_S530.npz",
+        "mobilized_total": 35503,
+        "status": "generated"
+      },
+      {
+        "stage": "Oil",
+        "block_id": "z640_y128_x0",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_Oil_z640_y128_x0_streamA_S120_then_S230.npz",
+        "mobilized_total": 0,
+        "status": "generated"
+      },
+      {
+        "stage": "WI",
+        "block_id": "z0_y0_x128",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_WI_z0_y0_x128_streamA_S320_then_S530.npz",
+        "mobilized_total": 31129,
+        "status": "existing"
+      },
+      {
+        "stage": "WI",
+        "block_id": "z0_y256_x128",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_WI_z0_y256_x128_streamA_S320_then_S530.npz",
+        "mobilized_total": 11302,
+        "status": "existing"
+      },
+      {
+        "stage": "WI",
+        "block_id": "z0_y384_x384",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_WI_z0_y384_x384_streamA_S320_then_S530.npz",
+        "mobilized_total": 14812,
+        "status": "existing"
+      },
+      {
+        "stage": "WI",
+        "block_id": "z128_y256_x256",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_WI_z128_y256_x256_streamA_S320_then_S530.npz",
+        "mobilized_total": 6276,
+        "status": "existing"
+      },
+      {
+        "stage": "WI",
+        "block_id": "z256_y256_x128",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_WI_z256_y256_x128_streamA_S320_then_S530.npz",
+        "mobilized_total": 3217,
+        "status": "generated"
+      },
+      {
+        "stage": "WI",
+        "block_id": "z384_y0_x384",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_WI_z384_y0_x384_streamA_S320_then_S530.npz",
+        "mobilized_total": 13699,
+        "status": "generated"
+      },
+      {
+        "stage": "WI",
+        "block_id": "z384_y128_x0",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_WI_z384_y128_x0_streamA_S120_then_S230.npz",
+        "mobilized_total": 0,
+        "status": "generated"
+      },
+      {
+        "stage": "WI",
+        "block_id": "z384_y256_x384",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_WI_z384_y256_x384_streamA_S320_then_S530.npz",
+        "mobilized_total": 6600,
+        "status": "generated"
+      },
+      {
+        "stage": "WI",
+        "block_id": "z384_y384_x256",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_WI_z384_y384_x256_streamA_S320_then_S530.npz",
+        "mobilized_total": 22668,
+        "status": "generated"
+      },
+      {
+        "stage": "WI",
+        "block_id": "z640_y128_x0",
+        "stream_id": "P1-22-DEV-A",
+        "file": "train50_WI_z640_y128_x0_streamA_S120_then_S230.npz",
+        "mobilized_total": 0,
+        "status": "generated"
+      }
+    ],
+    "candidate_count": 1117,
+    "source_count": 40,
+    "width": 64,
+    "stride": 8,
+    "minimum_parent_face_margin": 16,
+    "eligibility": "No exterior background; initial oil and water each >=4% of crop voxels",
+    "ranking": "Descending converted voxels in central 32^3, total converted voxels, initial oil; then source and z/y/x lexicographically",
+    "selected": {
+      "source": "train50_NPI-012_z384_y384_x256_streamA_S320_then_S530.npz",
+      "z": 40,
+      "y": 16,
+      "x": 16,
+      "width": 64,
+      "initial_oil": 18396,
+      "initial_water": 29259,
+      "converted": 3516,
+      "interior_converted": 1616,
+      "mobilized_percent": 19.112850619699934
+    },
+    "top_five": [
+      {
+        "source": "train50_NPI-012_z384_y384_x256_streamA_S320_then_S530.npz",
+        "z": 40,
+        "y": 16,
+        "x": 16,
+        "width": 64,
+        "initial_oil": 18396,
+        "initial_water": 29259,
+        "converted": 3516,
+        "interior_converted": 1616,
+        "mobilized_percent": 19.112850619699934
+      },
+      {
+        "source": "train50_NPI-012_z384_y384_x256_streamA_S320_then_S530.npz",
+        "z": 32,
+        "y": 16,
+        "x": 16,
+        "width": 64,
+        "initial_oil": 19660,
+        "initial_water": 23173,
+        "converted": 3903,
+        "interior_converted": 1391,
+        "mobilized_percent": 19.852492370295014
+      },
+      {
+        "source": "train50_NPI-012_z384_y384_x256_streamA_S320_then_S530.npz",
+        "z": 48,
+        "y": 16,
+        "x": 16,
+        "width": 64,
+        "initial_oil": 17646,
+        "initial_water": 35270,
+        "converted": 3491,
+        "interior_converted": 1381,
+        "mobilized_percent": 19.783520344554006
+      },
+      {
+        "source": "train50_NPI-012_z384_y384_x256_streamA_S320_then_S530.npz",
+        "z": 40,
+        "y": 24,
+        "x": 16,
+        "width": 64,
+        "initial_oil": 20213,
+        "initial_water": 23946,
+        "converted": 3735,
+        "interior_converted": 1038,
+        "mobilized_percent": 18.47820709444417
+      },
+      {
+        "source": "train50_NPI-012_z384_y384_x256_streamA_S320_then_S530.npz",
+        "z": 24,
+        "y": 16,
+        "x": 16,
+        "width": 64,
+        "initial_oil": 20005,
+        "initial_water": 18989,
+        "converted": 3542,
+        "interior_converted": 1015,
+        "mobilized_percent": 17.70557360659835
+      }
+    ],
+    "files": [
+      {
+        "source": "train50_NPI-006_z0_y0_x128_streamA_S320_then_S530.npz",
+        "eligible_crops": 37
+      },
+      {
+        "source": "train50_NPI-006_z0_y256_x128_streamA_S320_then_S530.npz",
+        "eligible_crops": 57
+      },
+      {
+        "source": "train50_NPI-006_z0_y384_x384_streamA_S320_then_S530.npz",
+        "eligible_crops": 0
+      },
+      {
+        "source": "train50_NPI-006_z128_y256_x256_streamA_S320_then_S530.npz",
+        "eligible_crops": 65
+      },
+      {
+        "source": "train50_NPI-006_z256_y256_x128_streamA_S320_then_S530.npz",
+        "eligible_crops": 10
+      },
+      {
+        "source": "train50_NPI-006_z384_y0_x384_streamA_S320_then_S530.npz",
+        "eligible_crops": 0
+      },
+      {
+        "source": "train50_NPI-006_z384_y128_x0_streamA_S120_then_S230.npz",
+        "eligible_crops": 43
+      },
+      {
+        "source": "train50_NPI-006_z384_y256_x384_streamA_S320_then_S530.npz",
+        "eligible_crops": 30
+      },
+      {
+        "source": "train50_NPI-006_z384_y384_x256_streamA_S320_then_S530.npz",
+        "eligible_crops": 30
+      },
+      {
+        "source": "train50_NPI-006_z640_y128_x0_streamA_S120_then_S230.npz",
+        "eligible_crops": 0
+      },
+      {
+        "source": "train50_NPI-012_z0_y0_x128_streamA_S320_then_S530.npz",
+        "eligible_crops": 13
+      },
+      {
+        "source": "train50_NPI-012_z0_y256_x128_streamA_S220_then_S330.npz",
+        "eligible_crops": 41
+      },
+      {
+        "source": "train50_NPI-012_z0_y384_x384_streamA_S320_then_S530.npz",
+        "eligible_crops": 0
+      },
+      {
+        "source": "train50_NPI-012_z128_y256_x256_streamA_S320_then_S530.npz",
+        "eligible_crops": 115
+      },
+      {
+        "source": "train50_NPI-012_z256_y256_x128_streamA_S320_then_S530.npz",
+        "eligible_crops": 109
+      },
+      {
+        "source": "train50_NPI-012_z384_y0_x384_streamA_S320_then_S530.npz",
+        "eligible_crops": 0
+      },
+      {
+        "source": "train50_NPI-012_z384_y128_x0_streamA_S120_then_S230.npz",
+        "eligible_crops": 15
+      },
+      {
+        "source": "train50_NPI-012_z384_y256_x384_streamA_S320_then_S530.npz",
+        "eligible_crops": 20
+      },
+      {
+        "source": "train50_NPI-012_z384_y384_x256_streamA_S320_then_S530.npz",
+        "eligible_crops": 40
+      },
+      {
+        "source": "train50_NPI-012_z640_y128_x0_streamA_S120_then_S230.npz",
+        "eligible_crops": 35
+      },
+      {
+        "source": "train50_Oil_z0_y0_x128_streamA_S320_then_S530.npz",
+        "eligible_crops": 32
+      },
+      {
+        "source": "train50_Oil_z0_y256_x128_streamA_S320_then_S530.npz",
+        "eligible_crops": 97
+      },
+      {
+        "source": "train50_Oil_z0_y384_x384_streamA_S320_then_S530.npz",
+        "eligible_crops": 0
+      },
+      {
+        "source": "train50_Oil_z128_y256_x256_streamA_S320_then_S530.npz",
+        "eligible_crops": 14
+      },
+      {
+        "source": "train50_Oil_z256_y256_x128_streamA_S320_then_S530.npz",
+        "eligible_crops": 27
+      },
+      {
+        "source": "train50_Oil_z384_y0_x384_streamA_S320_then_S530.npz",
+        "eligible_crops": 0
+      },
+      {
+        "source": "train50_Oil_z384_y128_x0_streamA_S120_then_S230.npz",
+        "eligible_crops": 0
+      },
+      {
+        "source": "train50_Oil_z384_y256_x384_streamA_S320_then_S530.npz",
+        "eligible_crops": 6
+      },
+      {
+        "source": "train50_Oil_z384_y384_x256_streamA_S320_then_S530.npz",
+        "eligible_crops": 0
+      },
+      {
+        "source": "train50_Oil_z640_y128_x0_streamA_S120_then_S230.npz",
+        "eligible_crops": 0
+      },
+      {
+        "source": "train50_WI_z0_y0_x128_streamA_S320_then_S530.npz",
+        "eligible_crops": 53
+      },
+      {
+        "source": "train50_WI_z0_y256_x128_streamA_S320_then_S530.npz",
+        "eligible_crops": 112
+      },
+      {
+        "source": "train50_WI_z0_y384_x384_streamA_S320_then_S530.npz",
+        "eligible_crops": 0
+      },
+      {
+        "source": "train50_WI_z128_y256_x256_streamA_S320_then_S530.npz",
+        "eligible_crops": 18
+      },
+      {
+        "source": "train50_WI_z256_y256_x128_streamA_S320_then_S530.npz",
+        "eligible_crops": 3
+      },
+      {
+        "source": "train50_WI_z384_y0_x384_streamA_S320_then_S530.npz",
+        "eligible_crops": 0
+      },
+      {
+        "source": "train50_WI_z384_y128_x0_streamA_S120_then_S230.npz",
+        "eligible_crops": 15
+      },
+      {
+        "source": "train50_WI_z384_y256_x384_streamA_S320_then_S530.npz",
+        "eligible_crops": 24
+      },
+      {
+        "source": "train50_WI_z384_y384_x256_streamA_S320_then_S530.npz",
+        "eligible_crops": 13
+      },
+      {
+        "source": "train50_WI_z640_y128_x0_streamA_S120_then_S230.npz",
+        "eligible_crops": 43
+      }
+    ],
+    "selected_source_sha256": "f0d193ecf0ea7094a8ac6509b9dad207796e8046b2ca5717ebf747e3db970ac0",
+    "inference": false,
+    "simulation": false,
+    "test_access": false
+  },
+  "initial_oil_sites": 18396,
+  "initial_water_sites": 29259,
+  "schedule": "S3 x20 then S5 x30",
+  "display_steps": [
+    0,
+    20,
+    50
+  ],
+  "quantification": "Exact original voxel counts at all 51 states; no surface-derived measurements",
+  "display_exclusions": "Rock hidden; five oil classes pooled; no exterior background in crop",
+  "physical_scale": "Voxel coordinates only; no calibrated physical length or time",
+  "statistical_unit": "One simulator-content-selected illustrative TRAIN trajectory, not an aggregate performance estimate",
+  "model_inference": false,
+  "test_access": false,
+  "image_plate_size_mm": [
+    180,
+    130
+  ],
+  "volume_panel_render_pixels": [
+    1484,
+    1400
+  ],
+  "camera": {
+    "azimuth": -125.0,
+    "elevation": 24.0,
+    "projection": "orthographic",
+    "center_xyz": [
+      47.5,
+      47.5,
+      71.5
+    ],
+    "crop_width_voxels": 64
+  },
+  "surface": "Native-grid 0.5 marching cubes; smooth-normal lighting, depth testing, self-shadow and local occlusion. No geometric smoothing, decimation or resampling.",
+  "opacity": {
+    "remaining_oil": 1.0,
+    "water": 0.12,
+    "mobilized": 1.0
+  },
+  "water_context": "Water at the corresponding simulated state",
+  "mobilized_context": "Faint neutral-gray initial oil silhouette, using the same camera and depth projection.",
+  "render_style": "Shared palette, light, depth-buffer renderer and orthographic camera direction with the central-interior figure.",
+  "curve": "All 51 original exact counts; converted oil divided by initial oil, in percent; no smoothing or time interpolation.",
+  "style_revision_only": false,
+  "original_count_rows_verified": 51
+}

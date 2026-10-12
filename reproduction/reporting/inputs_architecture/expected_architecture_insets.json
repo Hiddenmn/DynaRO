@@ -1,0 +1,97 @@
+{
+  "source": "figure1_features_fixed_dev_v5.npz",
+  "source_sha256": "4a962796641bb002cea492806d74dbb5ecb434eb5886b25929113155e99ace2a",
+  "source_shape_zyx": [
+    128,
+    128,
+    128
+  ],
+  "display_step": 100,
+  "view": "Complete unchanged 128-cubed architecture DEV example",
+  "camera": {
+    "azimuth": -125.0,
+    "elevation": 24.0,
+    "projection": "orthographic"
+  },
+  "palette": {
+    "0": "#FFFFFF",
+    "1": "#969696",
+    "2": "#56B4E9",
+    "3": "#E6AD15",
+    "4": "#009E73",
+    "5": "#CC79A7",
+    "6": "#D55E00",
+    "7": "#7560A8"
+  },
+  "phase_opacity": {
+    "oil": 1.0,
+    "water": 0.12,
+    "rock": 0.0
+  },
+  "surface": "Native level-0.5 marching cubes; smooth-normal lighting, self-shadow and local occlusion",
+  "geometry_smoothing": false,
+  "geometry_decimation": false,
+  "display_stride": 1,
+  "surface_points_overlay": false,
+  "output_display_threshold": 0.5,
+  "output_water": "Initial water plus initial oil sites with cached predicted occupancy below 0.5",
+  "quantification": "Continuous cached probabilities remain unaltered; thresholds are for geometry only",
+  "initial_class_counts": [
+    0,
+    1584253,
+    52587,
+    19161,
+    24147,
+    25081,
+    11015,
+    380908
+  ],
+  "continuous_output_oil": 457168.5075670105,
+  "records": {
+    "initial": {
+      "oil_voxels": 460312,
+      "water_voxels": 52587,
+      "oil_triangles": 591074,
+      "image_shape_yxc": [
+        1200,
+        1272,
+        3
+      ],
+      "camera_center_xyz": [
+        63.5,
+        63.5,
+        63.5
+      ],
+      "camera_span": [
+        220.88990783691406,
+        208.38670349121094
+      ]
+    },
+    "output": {
+      "oil_voxels": 457150,
+      "water_voxels": 55749,
+      "oil_triangles": 585416,
+      "image_shape_yxc": [
+        1200,
+        1272,
+        3
+      ],
+      "camera_center_xyz": [
+        63.5,
+        63.5,
+        63.5
+      ],
+      "camera_span": [
+        220.88990783691406,
+        208.38670349121094
+      ]
+    }
+  },
+  "renderer_source": [
+    "render_dev_interior_displacement.py",
+    "render_multiphase_depth_v5.py",
+    "render_architecture_dataflow_v9_unified.py"
+  ],
+  "new_inference": false,
+  "test_accessed": false
+}

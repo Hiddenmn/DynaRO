@@ -1,0 +1,3809 @@
+{
+  "status": "complete",
+  "started_utc": "2026-10-12T13:54:02.860331+00:00",
+  "plan": {
+    "phase": "benchmark",
+    "models": [
+      "dynaro",
+      "static_front",
+      "rtu",
+      "fno"
+    ],
+    "seed": 20260811,
+    "cases": [
+      {
+        "file": "labels/NPI-012/NPI-012_subcore_0011_label_uint8.npy",
+        "stage": "NPI-012",
+        "subcore_id": "NPI-012_subcore_0011",
+        "block_id": "z0_y256_x256",
+        "split": "dev",
+        "origin_zyx": [
+          0,
+          256,
+          256
+        ],
+        "shape_zyx": [
+          128,
+          128,
+          128
+        ],
+        "class_voxel_counts": [
+          0,
+          1623131,
+          178170,
+          3787,
+          17645,
+          67043,
+          11903,
+          195473
+        ],
+        "array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b"
+      },
+      {
+        "file": "labels/NPI-012/NPI-012_subcore_0010_label_uint8.npy",
+        "stage": "NPI-012",
+        "subcore_id": "NPI-012_subcore_0010",
+        "block_id": "z384_y384_x384",
+        "split": "dev",
+        "origin_zyx": [
+          384,
+          384,
+          384
+        ],
+        "shape_zyx": [
+          128,
+          128,
+          128
+        ],
+        "class_voxel_counts": [
+          1741228,
+          266698,
+          67907,
+          1946,
+          3342,
+          10412,
+          2002,
+          3617
+        ],
+        "array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2"
+      },
+      {
+        "file": "labels/NPI-012/NPI-012_subcore_0018_label_uint8.npy",
+        "stage": "NPI-012",
+        "subcore_id": "NPI-012_subcore_0018",
+        "block_id": "z512_y0_x128",
+        "split": "dev",
+        "origin_zyx": [
+          512,
+          0,
+          128
+        ],
+        "shape_zyx": [
+          128,
+          128,
+          128
+        ],
+        "class_voxel_counts": [
+          468439,
+          1194490,
+          210352,
+          10625,
+          23351,
+          33787,
+          12658,
+          143450
+        ],
+        "array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6"
+      },
+      {
+        "file": "labels/NPI-012/NPI-012_subcore_0007_label_uint8.npy",
+        "stage": "NPI-012",
+        "subcore_id": "NPI-012_subcore_0007",
+        "block_id": "z512_y128_x0",
+        "split": "dev",
+        "origin_zyx": [
+          512,
+          128,
+          0
+        ],
+        "shape_zyx": [
+          128,
+          128,
+          128
+        ],
+        "class_voxel_counts": [
+          422714,
+          1292394,
+          127539,
+          6981,
+          17721,
+          44904,
+          23949,
+          160950
+        ],
+        "array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532"
+      },
+      {
+        "file": "labels/NPI-012/NPI-012_subcore_0015_label_uint8.npy",
+        "stage": "NPI-012",
+        "subcore_id": "NPI-012_subcore_0015",
+        "block_id": "z640_y256_x128",
+        "split": "dev",
+        "origin_zyx": [
+          640,
+          256,
+          128
+        ],
+        "shape_zyx": [
+          128,
+          128,
+          128
+        ],
+        "class_voxel_counts": [
+          0,
+          1771121,
+          55755,
+          5708,
+          19507,
+          35203,
+          23137,
+          186721
+        ],
+        "array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f"
+      }
+    ],
+    "horizons": [
+      25,
+      50,
+      100
+    ],
+    "warmups": 2,
+    "repeats": 5,
+    "schedule": "S2 x min(20,T), then S3",
+    "time_feature": "t/(t+25)",
+    "grid": [
+      128,
+      128,
+      128
+    ],
+    "selection": "all five NPI-012 DEV blocks",
+    "output_contract": "all-step initial-oil-site probabilities and group inventories"
+  },
+  "environment": {
+    "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:36:12) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "cuda": "12.8",
+    "cudnn": 91900,
+    "gpu": "NVIDIA GeForce RTX 5070",
+    "gpu_total_bytes": 12792037376,
+    "allocation_cap_bytes": 9663676416,
+    "tf32": false,
+    "cudnn_benchmark": false,
+    "cpu_threads": 4,
+    "inter_op_threads": 1,
+    "batch_size": 1,
+    "dtype": "float32",
+    "timed_region": "native compact forward; CUDA-synchronized wall clock",
+    "exclude": [
+      "input I/O",
+      "connectivity preprocessing",
+      "host-to-device copy",
+      "checkpoint load",
+      "disk export",
+      "target scoring"
+    ],
+    "nvidia_smi": "NVIDIA GeForce RTX 5070, 616.92, 12227 MiB, 250.00 W"
+  },
+  "records": [
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0011",
+      "block_id": "z0_y256_x256",
+      "input_array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 295851,
+        "site_output_shape": [
+          25,
+          295851
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.07263740000053076,
+          "peak_allocated_mib": 292.9990234375,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.08620919999884791,
+          "peak_allocated_mib": 292.9990234375,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.07796669999879668,
+          "peak_allocated_mib": 292.9990234375,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.09373369999957504,
+          "peak_allocated_mib": 292.9990234375,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.08439379999981611,
+          "peak_allocated_mib": 292.9990234375,
+          "peak_reserved_mib": 384.0
+        }
+      ],
+      "latency_median_s": 0.08439379999981611,
+      "peak_allocated_mib": 292.9990234375,
+      "peak_reserved_mib": 384.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0011",
+      "block_id": "z0_y256_x256",
+      "input_array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 295851,
+        "site_output_shape": [
+          25,
+          295851
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.05203039999832981,
+          "peak_allocated_mib": 279.45556640625,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.04911499999798252,
+          "peak_allocated_mib": 279.45556640625,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.0476079000000027,
+          "peak_allocated_mib": 279.45556640625,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.04841640000086045,
+          "peak_allocated_mib": 279.45556640625,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.048357299998315284,
+          "peak_allocated_mib": 279.45556640625,
+          "peak_reserved_mib": 384.0
+        }
+      ],
+      "latency_median_s": 0.04841640000086045,
+      "peak_allocated_mib": 279.45556640625,
+      "peak_reserved_mib": 384.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0011",
+      "block_id": "z0_y256_x256",
+      "input_array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 295851,
+        "site_output_shape": [
+          25,
+          295851
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 2.547016299999086,
+          "peak_allocated_mib": 1572.52587890625,
+          "peak_reserved_mib": 1772.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 2.4898366999987047,
+          "peak_allocated_mib": 1572.52587890625,
+          "peak_reserved_mib": 1772.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 2.5057804999996733,
+          "peak_allocated_mib": 1572.52587890625,
+          "peak_reserved_mib": 1772.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 2.507172499997978,
+          "peak_allocated_mib": 1572.52587890625,
+          "peak_reserved_mib": 1772.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 2.543549099998927,
+          "peak_allocated_mib": 1572.52587890625,
+          "peak_reserved_mib": 1772.0
+        }
+      ],
+      "latency_median_s": 2.507172499997978,
+      "peak_allocated_mib": 1572.52587890625,
+      "peak_reserved_mib": 1772.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0011",
+      "block_id": "z0_y256_x256",
+      "input_array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 295851,
+        "site_output_shape": [
+          25,
+          295851
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 1.2255471000025864,
+          "peak_allocated_mib": 1132.3583984375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 1.2055839999993623,
+          "peak_allocated_mib": 1132.3583984375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 1.2062808999980916,
+          "peak_allocated_mib": 1132.3583984375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 1.2319476000011491,
+          "peak_allocated_mib": 1132.3583984375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 1.2736253000002762,
+          "peak_allocated_mib": 1132.3583984375,
+          "peak_reserved_mib": 2024.0
+        }
+      ],
+      "latency_median_s": 1.2255471000025864,
+      "peak_allocated_mib": 1132.3583984375,
+      "peak_reserved_mib": 2024.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0011",
+      "block_id": "z0_y256_x256",
+      "input_array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 295851,
+        "site_output_shape": [
+          50,
+          295851
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.10458610000205226,
+          "peak_allocated_mib": 348.9111328125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.09421910000310163,
+          "peak_allocated_mib": 348.9111328125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.09157039999990957,
+          "peak_allocated_mib": 348.9111328125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.08634329999767942,
+          "peak_allocated_mib": 348.9111328125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.09262019999732729,
+          "peak_allocated_mib": 348.9111328125,
+          "peak_reserved_mib": 376.0
+        }
+      ],
+      "latency_median_s": 0.09262019999732729,
+      "peak_allocated_mib": 348.9111328125,
+      "peak_reserved_mib": 376.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0011",
+      "block_id": "z0_y256_x256",
+      "input_array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 295851,
+        "site_output_shape": [
+          50,
+          295851
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 4.874415300000692,
+          "peak_allocated_mib": 1624.7705078125,
+          "peak_reserved_mib": 1772.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 4.8779875000000175,
+          "peak_allocated_mib": 1624.7705078125,
+          "peak_reserved_mib": 1772.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 4.8741919999993115,
+          "peak_allocated_mib": 1624.7705078125,
+          "peak_reserved_mib": 1772.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 4.877764199998637,
+          "peak_allocated_mib": 1624.7705078125,
+          "peak_reserved_mib": 1772.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 4.875000599997293,
+          "peak_allocated_mib": 1624.7705078125,
+          "peak_reserved_mib": 1772.0
+        }
+      ],
+      "latency_median_s": 4.875000599997293,
+      "peak_allocated_mib": 1624.7705078125,
+      "peak_reserved_mib": 1772.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0011",
+      "block_id": "z0_y256_x256",
+      "input_array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 295851,
+        "site_output_shape": [
+          50,
+          295851
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 2.360247900000104,
+          "peak_allocated_mib": 1182.60302734375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 2.359808900000644,
+          "peak_allocated_mib": 1182.60302734375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 2.3625981000004685,
+          "peak_allocated_mib": 1182.60302734375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 2.3653384999997797,
+          "peak_allocated_mib": 1182.60302734375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 2.402097300000605,
+          "peak_allocated_mib": 1182.60302734375,
+          "peak_reserved_mib": 2024.0
+        }
+      ],
+      "latency_median_s": 2.3625981000004685,
+      "peak_allocated_mib": 1182.60302734375,
+      "peak_reserved_mib": 2024.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0011",
+      "block_id": "z0_y256_x256",
+      "input_array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 295851,
+        "site_output_shape": [
+          50,
+          295851
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.11274129999947036,
+          "peak_allocated_mib": 358.9111328125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.1275391999988642,
+          "peak_allocated_mib": 358.9111328125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.12120909999794094,
+          "peak_allocated_mib": 358.9111328125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.1151733000006061,
+          "peak_allocated_mib": 358.9111328125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.11274559999947087,
+          "peak_allocated_mib": 358.9111328125,
+          "peak_reserved_mib": 376.0
+        }
+      ],
+      "latency_median_s": 0.1151733000006061,
+      "peak_allocated_mib": 358.9111328125,
+      "peak_reserved_mib": 376.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0011",
+      "block_id": "z0_y256_x256",
+      "input_array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 295851,
+        "site_output_shape": [
+          100,
+          295851
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 10.066948499999853,
+          "peak_allocated_mib": 1725.259765625,
+          "peak_reserved_mib": 1900.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 10.04259479999746,
+          "peak_allocated_mib": 1725.259765625,
+          "peak_reserved_mib": 1900.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 10.37718329999916,
+          "peak_allocated_mib": 1725.259765625,
+          "peak_reserved_mib": 1900.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 10.113731199999165,
+          "peak_allocated_mib": 1725.259765625,
+          "peak_reserved_mib": 1900.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 9.956103300002724,
+          "peak_allocated_mib": 1725.259765625,
+          "peak_reserved_mib": 1900.0
+        }
+      ],
+      "latency_median_s": 10.066948499999853,
+      "peak_allocated_mib": 1725.259765625,
+      "peak_reserved_mib": 1900.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0011",
+      "block_id": "z0_y256_x256",
+      "input_array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 295851,
+        "site_output_shape": [
+          100,
+          295851
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 4.919070199997805,
+          "peak_allocated_mib": 1283.09228515625,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 4.792398099998536,
+          "peak_allocated_mib": 1283.09228515625,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 4.751237399999809,
+          "peak_allocated_mib": 1283.09228515625,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 4.734121000001323,
+          "peak_allocated_mib": 1283.09228515625,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 4.727163700001256,
+          "peak_allocated_mib": 1283.09228515625,
+          "peak_reserved_mib": 2024.0
+        }
+      ],
+      "latency_median_s": 4.751237399999809,
+      "peak_allocated_mib": 1283.09228515625,
+      "peak_reserved_mib": 2024.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0011",
+      "block_id": "z0_y256_x256",
+      "input_array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 295851,
+        "site_output_shape": [
+          100,
+          295851
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.2493979999999283,
+          "peak_allocated_mib": 519.70458984375,
+          "peak_reserved_mib": 686.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.21506339999905322,
+          "peak_allocated_mib": 519.70458984375,
+          "peak_reserved_mib": 686.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.21288280000226223,
+          "peak_allocated_mib": 519.70458984375,
+          "peak_reserved_mib": 686.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.22141929999997956,
+          "peak_allocated_mib": 519.70458984375,
+          "peak_reserved_mib": 686.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.2222844999996596,
+          "peak_allocated_mib": 519.70458984375,
+          "peak_reserved_mib": 686.0
+        }
+      ],
+      "latency_median_s": 0.22141929999997956,
+      "peak_allocated_mib": 519.70458984375,
+      "peak_reserved_mib": 686.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0011",
+      "block_id": "z0_y256_x256",
+      "input_array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 295851,
+        "site_output_shape": [
+          100,
+          295851
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.16089189999911468,
+          "peak_allocated_mib": 506.31787109375,
+          "peak_reserved_mib": 646.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.15095329999894602,
+          "peak_allocated_mib": 506.31787109375,
+          "peak_reserved_mib": 646.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.17119370000000345,
+          "peak_allocated_mib": 506.31787109375,
+          "peak_reserved_mib": 646.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.15072570000120322,
+          "peak_allocated_mib": 506.31787109375,
+          "peak_reserved_mib": 646.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.15111909999905038,
+          "peak_allocated_mib": 506.31787109375,
+          "peak_reserved_mib": 646.0
+        }
+      ],
+      "latency_median_s": 0.15111909999905038,
+      "peak_allocated_mib": 506.31787109375,
+      "peak_reserved_mib": 646.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0010",
+      "block_id": "z384_y384_x384",
+      "input_array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 21319,
+        "site_output_shape": [
+          25,
+          21319
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.05187429999932647,
+          "peak_allocated_mib": 280.203125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.05296789999920293,
+          "peak_allocated_mib": 280.203125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.04610029999821563,
+          "peak_allocated_mib": 280.203125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.047941199998604134,
+          "peak_allocated_mib": 280.203125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.047599599998648046,
+          "peak_allocated_mib": 280.203125,
+          "peak_reserved_mib": 376.0
+        }
+      ],
+      "latency_median_s": 0.047941199998604134,
+      "peak_allocated_mib": 280.203125,
+      "peak_reserved_mib": 376.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0010",
+      "block_id": "z384_y384_x384",
+      "input_array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 21319,
+        "site_output_shape": [
+          25,
+          21319
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 2.440254000001005,
+          "peak_allocated_mib": 1527.06689453125,
+          "peak_reserved_mib": 1758.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 2.441448199999286,
+          "peak_allocated_mib": 1527.06689453125,
+          "peak_reserved_mib": 1758.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 2.4474074999998265,
+          "peak_allocated_mib": 1527.06689453125,
+          "peak_reserved_mib": 1758.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 2.4432741999989958,
+          "peak_allocated_mib": 1527.06689453125,
+          "peak_reserved_mib": 1758.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 2.4667408999994223,
+          "peak_allocated_mib": 1527.06689453125,
+          "peak_reserved_mib": 1758.0
+        }
+      ],
+      "latency_median_s": 2.4432741999989958,
+      "peak_allocated_mib": 1527.06689453125,
+      "peak_reserved_mib": 1758.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0010",
+      "block_id": "z384_y384_x384",
+      "input_array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 21319,
+        "site_output_shape": [
+          25,
+          21319
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 1.207923900001333,
+          "peak_allocated_mib": 1087.0244140625,
+          "peak_reserved_mib": 2006.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 1.208621800000401,
+          "peak_allocated_mib": 1087.0244140625,
+          "peak_reserved_mib": 2006.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 1.2071125000002212,
+          "peak_allocated_mib": 1087.0244140625,
+          "peak_reserved_mib": 2006.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 1.2074154000001727,
+          "peak_allocated_mib": 1087.0244140625,
+          "peak_reserved_mib": 2006.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 1.207647100000031,
+          "peak_allocated_mib": 1087.0244140625,
+          "peak_reserved_mib": 2006.0
+        }
+      ],
+      "latency_median_s": 1.207647100000031,
+      "peak_allocated_mib": 1087.0244140625,
+      "peak_reserved_mib": 2006.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0010",
+      "block_id": "z384_y384_x384",
+      "input_array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 21319,
+        "site_output_shape": [
+          25,
+          21319
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.06507469999996829,
+          "peak_allocated_mib": 281.17919921875,
+          "peak_reserved_mib": 378.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.06758169999739039,
+          "peak_allocated_mib": 281.17919921875,
+          "peak_reserved_mib": 378.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.06184900000152993,
+          "peak_allocated_mib": 281.17919921875,
+          "peak_reserved_mib": 378.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.06529559999762569,
+          "peak_allocated_mib": 281.17919921875,
+          "peak_reserved_mib": 378.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.06418000000121538,
+          "peak_allocated_mib": 281.17919921875,
+          "peak_reserved_mib": 378.0
+        }
+      ],
+      "latency_median_s": 0.06507469999996829,
+      "peak_allocated_mib": 281.17919921875,
+      "peak_reserved_mib": 378.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0010",
+      "block_id": "z384_y384_x384",
+      "input_array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 21319,
+        "site_output_shape": [
+          50,
+          21319
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 5.02275539999755,
+          "peak_allocated_mib": 1529.35009765625,
+          "peak_reserved_mib": 1762.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 5.1395272000008845,
+          "peak_allocated_mib": 1529.35009765625,
+          "peak_reserved_mib": 1762.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 5.108006599999499,
+          "peak_allocated_mib": 1529.35009765625,
+          "peak_reserved_mib": 1762.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 4.979014300002746,
+          "peak_allocated_mib": 1529.35009765625,
+          "peak_reserved_mib": 1762.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 4.983176400000957,
+          "peak_allocated_mib": 1529.35009765625,
+          "peak_reserved_mib": 1762.0
+        }
+      ],
+      "latency_median_s": 5.02275539999755,
+      "peak_allocated_mib": 1529.35009765625,
+      "peak_reserved_mib": 1762.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0010",
+      "block_id": "z384_y384_x384",
+      "input_array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 21319,
+        "site_output_shape": [
+          50,
+          21319
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 2.413630099999864,
+          "peak_allocated_mib": 1089.3076171875,
+          "peak_reserved_mib": 2008.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 2.4144360999998753,
+          "peak_allocated_mib": 1089.3076171875,
+          "peak_reserved_mib": 2008.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 2.4117482000001473,
+          "peak_allocated_mib": 1089.3076171875,
+          "peak_reserved_mib": 2008.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 2.547074699999939,
+          "peak_allocated_mib": 1089.3076171875,
+          "peak_reserved_mib": 2008.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 2.5939502000001085,
+          "peak_allocated_mib": 1089.3076171875,
+          "peak_reserved_mib": 2008.0
+        }
+      ],
+      "latency_median_s": 2.4144360999998753,
+      "peak_allocated_mib": 1089.3076171875,
+      "peak_reserved_mib": 2008.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0010",
+      "block_id": "z384_y384_x384",
+      "input_array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 21319,
+        "site_output_shape": [
+          50,
+          21319
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.1585172999984934,
+          "peak_allocated_mib": 281.1796875,
+          "peak_reserved_mib": 380.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.15002870000171242,
+          "peak_allocated_mib": 281.1796875,
+          "peak_reserved_mib": 380.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.16113409999888972,
+          "peak_allocated_mib": 281.1796875,
+          "peak_reserved_mib": 380.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.1577203000015288,
+          "peak_allocated_mib": 281.1796875,
+          "peak_reserved_mib": 380.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.15349179999975604,
+          "peak_allocated_mib": 281.1796875,
+          "peak_reserved_mib": 380.0
+        }
+      ],
+      "latency_median_s": 0.1577203000015288,
+      "peak_allocated_mib": 281.1796875,
+      "peak_reserved_mib": 380.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0010",
+      "block_id": "z384_y384_x384",
+      "input_array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 21319,
+        "site_output_shape": [
+          50,
+          21319
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.12103139999817358,
+          "peak_allocated_mib": 280.20361328125,
+          "peak_reserved_mib": 378.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.1122125000001688,
+          "peak_allocated_mib": 280.20361328125,
+          "peak_reserved_mib": 378.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.12187489999996615,
+          "peak_allocated_mib": 280.20361328125,
+          "peak_reserved_mib": 378.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.09968319999825326,
+          "peak_allocated_mib": 280.20361328125,
+          "peak_reserved_mib": 378.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.10691740000038408,
+          "peak_allocated_mib": 280.20361328125,
+          "peak_reserved_mib": 378.0
+        }
+      ],
+      "latency_median_s": 0.1122125000001688,
+      "peak_allocated_mib": 280.20361328125,
+      "peak_reserved_mib": 378.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0010",
+      "block_id": "z384_y384_x384",
+      "input_array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 21319,
+        "site_output_shape": [
+          100,
+          21319
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 4.986059200000454,
+          "peak_allocated_mib": 1093.8740234375,
+          "peak_reserved_mib": 2012.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 5.070950400000584,
+          "peak_allocated_mib": 1093.8740234375,
+          "peak_reserved_mib": 2012.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 4.879233999999997,
+          "peak_allocated_mib": 1093.8740234375,
+          "peak_reserved_mib": 2012.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 4.982299899998907,
+          "peak_allocated_mib": 1093.8740234375,
+          "peak_reserved_mib": 2012.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 4.923719899998105,
+          "peak_allocated_mib": 1093.8740234375,
+          "peak_reserved_mib": 2012.0
+        }
+      ],
+      "latency_median_s": 4.982299899998907,
+      "peak_allocated_mib": 1093.8740234375,
+      "peak_reserved_mib": 2012.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0010",
+      "block_id": "z384_y384_x384",
+      "input_array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 21319,
+        "site_output_shape": [
+          100,
+          21319
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.2429234000010183,
+          "peak_allocated_mib": 281.1806640625,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.23970760000156588,
+          "peak_allocated_mib": 281.1806640625,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.2667994000003091,
+          "peak_allocated_mib": 281.1806640625,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.2624759000027552,
+          "peak_allocated_mib": 281.1806640625,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.2556436999984726,
+          "peak_allocated_mib": 281.1806640625,
+          "peak_reserved_mib": 384.0
+        }
+      ],
+      "latency_median_s": 0.2556436999984726,
+      "peak_allocated_mib": 281.1806640625,
+      "peak_reserved_mib": 384.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0010",
+      "block_id": "z384_y384_x384",
+      "input_array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 21319,
+        "site_output_shape": [
+          100,
+          21319
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.1726098999970418,
+          "peak_allocated_mib": 280.20458984375,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.17848350000349456,
+          "peak_allocated_mib": 280.20458984375,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.1898127000022214,
+          "peak_allocated_mib": 280.20458984375,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.18197829999917303,
+          "peak_allocated_mib": 280.20458984375,
+          "peak_reserved_mib": 384.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.16957209999964107,
+          "peak_allocated_mib": 280.20458984375,
+          "peak_reserved_mib": 384.0
+        }
+      ],
+      "latency_median_s": 0.17848350000349456,
+      "peak_allocated_mib": 280.20458984375,
+      "peak_reserved_mib": 384.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0010",
+      "block_id": "z384_y384_x384",
+      "input_array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 21319,
+        "site_output_shape": [
+          100,
+          21319
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 11.198164600002201,
+          "peak_allocated_mib": 1533.91650390625,
+          "peak_reserved_mib": 1766.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 11.242981300001702,
+          "peak_allocated_mib": 1533.91650390625,
+          "peak_reserved_mib": 1766.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 11.15669329999946,
+          "peak_allocated_mib": 1533.91650390625,
+          "peak_reserved_mib": 1766.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 11.078763999998046,
+          "peak_allocated_mib": 1533.91650390625,
+          "peak_reserved_mib": 1766.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 11.337678500000038,
+          "peak_allocated_mib": 1533.91650390625,
+          "peak_reserved_mib": 1766.0
+        }
+      ],
+      "latency_median_s": 11.198164600002201,
+      "peak_allocated_mib": 1533.91650390625,
+      "peak_reserved_mib": 1766.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0018",
+      "block_id": "z512_y0_x128",
+      "input_array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 223871,
+        "site_output_shape": [
+          25,
+          223871
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 2.798196800002188,
+          "peak_allocated_mib": 1548.69580078125,
+          "peak_reserved_mib": 1792.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 2.800642999998672,
+          "peak_allocated_mib": 1548.69580078125,
+          "peak_reserved_mib": 1792.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 2.797450600002776,
+          "peak_allocated_mib": 1548.69580078125,
+          "peak_reserved_mib": 1792.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 2.830699000001914,
+          "peak_allocated_mib": 1548.69580078125,
+          "peak_reserved_mib": 1792.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 2.8090343000003486,
+          "peak_allocated_mib": 1548.69580078125,
+          "peak_reserved_mib": 1792.0
+        }
+      ],
+      "latency_median_s": 2.800642999998672,
+      "peak_allocated_mib": 1548.69580078125,
+      "peak_reserved_mib": 1792.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0018",
+      "block_id": "z512_y0_x128",
+      "input_array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 223871,
+        "site_output_shape": [
+          25,
+          223871
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 1.3600860000005923,
+          "peak_allocated_mib": 1108.8203125,
+          "peak_reserved_mib": 2030.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 1.2874411000011605,
+          "peak_allocated_mib": 1108.8203125,
+          "peak_reserved_mib": 2030.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 1.256257299999561,
+          "peak_allocated_mib": 1108.8203125,
+          "peak_reserved_mib": 2030.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 1.3463129000010667,
+          "peak_allocated_mib": 1108.8203125,
+          "peak_reserved_mib": 2030.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 1.3641182999999728,
+          "peak_allocated_mib": 1108.8203125,
+          "peak_reserved_mib": 2030.0
+        }
+      ],
+      "latency_median_s": 1.3463129000010667,
+      "peak_allocated_mib": 1108.8203125,
+      "peak_reserved_mib": 2030.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0018",
+      "block_id": "z512_y0_x128",
+      "input_array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 223871,
+        "site_output_shape": [
+          25,
+          223871
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.07370520000040415,
+          "peak_allocated_mib": 296.7978515625,
+          "peak_reserved_mib": 414.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.08050919999732287,
+          "peak_allocated_mib": 296.7978515625,
+          "peak_reserved_mib": 414.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.07709149999936926,
+          "peak_allocated_mib": 296.7978515625,
+          "peak_reserved_mib": 414.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.08258749999731663,
+          "peak_allocated_mib": 296.7978515625,
+          "peak_reserved_mib": 414.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.07946029999948223,
+          "peak_allocated_mib": 296.7978515625,
+          "peak_reserved_mib": 414.0
+        }
+      ],
+      "latency_median_s": 0.07946029999948223,
+      "peak_allocated_mib": 296.7978515625,
+      "peak_reserved_mib": 414.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0018",
+      "block_id": "z512_y0_x128",
+      "input_array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 223871,
+        "site_output_shape": [
+          25,
+          223871
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.08983969999826513,
+          "peak_allocated_mib": 286.5498046875,
+          "peak_reserved_mib": 414.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.06729209999684826,
+          "peak_allocated_mib": 286.5498046875,
+          "peak_reserved_mib": 414.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.06251920000067912,
+          "peak_allocated_mib": 286.5498046875,
+          "peak_reserved_mib": 414.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.05620439999984228,
+          "peak_allocated_mib": 286.5498046875,
+          "peak_reserved_mib": 414.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.059440799999720184,
+          "peak_allocated_mib": 286.5498046875,
+          "peak_reserved_mib": 414.0
+        }
+      ],
+      "latency_median_s": 0.06251920000067912,
+      "peak_allocated_mib": 286.5498046875,
+      "peak_reserved_mib": 414.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0018",
+      "block_id": "z512_y0_x128",
+      "input_array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 223871,
+        "site_output_shape": [
+          50,
+          223871
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 2.4641324000003806,
+          "peak_allocated_mib": 1130.4150390625,
+          "peak_reserved_mib": 2054.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 2.538996600000246,
+          "peak_allocated_mib": 1130.4150390625,
+          "peak_reserved_mib": 2054.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 2.5039180999992823,
+          "peak_allocated_mib": 1130.4150390625,
+          "peak_reserved_mib": 2054.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 2.362922799999069,
+          "peak_allocated_mib": 1130.4150390625,
+          "peak_reserved_mib": 2054.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 2.3561523999997007,
+          "peak_allocated_mib": 1130.4150390625,
+          "peak_reserved_mib": 2054.0
+        }
+      ],
+      "latency_median_s": 2.4641324000003806,
+      "peak_allocated_mib": 1130.4150390625,
+      "peak_reserved_mib": 2054.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0018",
+      "block_id": "z512_y0_x128",
+      "input_array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 223871,
+        "site_output_shape": [
+          50,
+          223871
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.2131574000013643,
+          "peak_allocated_mib": 296.79833984375,
+          "peak_reserved_mib": 440.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.20925260000149137,
+          "peak_allocated_mib": 296.79833984375,
+          "peak_reserved_mib": 440.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.17439220000233036,
+          "peak_allocated_mib": 296.79833984375,
+          "peak_reserved_mib": 440.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.16938070000105654,
+          "peak_allocated_mib": 296.79833984375,
+          "peak_reserved_mib": 440.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.16812230000141426,
+          "peak_allocated_mib": 296.79833984375,
+          "peak_reserved_mib": 440.0
+        }
+      ],
+      "latency_median_s": 0.17439220000233036,
+      "peak_allocated_mib": 296.79833984375,
+      "peak_reserved_mib": 440.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0018",
+      "block_id": "z512_y0_x128",
+      "input_array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 223871,
+        "site_output_shape": [
+          50,
+          223871
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.11475289999725646,
+          "peak_allocated_mib": 286.55029296875,
+          "peak_reserved_mib": 438.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.11894949999987148,
+          "peak_allocated_mib": 286.55029296875,
+          "peak_reserved_mib": 438.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.12788529999670573,
+          "peak_allocated_mib": 286.55029296875,
+          "peak_reserved_mib": 438.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.11265880000064499,
+          "peak_allocated_mib": 286.55029296875,
+          "peak_reserved_mib": 438.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.1097511999978451,
+          "peak_allocated_mib": 286.55029296875,
+          "peak_reserved_mib": 438.0
+        }
+      ],
+      "latency_median_s": 0.11475289999725646,
+      "peak_allocated_mib": 286.55029296875,
+      "peak_reserved_mib": 438.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0018",
+      "block_id": "z512_y0_x128",
+      "input_array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 223871,
+        "site_output_shape": [
+          50,
+          223871
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 6.6340120999993815,
+          "peak_allocated_mib": 1570.29052734375,
+          "peak_reserved_mib": 1816.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 6.639538199997332,
+          "peak_allocated_mib": 1570.29052734375,
+          "peak_reserved_mib": 1816.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 6.635460100002092,
+          "peak_allocated_mib": 1570.29052734375,
+          "peak_reserved_mib": 1816.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 6.85082870000042,
+          "peak_allocated_mib": 1570.29052734375,
+          "peak_reserved_mib": 1816.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 6.957529600000271,
+          "peak_allocated_mib": 1570.29052734375,
+          "peak_reserved_mib": 1816.0
+        }
+      ],
+      "latency_median_s": 6.639538199997332,
+      "peak_allocated_mib": 1570.29052734375,
+      "peak_reserved_mib": 1816.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0018",
+      "block_id": "z512_y0_x128",
+      "input_array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 223871,
+        "site_output_shape": [
+          100,
+          223871
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.4687930000000051,
+          "peak_allocated_mib": 377.275390625,
+          "peak_reserved_mib": 662.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.45451909999974305,
+          "peak_allocated_mib": 377.275390625,
+          "peak_reserved_mib": 662.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.4190386000009312,
+          "peak_allocated_mib": 377.275390625,
+          "peak_reserved_mib": 662.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.4417471000015212,
+          "peak_allocated_mib": 377.275390625,
+          "peak_reserved_mib": 662.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.4959290999977384,
+          "peak_allocated_mib": 377.275390625,
+          "peak_reserved_mib": 662.0
+        }
+      ],
+      "latency_median_s": 0.45451909999974305,
+      "peak_allocated_mib": 377.275390625,
+      "peak_reserved_mib": 662.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0018",
+      "block_id": "z512_y0_x128",
+      "input_array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 223871,
+        "site_output_shape": [
+          100,
+          223871
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.31481459999849903,
+          "peak_allocated_mib": 366.17333984375,
+          "peak_reserved_mib": 660.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.29307990000233985,
+          "peak_allocated_mib": 366.17333984375,
+          "peak_reserved_mib": 660.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.29298779999953695,
+          "peak_allocated_mib": 366.17333984375,
+          "peak_reserved_mib": 660.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.27571610000086366,
+          "peak_allocated_mib": 366.17333984375,
+          "peak_reserved_mib": 660.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.2941776999978174,
+          "peak_allocated_mib": 366.17333984375,
+          "peak_reserved_mib": 660.0
+        }
+      ],
+      "latency_median_s": 0.29307990000233985,
+      "peak_allocated_mib": 366.17333984375,
+      "peak_reserved_mib": 660.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0018",
+      "block_id": "z512_y0_x128",
+      "input_array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 223871,
+        "site_output_shape": [
+          100,
+          223871
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 14.266745100001572,
+          "peak_allocated_mib": 1613.47998046875,
+          "peak_reserved_mib": 1866.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 13.93215909999708,
+          "peak_allocated_mib": 1613.47998046875,
+          "peak_reserved_mib": 1866.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 14.321677800002362,
+          "peak_allocated_mib": 1613.47998046875,
+          "peak_reserved_mib": 1866.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 14.606446799996775,
+          "peak_allocated_mib": 1613.47998046875,
+          "peak_reserved_mib": 1866.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 14.48240369999985,
+          "peak_allocated_mib": 1613.47998046875,
+          "peak_reserved_mib": 1866.0
+        }
+      ],
+      "latency_median_s": 14.321677800002362,
+      "peak_allocated_mib": 1613.47998046875,
+      "peak_reserved_mib": 1866.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0018",
+      "block_id": "z512_y0_x128",
+      "input_array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 223871,
+        "site_output_shape": [
+          100,
+          223871
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 6.989366499998141,
+          "peak_allocated_mib": 1173.6044921875,
+          "peak_reserved_mib": 2104.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 6.677845999998681,
+          "peak_allocated_mib": 1173.6044921875,
+          "peak_reserved_mib": 2104.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 6.782476899999892,
+          "peak_allocated_mib": 1173.6044921875,
+          "peak_reserved_mib": 2104.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 6.766873900000064,
+          "peak_allocated_mib": 1173.6044921875,
+          "peak_reserved_mib": 2104.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 6.931682600003114,
+          "peak_allocated_mib": 1173.6044921875,
+          "peak_reserved_mib": 2104.0
+        }
+      ],
+      "latency_median_s": 6.782476899999892,
+      "peak_allocated_mib": 1173.6044921875,
+      "peak_reserved_mib": 2104.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0007",
+      "block_id": "z512_y128_x0",
+      "input_array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 254505,
+        "site_output_shape": [
+          25,
+          254505
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 1.4659797999993316,
+          "peak_allocated_mib": 1112.166015625,
+          "peak_reserved_mib": 2050.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 1.4006789999984903,
+          "peak_allocated_mib": 1112.166015625,
+          "peak_reserved_mib": 2050.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 1.396936099998129,
+          "peak_allocated_mib": 1112.166015625,
+          "peak_reserved_mib": 2050.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 1.3903812000025937,
+          "peak_allocated_mib": 1112.166015625,
+          "peak_reserved_mib": 2050.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 1.4058632000014768,
+          "peak_allocated_mib": 1112.166015625,
+          "peak_reserved_mib": 2050.0
+        }
+      ],
+      "latency_median_s": 1.4006789999984903,
+      "peak_allocated_mib": 1112.166015625,
+      "peak_reserved_mib": 2050.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0007",
+      "block_id": "z512_y128_x0",
+      "input_array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 254505,
+        "site_output_shape": [
+          25,
+          254505
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.10768559999996796,
+          "peak_allocated_mib": 299.259765625,
+          "peak_reserved_mib": 404.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.11824640000122599,
+          "peak_allocated_mib": 299.259765625,
+          "peak_reserved_mib": 404.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.11303489999772864,
+          "peak_allocated_mib": 299.259765625,
+          "peak_reserved_mib": 404.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.11512689999653958,
+          "peak_allocated_mib": 299.259765625,
+          "peak_reserved_mib": 404.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.11512900000161608,
+          "peak_allocated_mib": 299.259765625,
+          "peak_reserved_mib": 404.0
+        }
+      ],
+      "latency_median_s": 0.11512689999653958,
+      "peak_allocated_mib": 299.259765625,
+      "peak_reserved_mib": 404.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0007",
+      "block_id": "z512_y128_x0",
+      "input_array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 254505,
+        "site_output_shape": [
+          25,
+          254505
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.08083819999956177,
+          "peak_allocated_mib": 287.609375,
+          "peak_reserved_mib": 404.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.069091399996978,
+          "peak_allocated_mib": 287.609375,
+          "peak_reserved_mib": 404.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.07686359999934211,
+          "peak_allocated_mib": 287.609375,
+          "peak_reserved_mib": 404.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.07830610000019078,
+          "peak_allocated_mib": 287.609375,
+          "peak_reserved_mib": 404.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.07399440000153845,
+          "peak_allocated_mib": 287.609375,
+          "peak_reserved_mib": 404.0
+        }
+      ],
+      "latency_median_s": 0.07686359999934211,
+      "peak_allocated_mib": 287.609375,
+      "peak_reserved_mib": 404.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0007",
+      "block_id": "z512_y128_x0",
+      "input_array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 254505,
+        "site_output_shape": [
+          25,
+          254505
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 3.6579884000020684,
+          "peak_allocated_mib": 1552.20849609375,
+          "peak_reserved_mib": 1792.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 3.8094569999993837,
+          "peak_allocated_mib": 1552.20849609375,
+          "peak_reserved_mib": 1792.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 3.8469837000011466,
+          "peak_allocated_mib": 1552.20849609375,
+          "peak_reserved_mib": 1792.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 3.592293300000165,
+          "peak_allocated_mib": 1552.20849609375,
+          "peak_reserved_mib": 1792.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 3.4993749000022945,
+          "peak_allocated_mib": 1552.20849609375,
+          "peak_reserved_mib": 1792.0
+        }
+      ],
+      "latency_median_s": 3.6579884000020684,
+      "peak_allocated_mib": 1552.20849609375,
+      "peak_reserved_mib": 1792.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0007",
+      "block_id": "z512_y128_x0",
+      "input_array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 254505,
+        "site_output_shape": [
+          50,
+          254505
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.16345279999950435,
+          "peak_allocated_mib": 304.60888671875,
+          "peak_reserved_mib": 430.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.17326669999965816,
+          "peak_allocated_mib": 304.60888671875,
+          "peak_reserved_mib": 430.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.1742101999989245,
+          "peak_allocated_mib": 304.60888671875,
+          "peak_reserved_mib": 430.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.19214230000216048,
+          "peak_allocated_mib": 304.60888671875,
+          "peak_reserved_mib": 430.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.20126170000003185,
+          "peak_allocated_mib": 304.60888671875,
+          "peak_reserved_mib": 430.0
+        }
+      ],
+      "latency_median_s": 0.1742101999989245,
+      "peak_allocated_mib": 304.60888671875,
+      "peak_reserved_mib": 430.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0007",
+      "block_id": "z512_y128_x0",
+      "input_array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 254505,
+        "site_output_shape": [
+          50,
+          254505
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.12145280000186176,
+          "peak_allocated_mib": 291.9873046875,
+          "peak_reserved_mib": 428.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.11990920000243932,
+          "peak_allocated_mib": 291.9873046875,
+          "peak_reserved_mib": 428.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.14070599999831757,
+          "peak_allocated_mib": 291.9873046875,
+          "peak_reserved_mib": 428.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.13283690000025672,
+          "peak_allocated_mib": 291.9873046875,
+          "peak_reserved_mib": 428.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.11505779999788501,
+          "peak_allocated_mib": 291.9873046875,
+          "peak_reserved_mib": 428.0
+        }
+      ],
+      "latency_median_s": 0.12145280000186176,
+      "peak_allocated_mib": 291.9873046875,
+      "peak_reserved_mib": 428.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0007",
+      "block_id": "z512_y128_x0",
+      "input_array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 254505,
+        "site_output_shape": [
+          50,
+          254505
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 7.241007900000113,
+          "peak_allocated_mib": 1576.73291015625,
+          "peak_reserved_mib": 1816.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 7.510062800000014,
+          "peak_allocated_mib": 1576.73291015625,
+          "peak_reserved_mib": 1816.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 7.526354800000263,
+          "peak_allocated_mib": 1576.73291015625,
+          "peak_reserved_mib": 1816.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 7.612189999999828,
+          "peak_allocated_mib": 1576.73291015625,
+          "peak_reserved_mib": 1816.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 7.997442399999272,
+          "peak_allocated_mib": 1576.73291015625,
+          "peak_reserved_mib": 1816.0
+        }
+      ],
+      "latency_median_s": 7.526354800000263,
+      "peak_allocated_mib": 1576.73291015625,
+      "peak_reserved_mib": 1816.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0007",
+      "block_id": "z512_y128_x0",
+      "input_array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 254505,
+        "site_output_shape": [
+          50,
+          254505
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 3.7704244000015024,
+          "peak_allocated_mib": 1136.6904296875,
+          "peak_reserved_mib": 2074.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 3.542503399999987,
+          "peak_allocated_mib": 1136.6904296875,
+          "peak_reserved_mib": 2074.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 3.470079300001089,
+          "peak_allocated_mib": 1136.6904296875,
+          "peak_reserved_mib": 2074.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 3.2700125999981537,
+          "peak_allocated_mib": 1136.6904296875,
+          "peak_reserved_mib": 2074.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 3.2765026000015496,
+          "peak_allocated_mib": 1136.6904296875,
+          "peak_reserved_mib": 2074.0
+        }
+      ],
+      "latency_median_s": 3.470079300001089,
+      "peak_allocated_mib": 1136.6904296875,
+      "peak_reserved_mib": 2074.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0007",
+      "block_id": "z512_y128_x0",
+      "input_array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 254505,
+        "site_output_shape": [
+          100,
+          254505
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.27010599999994156,
+          "peak_allocated_mib": 390.98095703125,
+          "peak_reserved_mib": 674.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.2303530999997747,
+          "peak_allocated_mib": 390.98095703125,
+          "peak_reserved_mib": 674.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.23296950000076322,
+          "peak_allocated_mib": 390.98095703125,
+          "peak_reserved_mib": 674.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.24408849999963422,
+          "peak_allocated_mib": 390.98095703125,
+          "peak_reserved_mib": 674.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.24450159999832977,
+          "peak_allocated_mib": 390.98095703125,
+          "peak_reserved_mib": 674.0
+        }
+      ],
+      "latency_median_s": 0.24408849999963422,
+      "peak_allocated_mib": 390.98095703125,
+      "peak_reserved_mib": 674.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0007",
+      "block_id": "z512_y128_x0",
+      "input_array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 254505,
+        "site_output_shape": [
+          100,
+          254505
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 15.738199400002486,
+          "peak_allocated_mib": 1625.78173828125,
+          "peak_reserved_mib": 1866.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 14.715505999996822,
+          "peak_allocated_mib": 1625.78173828125,
+          "peak_reserved_mib": 1866.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 13.963779199999408,
+          "peak_allocated_mib": 1625.78173828125,
+          "peak_reserved_mib": 1866.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 14.07020840000041,
+          "peak_allocated_mib": 1625.78173828125,
+          "peak_reserved_mib": 1866.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 14.942576800000097,
+          "peak_allocated_mib": 1625.78173828125,
+          "peak_reserved_mib": 1866.0
+        }
+      ],
+      "latency_median_s": 14.715505999996822,
+      "peak_allocated_mib": 1625.78173828125,
+      "peak_reserved_mib": 1866.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0007",
+      "block_id": "z512_y128_x0",
+      "input_array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 254505,
+        "site_output_shape": [
+          100,
+          254505
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 7.666706799998792,
+          "peak_allocated_mib": 1185.7392578125,
+          "peak_reserved_mib": 2124.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 7.371435700002621,
+          "peak_allocated_mib": 1185.7392578125,
+          "peak_reserved_mib": 2124.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 7.015022100000351,
+          "peak_allocated_mib": 1185.7392578125,
+          "peak_reserved_mib": 2124.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 7.02764709999974,
+          "peak_allocated_mib": 1185.7392578125,
+          "peak_reserved_mib": 2124.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 6.699601600001188,
+          "peak_allocated_mib": 1185.7392578125,
+          "peak_reserved_mib": 2124.0
+        }
+      ],
+      "latency_median_s": 7.02764709999974,
+      "peak_allocated_mib": 1185.7392578125,
+      "peak_reserved_mib": 2124.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0007",
+      "block_id": "z512_y128_x0",
+      "input_array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 254505,
+        "site_output_shape": [
+          100,
+          254505
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.2730464000014763,
+          "peak_allocated_mib": 403.6025390625,
+          "peak_reserved_mib": 676.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.3199175000008836,
+          "peak_allocated_mib": 403.6025390625,
+          "peak_reserved_mib": 676.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.27314429999751155,
+          "peak_allocated_mib": 403.6025390625,
+          "peak_reserved_mib": 676.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.28998150000188616,
+          "peak_allocated_mib": 403.6025390625,
+          "peak_reserved_mib": 676.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.305453299999499,
+          "peak_allocated_mib": 403.6025390625,
+          "peak_reserved_mib": 676.0
+        }
+      ],
+      "latency_median_s": 0.28998150000188616,
+      "peak_allocated_mib": 403.6025390625,
+      "peak_reserved_mib": 676.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0015",
+      "block_id": "z640_y256_x128",
+      "input_array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 270276,
+        "site_output_shape": [
+          25,
+          270276
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.0807225999997172,
+          "peak_allocated_mib": 301.92333984375,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.0859892000007676,
+          "peak_allocated_mib": 301.92333984375,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.08250889999908395,
+          "peak_allocated_mib": 301.92333984375,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.0801216999971075,
+          "peak_allocated_mib": 301.92333984375,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.07954510000126902,
+          "peak_allocated_mib": 301.92333984375,
+          "peak_reserved_mib": 376.0
+        }
+      ],
+      "latency_median_s": 0.0807225999997172,
+      "peak_allocated_mib": 301.92333984375,
+      "peak_reserved_mib": 376.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0015",
+      "block_id": "z640_y256_x128",
+      "input_array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 270276,
+        "site_output_shape": [
+          25,
+          270276
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.05594750000091153,
+          "peak_allocated_mib": 289.55078125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.05800000000090222,
+          "peak_allocated_mib": 289.55078125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.054926000000705244,
+          "peak_allocated_mib": 289.55078125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.061499600000388455,
+          "peak_allocated_mib": 289.55078125,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.06425899999885587,
+          "peak_allocated_mib": 289.55078125,
+          "peak_reserved_mib": 376.0
+        }
+      ],
+      "latency_median_s": 0.05800000000090222,
+      "peak_allocated_mib": 289.55078125,
+      "peak_reserved_mib": 376.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0015",
+      "block_id": "z640_y256_x128",
+      "input_array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 270276,
+        "site_output_shape": [
+          25,
+          270276
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 2.736585400001786,
+          "peak_allocated_mib": 1572.72119140625,
+          "peak_reserved_mib": 1768.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 2.727743300001748,
+          "peak_allocated_mib": 1572.72119140625,
+          "peak_reserved_mib": 1768.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 2.726083599998674,
+          "peak_allocated_mib": 1572.72119140625,
+          "peak_reserved_mib": 1768.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 2.7875133999987156,
+          "peak_allocated_mib": 1572.72119140625,
+          "peak_reserved_mib": 1768.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 2.7914655999993556,
+          "peak_allocated_mib": 1572.72119140625,
+          "peak_reserved_mib": 1768.0
+        }
+      ],
+      "latency_median_s": 2.736585400001786,
+      "peak_allocated_mib": 1572.72119140625,
+      "peak_reserved_mib": 1768.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0015",
+      "block_id": "z640_y256_x128",
+      "input_array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f",
+      "horizon": 25,
+      "output_check": {
+        "initial_oil_sites": 270276,
+        "site_output_shape": [
+          25,
+          270276
+        ],
+        "inventory_output_shape": [
+          25,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 1.603381700002501,
+          "peak_allocated_mib": 1130.5537109375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 1.6551236999985122,
+          "peak_allocated_mib": 1130.5537109375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 1.7281852000014624,
+          "peak_allocated_mib": 1130.5537109375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 1.71645350000108,
+          "peak_allocated_mib": 1130.5537109375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 1.7200407999989693,
+          "peak_allocated_mib": 1130.5537109375,
+          "peak_reserved_mib": 2024.0
+        }
+      ],
+      "latency_median_s": 1.71645350000108,
+      "peak_allocated_mib": 1130.5537109375,
+      "peak_reserved_mib": 2024.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0015",
+      "block_id": "z640_y256_x128",
+      "input_array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 270276,
+        "site_output_shape": [
+          50,
+          270276
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.14902819999770145,
+          "peak_allocated_mib": 344.2041015625,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.14940399999977672,
+          "peak_allocated_mib": 344.2041015625,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.14997829999992973,
+          "peak_allocated_mib": 344.2041015625,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.15496389999680105,
+          "peak_allocated_mib": 344.2041015625,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.14508910000222386,
+          "peak_allocated_mib": 344.2041015625,
+          "peak_reserved_mib": 376.0
+        }
+      ],
+      "latency_median_s": 0.14940399999977672,
+      "peak_allocated_mib": 344.2041015625,
+      "peak_reserved_mib": 376.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0015",
+      "block_id": "z640_y256_x128",
+      "input_array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 270276,
+        "site_output_shape": [
+          50,
+          270276
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 7.1700415999985125,
+          "peak_allocated_mib": 1622.9658203125,
+          "peak_reserved_mib": 1772.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 7.635272799998347,
+          "peak_allocated_mib": 1622.9658203125,
+          "peak_reserved_mib": 1772.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 7.832955800000491,
+          "peak_allocated_mib": 1622.9658203125,
+          "peak_reserved_mib": 1772.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 7.48035770000206,
+          "peak_allocated_mib": 1622.9658203125,
+          "peak_reserved_mib": 1772.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 7.084944400001405,
+          "peak_allocated_mib": 1622.9658203125,
+          "peak_reserved_mib": 1772.0
+        }
+      ],
+      "latency_median_s": 7.48035770000206,
+      "peak_allocated_mib": 1622.9658203125,
+      "peak_reserved_mib": 1772.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0015",
+      "block_id": "z640_y256_x128",
+      "input_array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 270276,
+        "site_output_shape": [
+          50,
+          270276
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 3.474441800000932,
+          "peak_allocated_mib": 1178.79833984375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 3.3139273000015237,
+          "peak_allocated_mib": 1178.79833984375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 3.419755200000509,
+          "peak_allocated_mib": 1178.79833984375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 3.285674899998412,
+          "peak_allocated_mib": 1178.79833984375,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 3.3834884999996575,
+          "peak_allocated_mib": 1178.79833984375,
+          "peak_reserved_mib": 2024.0
+        }
+      ],
+      "latency_median_s": 3.3834884999996575,
+      "peak_allocated_mib": 1178.79833984375,
+      "peak_reserved_mib": 2024.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0015",
+      "block_id": "z640_y256_x128",
+      "input_array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f",
+      "horizon": 50,
+      "output_check": {
+        "initial_oil_sites": 270276,
+        "site_output_shape": [
+          50,
+          270276
+        ],
+        "inventory_output_shape": [
+          50,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.18061609999858774,
+          "peak_allocated_mib": 354.2041015625,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.1737622000000556,
+          "peak_allocated_mib": 354.2041015625,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.16063089999806834,
+          "peak_allocated_mib": 354.2041015625,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.16562100000010105,
+          "peak_allocated_mib": 354.2041015625,
+          "peak_reserved_mib": 376.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.1652568000026804,
+          "peak_allocated_mib": 354.2041015625,
+          "peak_reserved_mib": 376.0
+        }
+      ],
+      "latency_median_s": 0.16562100000010105,
+      "peak_allocated_mib": 354.2041015625,
+      "peak_reserved_mib": 376.0
+    },
+    {
+      "model": "rtu",
+      "seed": 20260811,
+      "checkpoint_sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2",
+      "parameters": 2103565,
+      "case": "NPI-012_subcore_0015",
+      "block_id": "z640_y256_x128",
+      "input_array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 270276,
+        "site_output_shape": [
+          100,
+          270276
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 14.811934900000779,
+          "peak_allocated_mib": 1723.455078125,
+          "peak_reserved_mib": 1900.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 14.625699500000337,
+          "peak_allocated_mib": 1723.455078125,
+          "peak_reserved_mib": 1900.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 13.875274199999694,
+          "peak_allocated_mib": 1723.455078125,
+          "peak_reserved_mib": 1900.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 12.080836599998293,
+          "peak_allocated_mib": 1723.455078125,
+          "peak_reserved_mib": 1900.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 14.931726700000581,
+          "peak_allocated_mib": 1723.455078125,
+          "peak_reserved_mib": 1900.0
+        }
+      ],
+      "latency_median_s": 14.625699500000337,
+      "peak_allocated_mib": 1723.455078125,
+      "peak_reserved_mib": 1900.0
+    },
+    {
+      "model": "fno",
+      "seed": 20260811,
+      "checkpoint_sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d",
+      "parameters": 4196289,
+      "case": "NPI-012_subcore_0015",
+      "block_id": "z640_y256_x128",
+      "input_array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 270276,
+        "site_output_shape": [
+          100,
+          270276
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 6.918903300000238,
+          "peak_allocated_mib": 1279.28759765625,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 7.615803900000174,
+          "peak_allocated_mib": 1279.28759765625,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 7.721412200000486,
+          "peak_allocated_mib": 1279.28759765625,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 7.086757799999759,
+          "peak_allocated_mib": 1279.28759765625,
+          "peak_reserved_mib": 2024.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 5.990622400000575,
+          "peak_allocated_mib": 1279.28759765625,
+          "peak_reserved_mib": 2024.0
+        }
+      ],
+      "latency_median_s": 7.086757799999759,
+      "peak_allocated_mib": 1279.28759765625,
+      "peak_reserved_mib": 2024.0
+    },
+    {
+      "model": "dynaro",
+      "seed": 20260811,
+      "checkpoint_sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0015",
+      "block_id": "z640_y256_x128",
+      "input_array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 270276,
+        "site_output_shape": [
+          100,
+          270276
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.36521580000044196,
+          "peak_allocated_mib": 503.63037109375,
+          "peak_reserved_mib": 666.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.4050027000012051,
+          "peak_allocated_mib": 503.63037109375,
+          "peak_reserved_mib": 666.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.42142880000028526,
+          "peak_allocated_mib": 503.63037109375,
+          "peak_reserved_mib": 666.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.41495800000120653,
+          "peak_allocated_mib": 503.63037109375,
+          "peak_reserved_mib": 666.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.4245448000001488,
+          "peak_allocated_mib": 503.63037109375,
+          "peak_reserved_mib": 666.0
+        }
+      ],
+      "latency_median_s": 0.41495800000120653,
+      "peak_allocated_mib": 503.63037109375,
+      "peak_reserved_mib": 666.0
+    },
+    {
+      "model": "static_front",
+      "seed": 20260811,
+      "checkpoint_sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94",
+      "parameters": 90991,
+      "case": "NPI-012_subcore_0015",
+      "block_id": "z640_y256_x128",
+      "input_array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f",
+      "horizon": 100,
+      "output_check": {
+        "initial_oil_sites": 270276,
+        "site_output_shape": [
+          100,
+          270276
+        ],
+        "inventory_output_shape": [
+          100,
+          2560
+        ],
+        "finite_bounded_monotone": true,
+        "inventory_identity": true
+      },
+      "repetitions": [
+        {
+          "rep": 1,
+          "wall_s": 0.22283710000192514,
+          "peak_allocated_mib": 497.63037109375,
+          "peak_reserved_mib": 626.0
+        },
+        {
+          "rep": 2,
+          "wall_s": 0.24454550000154995,
+          "peak_allocated_mib": 497.63037109375,
+          "peak_reserved_mib": 626.0
+        },
+        {
+          "rep": 3,
+          "wall_s": 0.2331000000012864,
+          "peak_allocated_mib": 497.63037109375,
+          "peak_reserved_mib": 626.0
+        },
+        {
+          "rep": 4,
+          "wall_s": 0.21417060000021593,
+          "peak_allocated_mib": 497.63037109375,
+          "peak_reserved_mib": 626.0
+        },
+        {
+          "rep": 5,
+          "wall_s": 0.2214869000017643,
+          "peak_allocated_mib": 497.63037109375,
+          "peak_reserved_mib": 626.0
+        }
+      ],
+      "latency_median_s": 0.22283710000192514,
+      "peak_allocated_mib": 497.63037109375,
+      "peak_reserved_mib": 626.0
+    }
+  ],
+  "script_sha256": "17ce7e1a40de111e45666289cdc81cf5836b74a6cdce0dd24b5cf49d5c8670f6",
+  "optimizer_updates": 0,
+  "test_pairs_scored": 0,
+  "summary": [
+    {
+      "model": "dynaro",
+      "horizon": 25,
+      "blocks": 5,
+      "mean_case_median_s": 0.08495565999910468,
+      "min_case_median_s": 0.06507469999996829,
+      "max_case_median_s": 0.11512689999653958,
+      "max_peak_allocated_mib": 301.92333984375,
+      "max_peak_reserved_mib": 414.0
+    },
+    {
+      "model": "dynaro",
+      "horizon": 50,
+      "blocks": 5,
+      "mean_case_median_s": 0.15742340000069815,
+      "min_case_median_s": 0.1151733000006061,
+      "max_case_median_s": 0.17439220000233036,
+      "max_peak_allocated_mib": 358.9111328125,
+      "max_peak_reserved_mib": 440.0
+    },
+    {
+      "model": "dynaro",
+      "horizon": 100,
+      "blocks": 5,
+      "mean_case_median_s": 0.32730432000025755,
+      "min_case_median_s": 0.22141929999997956,
+      "max_case_median_s": 0.45451909999974305,
+      "max_peak_allocated_mib": 519.70458984375,
+      "max_peak_reserved_mib": 686.0
+    },
+    {
+      "model": "fno",
+      "horizon": 25,
+      "blocks": 5,
+      "mean_case_median_s": 1.379327920000651,
+      "min_case_median_s": 1.207647100000031,
+      "max_case_median_s": 1.71645350000108,
+      "max_peak_allocated_mib": 1132.3583984375,
+      "max_peak_reserved_mib": 2050.0
+    },
+    {
+      "model": "fno",
+      "horizon": 50,
+      "blocks": 5,
+      "mean_case_median_s": 2.8189468800002944,
+      "min_case_median_s": 2.3625981000004685,
+      "max_case_median_s": 3.470079300001089,
+      "max_peak_allocated_mib": 1182.60302734375,
+      "max_peak_reserved_mib": 2074.0
+    },
+    {
+      "model": "fno",
+      "horizon": 100,
+      "blocks": 5,
+      "mean_case_median_s": 6.1260838199996215,
+      "min_case_median_s": 4.751237399999809,
+      "max_case_median_s": 7.086757799999759,
+      "max_peak_allocated_mib": 1283.09228515625,
+      "max_peak_reserved_mib": 2124.0
+    },
+    {
+      "model": "rtu",
+      "horizon": 25,
+      "blocks": 5,
+      "mean_case_median_s": 2.8291326999999002,
+      "min_case_median_s": 2.4432741999989958,
+      "max_case_median_s": 3.6579884000020684,
+      "max_peak_allocated_mib": 1572.72119140625,
+      "max_peak_reserved_mib": 1792.0
+    },
+    {
+      "model": "rtu",
+      "horizon": 50,
+      "blocks": 5,
+      "mean_case_median_s": 6.308801339998899,
+      "min_case_median_s": 4.875000599997293,
+      "max_case_median_s": 7.526354800000263,
+      "max_peak_allocated_mib": 1624.7705078125,
+      "max_peak_reserved_mib": 1816.0
+    },
+    {
+      "model": "rtu",
+      "horizon": 100,
+      "blocks": 5,
+      "mean_case_median_s": 12.985599280000315,
+      "min_case_median_s": 10.066948499999853,
+      "max_case_median_s": 14.715505999996822,
+      "max_peak_allocated_mib": 1725.259765625,
+      "max_peak_reserved_mib": 1900.0
+    },
+    {
+      "model": "static_front",
+      "horizon": 25,
+      "blocks": 5,
+      "mean_case_median_s": 0.058748080000077606,
+      "min_case_median_s": 0.047941199998604134,
+      "max_case_median_s": 0.07686359999934211,
+      "max_peak_allocated_mib": 289.55078125,
+      "max_peak_reserved_mib": 414.0
+    },
+    {
+      "model": "static_front",
+      "horizon": 50,
+      "blocks": 5,
+      "mean_case_median_s": 0.11808847999927821,
+      "min_case_median_s": 0.09262019999732729,
+      "max_case_median_s": 0.14940399999977672,
+      "max_peak_allocated_mib": 348.9111328125,
+      "max_peak_reserved_mib": 438.0
+    },
+    {
+      "model": "static_front",
+      "horizon": 100,
+      "blocks": 5,
+      "mean_case_median_s": 0.21792162000128884,
+      "min_case_median_s": 0.15111909999905038,
+      "max_case_median_s": 0.29307990000233985,
+      "max_peak_allocated_mib": 506.31787109375,
+      "max_peak_reserved_mib": 674.0
+    }
+  ],
+  "finished_utc": "2026-10-12T14:13:40.932449+00:00",
+  "wall_duration_s": 1178.0723120000002
+}

@@ -1,0 +1,4 @@
+cohort,baseline_step,followup_step,simulator_baseline_oil_sites,simulator_converted_sites,prediction_expected_oil_at_baseline,prediction_expected_oil_at_followup,prediction_expected_converted_sites,simulator_mobilized_percent,prediction_mobilized_percent,prediction_baseline_remaining_percent,initial_class_3_sites,initial_class_4_sites,initial_class_5_sites,initial_class_6_sites,initial_class_7_sites
+water_contact,50,75,3581,2628,2045.231573854573,699.8384525068104,1345.3931213477626,73.38732197710137,37.5703189429702,57.11342010205454,56,491,1216,125,1693
+no_water_contact,50,75,26236,3258,25009.980288323015,20577.65485817648,4432.325430146535,12.41805153224577,16.89405942272654,95.32695642751568,464,2510,5887,2038,15337
+not_inlet_connected,50,75,1973,0,1973.0,1973.0,0.0,0.0,0.0,100.0,21,352,999,43,558

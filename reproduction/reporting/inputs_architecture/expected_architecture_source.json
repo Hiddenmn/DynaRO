@@ -1,0 +1,242 @@
+{
+  "role": "current compact architecture for the ESWA manuscript; technical labels only, no title banner",
+  "concept_reference": "figure1_statefront_dataflow_concept_only_20261005_v2.png",
+  "AI_pixels_used": false,
+  "feature_cache": "figure1_features_fixed_dev_v5.npz",
+  "composition_references": [
+    {
+      "paper": "MeshGraphNets, ICLR 2021, Figure 1",
+      "url": "https://arxiv.org/html/2010.03409v4",
+      "adopted": "Real-state windows and clear iterative-state flow; no artwork or graph modules copied"
+    },
+    {
+      "paper": "GraphCast, Science 2023, Figure 1, author manuscript",
+      "url": "https://arxiv.org/html/2212.12794v2",
+      "adopted": "Consistent 3D viewpoints, explicit representation changes and distinct rollout feedback; no artwork or architecture copied"
+    }
+  ],
+  "volume_insets": "figure1_statefront_phase_insets_v8_unified.source.json",
+  "composition_changes": "Existing compact two-row composition, all feature maps, dimensions, scientific nodes and edges retained. Only the two full-domain volume insets use native-grid 0.5 surfaces with the shared smooth-normal lighting and orthographic camera. Purple oil is opaque; pale-blue water has opacity 0.12; rock is hidden. No new concept pass: local inset style adaptation, not a composition redesign.",
+  "volume_palette": {
+    "0": "#FFFFFF",
+    "1": "#969696",
+    "2": "#56B4E9",
+    "3": "#E6AD15",
+    "4": "#009E73",
+    "5": "#CC79A7",
+    "6": "#D55E00",
+    "7": "#7560A8"
+  },
+  "canvas_mm": [
+    180.0,
+    128.0
+  ],
+  "prior_canvas_mm": [
+    180,
+    150
+  ],
+  "concept_pass": "Reuse completed v2 concept; localized data-inset and legend revision, no new topology or composition family",
+  "feature_cache_sha256": "4a962796641bb002cea492806d74dbb5ecb434eb5886b25929113155e99ace2a",
+  "same_fixed_case": "z0_y256_x256|Oil|P1-22-DEV-B|S2~S3",
+  "step": 100,
+  "feature_selection": "Unchanged cached channels 0-2 for encoder/hidden-state windows, native z=64 and regional z=4. Class-logit window displays all five fixed-order class channels at z=4; no activation-based selection.",
+  "class_logit_channel_order": [
+    "Film",
+    "Corner",
+    "Droplet",
+    "Columnar",
+    "Cluster"
+  ],
+  "feature_display_limits": {
+    "conv1": {
+      "per_channel_limits": [
+        {
+          "channel": 2,
+          "min": -0.0051433551125228405,
+          "max": 1.4044523239135742
+        },
+        {
+          "channel": 1,
+          "min": -0.022914212197065353,
+          "max": 1.3289005756378174
+        },
+        {
+          "channel": 0,
+          "min": -0.16996769607067108,
+          "max": 0.09417445212602615
+        }
+      ]
+    },
+    "E": {
+      "per_channel_limits": [
+        {
+          "channel": 2,
+          "min": -0.16997121274471283,
+          "max": -0.02310989238321781
+        },
+        {
+          "channel": 1,
+          "min": 0.2433340847492218,
+          "max": 3.5846004486083984
+        },
+        {
+          "channel": 0,
+          "min": -0.16997121274471283,
+          "max": -0.040906231850385666
+        }
+      ]
+    },
+    "S": {
+      "per_channel_limits": [
+        {
+          "channel": 2,
+          "min": -0.16726116836071014,
+          "max": -0.15820452570915222
+        },
+        {
+          "channel": 1,
+          "min": 1.333367109298706,
+          "max": 1.6933996677398682
+        },
+        {
+          "channel": 0,
+          "min": -0.1695062667131424,
+          "max": -0.1512049287557602
+        }
+      ]
+    },
+    "H": {
+      "per_channel_limits": [
+        {
+          "channel": 2,
+          "min": 0.36827409267425537,
+          "max": 0.9975557327270508
+        },
+        {
+          "channel": 1,
+          "min": -0.06358222663402557,
+          "max": 0.8013892769813538
+        },
+        {
+          "channel": 0,
+          "min": 0.05316784605383873,
+          "max": 0.7984267473220825
+        }
+      ]
+    },
+    "ell": {
+      "per_channel_limits": [
+        {
+          "channel": 0,
+          "min": -0.15177108347415924,
+          "max": 0.750635027885437
+        }
+      ]
+    },
+    "q": {
+      "per_channel_limits": [
+        {
+          "channel": 4,
+          "min": -4.570821762084961,
+          "max": -3.6200380325317383
+        },
+        {
+          "channel": 3,
+          "min": -4.665722370147705,
+          "max": -4.069873332977295
+        },
+        {
+          "channel": 2,
+          "min": -4.83953332901001,
+          "max": -4.010756015777588
+        },
+        {
+          "channel": 1,
+          "min": -5.044609069824219,
+          "max": -4.4696269035339355
+        },
+        {
+          "channel": 0,
+          "min": -5.2683424949646,
+          "max": -4.57734489440918
+        }
+      ]
+    },
+    "b": {
+      "per_channel_limits": [
+        {
+          "channel": 0,
+          "min": 0.2700904905796051,
+          "max": 1.1775788068771362
+        }
+      ]
+    },
+    "previous": {
+      "per_channel_limits": [
+        {
+          "channel": 0,
+          "min": 0,
+          "max": 1
+        }
+      ]
+    },
+    "front_locator": {
+      "per_channel_limits": [
+        {
+          "channel": 0,
+          "min": 0,
+          "max": 1
+        }
+      ]
+    },
+    "front": {
+      "per_channel_limits": [
+        {
+          "channel": 0,
+          "min": 0,
+          "max": 1
+        }
+      ]
+    }
+  },
+  "front_display": "Full-domain maximum projection along z plus a linked 40x40 magnification at x=0:40,y=0:40, covering every nonzero projected value. Identical absolute 0-1 scale in both views; no rescaling or new inference.",
+  "front_view_contract": {
+    "reuse_level": "localized display adaptation of existing architecture",
+    "source": "front_weight[z,y,x] in the unchanged cached transition 99 to 100",
+    "full_projection_shape": [
+      128,
+      128
+    ],
+    "magnified_xy_bounds_half_open": [
+      0,
+      40,
+      0,
+      40
+    ],
+    "full_nonzero_pixels": 488,
+    "magnified_nonzero_pixels": 488,
+    "normalization": "linear absolute range [0,1] in full and magnified views",
+    "scientific_edges_changed": false
+  },
+  "display_threshold_only": 0.5,
+  "actual_network": "RegionalStateFrontSurrogate(readout_mode=direct)",
+  "new_inference": false,
+  "class_identity": "Fixed initial slice-derived labels; not reclassification at each time or independently validated 3D morphology categories",
+  "single_crossing_bridge": "geometry_front passes over previous_regional, no graph junction",
+  "artifact_sha256": {
+    "png": "e36fe60ff954e285274da03d73f7a41fff5cc2d3f7e97bb329c8aeaf76fd9d5d",
+    "svg": "30fc638f3bf5b2cfeaff51c0b7f70d2a074a0cc08a67b50db7e301254ac9e388",
+    "pdf": "cd3f5ab75f44ce339e301b9743c06b17bbc70eee2d17cd3c1adbc64c20f715db"
+  },
+  "caption": "StateGuard-RO recurrent 3D architecture with predicted-state fronts. Eight one-hot channels from stacked slice labels and the inlet mask I and connected-pore mask C form the 128-cubed input G. Two 3D convolutions encode local features E; pooling produces regional features S, which initialize recurrent memory and enter the ConvGRU context together with previous five-class fractions, the current action and bounded time. Two recurrent heads supply five oil-class logits and a cell bias. Gathering these by each initial oil site's fixed initial class k0 and cell c, adding a local-logit skip and applying sigmoid yields site propensity. Six-face exposure from the previous predicted state, bounded by inlet-connected reachability, modulates this propensity. A nonnegative multiplicative update produces oil occupancy; five-class remaining amounts N and RF follow by aggregation using the fixed initial oil classes. The five regional fractions feed back into the next step; the model does not reclassify oil morphology. Dashed paths carry the predicted state and hidden memory to the next step. StateGuard acts during training. All windows use the same fixed background-free DEV case (seed 20260811; S2 for 20 steps then S3 for 80), with recurrent fields shown for transition 99 to 100. Encoder and hidden-state stacks show channels 0-2 at z=64 on the native grid or z=4 on the regional grid. All five class-logit planes are shown at z=4 in the fixed order film, corner, droplet, columnar and cluster. Feature intensities use channelwise min-max display normalization. Exposure is maximum-projected along z. A full 128-by-128 locator outlines the magnified 40-by-40 exposure window at x=0-39, y=0-39; this window contains all nonzero projected exposure in the cached transition. Exposure and occupancy views retain their 0-1 scales. Input and output volumes share the camera, model-grid coordinate scale and phase opacities. Water and oil are rendered over the complete 128-cubed domain, with rock hidden for clarity. Translucent blue water provides context for a single purple oil phase; this display pooling does not remove the model's five-class information. Native-grid level-0.5 surfaces use smooth-normal lighting, self-shadow and local occlusion, without mesh smoothing, decimation or point overlays. The orthographic camera (azimuth -125 degrees, elevation 24 degrees) and phase colours match the displacement plates. Output rendering uses a 0.5 occupancy threshold; numerical quantities use continuous probabilities. Initial classes come from the stacked two-dimensional labels, not an independent three-dimensional morphology classification.",
+  "qa_scope": "standalone + caption proof only; full manuscript embedding not yet compiled",
+  "style_revision_checks": {
+    "unchanged_objects_and_edges": {
+      "objects": 73,
+      "edges": 24
+    },
+    "volume_view_sizes_equal": true,
+    "feature_cache_unchanged": true,
+    "composition_preserved": true
+  }
+}

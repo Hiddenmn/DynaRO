@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "figure": "supplementary Figure S2",
+  "stem": "figure8_dev_max_mobilization_prediction_v1",
+  "scope": "Reference comparison only; renderer uses the shared saved prediction arrays",
+  "files": {
+    "expected_parent_display.json": {
+      "sha256": "308a40ee0a815c4689ec60214cb8dc9cada71323f2ef8c6fc0e94de6ddc72d40",
+      "bytes": 15372,
+      "operation": "unchanged copy",
+      "source": "figures/figure8_dev_max_mobilization_prediction_v1.display.json"
+    }
+  },
+  "shared_inputs": {
+    "dev_parent_prediction.npz": {
+      "sha256": "a938cd5e8f4b5a36182a7829b41804ac8881d5c69a4447abcf8c3727b7870a4f",
+      "bytes": 3434058,
+      "source": "manuscript_stateguard_ro_eswa_v0_20260923/figures/figure8_dev_max_mobilization_prediction_v1.npz",
+      "operation": "unchanged copy"
+    },
+    "dev_parent_prediction.source.json": {
+      "sha256": "f684af33453f1fa4968a0ba09507b43247a9e32234811279dab6ae88c539c437",
+      "bytes": 4489,
+      "source": "manuscript_stateguard_ro_eswa_v0_20260923/figures/figure8_dev_max_mobilization_prediction_v1.source.json",
+      "operation": "unchanged copy"
+    }
+  }
+}

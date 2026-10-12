@@ -1,0 +1,3 @@
+# Preserve checksummed research files across operating systems.
+reproduction/** -text
+timing/** -text

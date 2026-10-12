@@ -1,0 +1,35 @@
+{
+  "dynaro": {
+    "display_name": "DynaRO",
+    "historical_arm": "state_front",
+    "architecture": {"cell_width": 16, "local_width": 8, "hidden_width": 24},
+    "readout": "direct",
+    "parameters": 90991
+  },
+  "static_front": {
+    "display_name": "Static front",
+    "historical_arm": "static_front",
+    "architecture": {"cell_width": 16, "local_width": 8, "hidden_width": 24},
+    "readout": "direct",
+    "parameters": 90991
+  },
+  "coarse_front": {
+    "display_name": "Regional-mean exposure",
+    "historical_arm": "coarse_front",
+    "architecture": {"cell_width": 16, "local_width": 8, "hidden_width": 24},
+    "readout": "direct",
+    "parameters": 90991
+  },
+  "fno": {
+    "display_name": "FNO adaptation",
+    "historical_arm": "fno",
+    "architecture": {"cell_width": 16, "width": 16, "modes": [8, 8, 8], "layers": 4, "padding": 8},
+    "parameters": 4196289
+  },
+  "rtu": {
+    "display_name": "RTU adaptation",
+    "historical_arm": "rtu",
+    "architecture": {"cell_width": 16, "base_width": 16, "heads": 4, "transformer_layers": 2, "positional_shape": [16, 16, 16]},
+    "parameters": 2103565
+  }
+}

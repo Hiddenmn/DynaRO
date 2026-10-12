@@ -1,0 +1,4 @@
+# Local preparation and synthetic simulator checks: Python 3.12.13 on Windows.
+# These pins do not establish bitwise identity with historical Linux outputs.
+numpy==2.4.6
+scipy==1.17.1

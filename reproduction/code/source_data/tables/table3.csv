@@ -1,0 +1,7 @@
+Summary,Training rule,Site Brier,Response MSE
+Three-seed mean +/- sample SD,Response weight 0,14.489 +/- 0.321,0.884 +/- 0.061
+Three-seed mean +/- sample SD,Fixed weight 50,14.579 +/- 0.052,0.717 +/- 0.003
+Three-seed mean +/- sample SD,Du-style cosine gate,14.530 +/- 0.171,0.725 +/- 0.002
+Three-seed mean +/- sample SD,State-prioritized,14.153 +/- 0.190,0.712 +/- 0.001
+Seed 20260811,PCGrad-RO,14.464,0.725
+Seed 20260811,State-prioritized,14.005,0.711

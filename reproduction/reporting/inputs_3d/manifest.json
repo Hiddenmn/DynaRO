@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "figure": "main Figure 5",
+  "stem": "figure12_central64_displacement_v2",
+  "scope": "Rendering a fixed saved DEV case; no inference, simulation or TEST access",
+  "pair_id": "z0_y256_x256|NPI-012|P1-22-DEV-A|S3~S5",
+  "files": {
+    "dev_parent_prediction.npz": {
+      "sha256": "a938cd5e8f4b5a36182a7829b41804ac8881d5c69a4447abcf8c3727b7870a4f",
+      "bytes": 3434058,
+      "source": "manuscript_stateguard_ro_eswa_v0_20260923/figures/figure8_dev_max_mobilization_prediction_v1.npz",
+      "operation": "unchanged copy"
+    },
+    "dev_parent_prediction.source.json": {
+      "sha256": "f684af33453f1fa4968a0ba09507b43247a9e32234811279dab6ae88c539c437",
+      "bytes": 4489,
+      "source": "manuscript_stateguard_ro_eswa_v0_20260923/figures/figure8_dev_max_mobilization_prediction_v1.source.json",
+      "operation": "unchanged copy"
+    },
+    "dev_parent_simulator.npz": {
+      "sha256": "e4cab413af422b5d0a59ade92ebb4784c6c64a03d3c5b4dfaaef9fbd28cad809",
+      "bytes": 15584639,
+      "source": "runs/statefront_dev100_extension_seed20260811_20261001/data/dev100_NPI-012_z0_y256_x256_streamA_S530_then_S370.npz",
+      "operation": "unchanged copy"
+    },
+    "expected_central64_time.csv": {
+      "sha256": "da72605db7f88daccd595d86f9dfabd2203b3fdac52c9239d7b6b3bdf913bb14",
+      "bytes": 423,
+      "source": "manuscript_stateguard_ro_eswa_v0_20260923/figures/figure12_central64_displacement_v2.time.csv",
+      "operation": "unchanged copy"
+    },
+    "expected_central64_depth.csv": {
+      "sha256": "45295ceb7a1c70b45d41477c89a2c07907d4b8b5605cbc39a4291333867f7053",
+      "bytes": 428,
+      "source": "manuscript_stateguard_ro_eswa_v0_20260923/figures/figure12_central64_displacement_v2.depth.csv",
+      "operation": "unchanged copy"
+    },
+    "expected_central64_contact.csv": {
+      "sha256": "ee2781dd89b4008c9bfef3ed2ffcfc6692c06566d029f3d3c255fe7c129a7e82",
+      "bytes": 817,
+      "source": "manuscript_stateguard_ro_eswa_v0_20260923/figures/figure12_central64_displacement_v2.contact.csv",
+      "operation": "unchanged copy"
+    }
+  },
+  "contract": {
+    "parent_shape": [
+      128,
+      128,
+      128
+    ],
+    "crop_zyx": [
+      [
+        32,
+        96
+      ],
+      [
+        32,
+        96
+      ],
+      [
+        32,
+        96
+      ]
+    ],
+    "steps": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "camera": {
+      "azimuth": -125.0,
+      "elevation": 24.0
+    },
+    "prediction_display_threshold": 0.5,
+    "initial_local_oil": 35740,
+    "simulator_mobilized_voxels": 17087,
+    "cohort_baseline_sizes": [
+      3581,
+      26236,
+      1973
+    ],
+    "cohort_steps": [
+      50,
+      75
+    ],
+    "counts_use_continuous_predictions": true
+  }
+}

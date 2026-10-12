@@ -1,0 +1,2242 @@
+[
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0006_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0006",
+    "block_id": "z0_y0_x128",
+    "split": "train",
+    "origin_zyx": [
+      0,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      413289,
+      1324185,
+      152671,
+      3594,
+      14946,
+      28445,
+      16311,
+      143711
+    ],
+    "array_sha256": "388c8fa46ad54c795536ef052a7afcb23647be6f2c17ea50a4b6b6885e99c124"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0006_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0006",
+    "block_id": "z0_y0_x128",
+    "split": "train",
+    "origin_zyx": [
+      0,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      398251,
+      1353513,
+      114975,
+      4843,
+      13919,
+      29676,
+      12926,
+      169049
+    ],
+    "array_sha256": "150ac9bcf32db92693e75040bd80474e30d92511598bad1f5c3240d10c4852b3"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0006_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0006",
+    "block_id": "z0_y0_x128",
+    "split": "train",
+    "origin_zyx": [
+      0,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      440644,
+      1318982,
+      177995,
+      15123,
+      17732,
+      15376,
+      13482,
+      97818
+    ],
+    "array_sha256": "6ae172e1a952b9a6f98165d0a8ad5ff3127d42c0a5a49835f77e93f93d5c0f19"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0006_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0006",
+    "block_id": "z0_y0_x128",
+    "split": "train",
+    "origin_zyx": [
+      0,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      396315,
+      1344918,
+      210692,
+      12724,
+      16506,
+      15745,
+      15603,
+      84649
+    ],
+    "array_sha256": "f5d544a80e757ab58af133ee5a68c3d88a55fc47aad144e4c754fbca668ef01c"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0003_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0003",
+    "block_id": "z0_y256_x128",
+    "split": "train",
+    "origin_zyx": [
+      0,
+      256,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      50,
+      1677933,
+      157295,
+      788,
+      7843,
+      31740,
+      5243,
+      216260
+    ],
+    "array_sha256": "6a1e8214eb1536155580b220821450186b0adbf1db0849a10bd855a62c8f3671"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0003_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0003",
+    "block_id": "z0_y256_x128",
+    "split": "train",
+    "origin_zyx": [
+      0,
+      256,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1701722,
+      107631,
+      1334,
+      8288,
+      29568,
+      5675,
+      242934
+    ],
+    "array_sha256": "7c8a599be060488bafd49b685538f104126eb1dd2cd1e902e51544ab007781da"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0003_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0003",
+    "block_id": "z0_y256_x128",
+    "split": "train",
+    "origin_zyx": [
+      0,
+      256,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1724685,
+      144048,
+      7997,
+      13357,
+      16834,
+      5581,
+      184650
+    ],
+    "array_sha256": "c38aa89caaf094ca17e8513c114d7820b31639e741508f337d1c20241f1a71ee"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0003_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0003",
+    "block_id": "z0_y256_x128",
+    "split": "train",
+    "origin_zyx": [
+      0,
+      256,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1732939,
+      173663,
+      7943,
+      12892,
+      18659,
+      3930,
+      147126
+    ],
+    "array_sha256": "6b3241207df311dfeb13ae93e9efe5998374859c899c020e7ba690128302afda"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0011_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0011",
+    "block_id": "z0_y256_x256",
+    "split": "dev",
+    "origin_zyx": [
+      0,
+      256,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      9972,
+      1566392,
+      306653,
+      3415,
+      17013,
+      45786,
+      13148,
+      134773
+    ],
+    "array_sha256": "04a23ef04dfa79879f92ae2c289bc11c7f4984fe2201c3cd0b888b35cf39451a"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0011_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0011",
+    "block_id": "z0_y256_x256",
+    "split": "dev",
+    "origin_zyx": [
+      0,
+      256,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1623131,
+      178170,
+      3787,
+      17645,
+      67043,
+      11903,
+      195473
+    ],
+    "array_sha256": "aaf846bb728d521cdd70842258421bdbee11f3bb821a3a0ce6688b6386c23b9b"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0011_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0011",
+    "block_id": "z0_y256_x256",
+    "split": "dev",
+    "origin_zyx": [
+      0,
+      256,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1584253,
+      52587,
+      19161,
+      24147,
+      25081,
+      11015,
+      380908
+    ],
+    "array_sha256": "4ec2e36c7aa6b8fb59c2920d07ca07ac780dffd301911d856f1d070776e419aa"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0011_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0011",
+    "block_id": "z0_y256_x256",
+    "split": "dev",
+    "origin_zyx": [
+      0,
+      256,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      8246,
+      1595330,
+      344738,
+      12960,
+      19436,
+      25572,
+      7164,
+      83706
+    ],
+    "array_sha256": "648861038bbcc4d89cc542e4815e1682c63d1e48db3133cefdb9fcb273898f99"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0008_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0008",
+    "block_id": "z0_y384_x384",
+    "split": "train",
+    "origin_zyx": [
+      0,
+      384,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1721994,
+      258782,
+      66316,
+      6861,
+      6791,
+      6155,
+      853,
+      29400
+    ],
+    "array_sha256": "f9244a0f319ecb24263160e961782b77bed06db8940672686afbc5ee296642f4"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0008_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0008",
+    "block_id": "z0_y384_x384",
+    "split": "train",
+    "origin_zyx": [
+      0,
+      384,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1737328,
+      246145,
+      53090,
+      5154,
+      3827,
+      4455,
+      1563,
+      45590
+    ],
+    "array_sha256": "0f69a31b50afdacda2dec1881300b5367602026922c67b88c4e11e18318b6ab7"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0008_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0008",
+    "block_id": "z0_y384_x384",
+    "split": "train",
+    "origin_zyx": [
+      0,
+      384,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1737762,
+      257549,
+      35085,
+      8198,
+      2892,
+      4502,
+      2639,
+      48525
+    ],
+    "array_sha256": "0dddabf2b705668a5d68933cf8bd3756874ad7cdce92f792ed4e8f5bf09f7c0a"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0008_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0008",
+    "block_id": "z0_y384_x384",
+    "split": "train",
+    "origin_zyx": [
+      0,
+      384,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1739924,
+      253009,
+      71902,
+      11535,
+      3097,
+      4132,
+      1137,
+      12416
+    ],
+    "array_sha256": "bbf3e6bb64e4311f0efd1f3c544e0950262393c8f47dad6f2c27b5c74ae08a78"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0005_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0005",
+    "block_id": "z128_y256_x256",
+    "split": "train",
+    "origin_zyx": [
+      128,
+      256,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      555,
+      1715137,
+      231182,
+      4281,
+      19502,
+      43813,
+      9509,
+      73173
+    ],
+    "array_sha256": "a9573e674087b9aaaf3072f2f080c7bc71ccfc67a0b6fda32d1ff8ade04da72c"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0005_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0005",
+    "block_id": "z128_y256_x256",
+    "split": "train",
+    "origin_zyx": [
+      128,
+      256,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1757845,
+      94911,
+      6613,
+      27198,
+      64021,
+      11416,
+      135148
+    ],
+    "array_sha256": "5d4cd8b1486cb40399c5a0fdee3921b70c8808db25e7ac1ce519825fee1bf295"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0005_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0005",
+    "block_id": "z128_y256_x256",
+    "split": "train",
+    "origin_zyx": [
+      128,
+      256,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1721846,
+      63344,
+      28110,
+      28936,
+      25693,
+      13290,
+      215933
+    ],
+    "array_sha256": "11e12a210c985365ad977b6adcfb63f38c19ba7fa3985d18362c057b0e5e5b92"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0005_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0005",
+    "block_id": "z128_y256_x256",
+    "split": "train",
+    "origin_zyx": [
+      128,
+      256,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      249,
+      1743724,
+      255649,
+      11813,
+      20326,
+      20192,
+      5651,
+      39548
+    ],
+    "array_sha256": "313942365472904b2a0934874fc5294960c65ee6c730d821a9e35a09c62a265a"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0019_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0019",
+    "block_id": "z128_y384_x256",
+    "split": "locked_test",
+    "origin_zyx": [
+      128,
+      384,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      511254,
+      1181147,
+      130281,
+      2776,
+      10529,
+      37454,
+      20649,
+      203062
+    ],
+    "array_sha256": "5edcb2f05b35b3deaf09617c44ae42bd68a700bfc764c05a7ac014bca34e3651"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0019_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0019",
+    "block_id": "z128_y384_x256",
+    "split": "locked_test",
+    "origin_zyx": [
+      128,
+      384,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      534273,
+      1207909,
+      168670,
+      5023,
+      14339,
+      40764,
+      15403,
+      110771
+    ],
+    "array_sha256": "7e5f036b71960b2f53c093d42a6205f3533170e27197821c885e9ae312484d3e"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0019_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0019",
+    "block_id": "z128_y384_x256",
+    "split": "locked_test",
+    "origin_zyx": [
+      128,
+      384,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      539460,
+      1193454,
+      116488,
+      11149,
+      14517,
+      14189,
+      14036,
+      193859
+    ],
+    "array_sha256": "8e0db508bd515d9e75d48974d60773491d4f2b346e545e79818fee03a20f0a92"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0019_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0019",
+    "block_id": "z128_y384_x256",
+    "split": "locked_test",
+    "origin_zyx": [
+      128,
+      384,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      531072,
+      1209213,
+      170896,
+      6526,
+      10510,
+      13722,
+      12002,
+      143211
+    ],
+    "array_sha256": "ed5771b12e64b4f035a8b5c5a88e83c7bb8a454e93d5c1152c09ec06b72bc488"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0004_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0004",
+    "block_id": "z256_y0_x128",
+    "split": "locked_test",
+    "origin_zyx": [
+      256,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      436693,
+      1355965,
+      146227,
+      4595,
+      15550,
+      26036,
+      21011,
+      91075
+    ],
+    "array_sha256": "7927bc15b209067a3f52d24cd49f9c54dd9a396b1788880f4586f0f1b37fbd04"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0004_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0004",
+    "block_id": "z256_y0_x128",
+    "split": "locked_test",
+    "origin_zyx": [
+      256,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      423460,
+      1400464,
+      102607,
+      6252,
+      19433,
+      33976,
+      22577,
+      88383
+    ],
+    "array_sha256": "e6236ff285e9f29a9cc743866f7e8204b1a3633d49ace7f08786c6268cfb2141"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0004_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0004",
+    "block_id": "z256_y0_x128",
+    "split": "locked_test",
+    "origin_zyx": [
+      256,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      440247,
+      1371510,
+      132298,
+      17609,
+      17644,
+      15342,
+      15625,
+      86877
+    ],
+    "array_sha256": "24df9394f916272ba8a97e34b2756a897524a744283ec8c06fb791f4fe2edaac"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0004_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0004",
+    "block_id": "z256_y0_x128",
+    "split": "locked_test",
+    "origin_zyx": [
+      256,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      422571,
+      1394854,
+      159416,
+      12840,
+      13316,
+      13725,
+      21014,
+      59416
+    ],
+    "array_sha256": "33582394a209088d5d08a21dec77e08662925f3b9cd6abd00a0721d9d3e9b451"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0017_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0017",
+    "block_id": "z256_y256_x128",
+    "split": "train",
+    "origin_zyx": [
+      256,
+      256,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      3317,
+      1751763,
+      197386,
+      4402,
+      12639,
+      21644,
+      5690,
+      100311
+    ],
+    "array_sha256": "141f98e0f26c9c5897394e86b7f30e9115282be5b2f2f8a2829c772cf54b0836"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0017_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0017",
+    "block_id": "z256_y256_x128",
+    "split": "train",
+    "origin_zyx": [
+      256,
+      256,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1795589,
+      135502,
+      5664,
+      17082,
+      34255,
+      19361,
+      89699
+    ],
+    "array_sha256": "93ef9ab8db0c4a71441140d2d55cbe0c60c221ab1024f3afa26de8f8030e6f34"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0017_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0017",
+    "block_id": "z256_y256_x128",
+    "split": "train",
+    "origin_zyx": [
+      256,
+      256,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1773509,
+      112270,
+      9260,
+      13119,
+      13468,
+      18666,
+      156860
+    ],
+    "array_sha256": "dae58def8561e79d62d3b742d5df99441e33908c2fd5936d6ff6b691ef3b295f"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0017_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0017",
+    "block_id": "z256_y256_x128",
+    "split": "train",
+    "origin_zyx": [
+      256,
+      256,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      5511,
+      1784378,
+      211729,
+      6564,
+      11042,
+      11646,
+      2929,
+      63353
+    ],
+    "array_sha256": "5025c48843dedd289aae441e48320fb575fc07cbf68b8a04c6596626f6988384"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0016_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0016",
+    "block_id": "z384_y0_x128",
+    "split": "locked_test",
+    "origin_zyx": [
+      384,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      472469,
+      1293236,
+      153941,
+      5374,
+      24838,
+      37853,
+      11077,
+      98364
+    ],
+    "array_sha256": "e60c9634042f36c2c27d6b73367063f52a799d53cbf17be2663a377bd91d5eb5"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0016_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0016",
+    "block_id": "z384_y0_x128",
+    "split": "locked_test",
+    "origin_zyx": [
+      384,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      460789,
+      1338965,
+      126278,
+      8184,
+      25617,
+      46167,
+      12042,
+      79110
+    ],
+    "array_sha256": "34427c0f394b5540dfc4d7c9873020839c301bf23f8b7451d05def4f6311e5af"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0016_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0016",
+    "block_id": "z384_y0_x128",
+    "split": "locked_test",
+    "origin_zyx": [
+      384,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      452354,
+      1315221,
+      95457,
+      23538,
+      23638,
+      19856,
+      14354,
+      152734
+    ],
+    "array_sha256": "e0328a8633e6e270693871fd39aad0999d680eb66590431f710c662c66d2f108"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0016_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0016",
+    "block_id": "z384_y0_x128",
+    "split": "locked_test",
+    "origin_zyx": [
+      384,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      461712,
+      1326501,
+      205977,
+      19309,
+      20124,
+      16987,
+      11513,
+      35029
+    ],
+    "array_sha256": "5d0699e11258e70c2a1415cdc4dd1cdfb22006df1dc818ebb5fb4cab7bcb4517"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0014_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0014",
+    "block_id": "z384_y0_x384",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      0,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1711561,
+      283056,
+      65911,
+      6094,
+      3754,
+      4416,
+      301,
+      22059
+    ],
+    "array_sha256": "59c9ec1dccd1546c1de5dcc4e6e92878d157f7f3b0b26101552ada37e400cb90"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0014_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0014",
+    "block_id": "z384_y0_x384",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      0,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1708346,
+      291665,
+      70297,
+      5241,
+      3448,
+      6118,
+      1464,
+      10573
+    ],
+    "array_sha256": "731ba93fbe4cf667bee430911c501dd045e8bf60b888663d802ad5a75ebbf601"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0014_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0014",
+    "block_id": "z384_y0_x384",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      0,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1718227,
+      289227,
+      54746,
+      10390,
+      2107,
+      1339,
+      2200,
+      18916
+    ],
+    "array_sha256": "518ddb5d04f36fee6d1e101abff21de9d7e84052e391554c482739e364961fdc"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0014_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0014",
+    "block_id": "z384_y0_x384",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      0,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1706746,
+      281304,
+      87507,
+      8701,
+      2876,
+      2565,
+      270,
+      7183
+    ],
+    "array_sha256": "ed4d71c817db45ea1db6a2611720efdd6adec4ba6c374bfbffdb51eade4cee5a"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0012_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0012",
+    "block_id": "z384_y128_x0",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      128,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      440818,
+      1266754,
+      116806,
+      7087,
+      19676,
+      48655,
+      24348,
+      173008
+    ],
+    "array_sha256": "54fe21199b04a9cb2eea56b10c49b2b5c5d4eb5cc99a2d923c53510777da5d83"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0012_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0012",
+    "block_id": "z384_y128_x0",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      128,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      434962,
+      1311986,
+      107414,
+      9339,
+      21906,
+      50756,
+      16194,
+      144595
+    ],
+    "array_sha256": "f7b98aac76ae3627747279c2a10b1a80862be4399a8ae3566ccaf2dbf45a403f"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0012_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0012",
+    "block_id": "z384_y128_x0",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      128,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      437265,
+      1309306,
+      95890,
+      29700,
+      25879,
+      30880,
+      18135,
+      150097
+    ],
+    "array_sha256": "e9678470b2bf78e4cef4390d642b98f784f6d1535186f01f5cb24f9aa45111a2"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0012_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0012",
+    "block_id": "z384_y128_x0",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      128,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      447605,
+      1323412,
+      176880,
+      19343,
+      22297,
+      19211,
+      13631,
+      74773
+    ],
+    "array_sha256": "a07e08d3358ba1349c4c43ac53af28a673f119558dc0bf84aed518b442a99959"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0001_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0001",
+    "block_id": "z384_y256_x384",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      256,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      532109,
+      1221940,
+      159627,
+      2944,
+      11682,
+      21080,
+      15546,
+      132224
+    ],
+    "array_sha256": "8f740cd5c1620e3ad731cead3023d767b3b3af3a519b6f3978669daf9d48d391"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0001_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0001",
+    "block_id": "z384_y256_x384",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      256,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      548380,
+      1266668,
+      155779,
+      6232,
+      16218,
+      37498,
+      7646,
+      58731
+    ],
+    "array_sha256": "c2beb51991b3cb50ab3a62e75f01da0cf429fd25da10810d1039f06d4912cdb1"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0001_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0001",
+    "block_id": "z384_y256_x384",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      256,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      553188,
+      1240569,
+      97082,
+      15317,
+      17811,
+      14948,
+      18877,
+      139360
+    ],
+    "array_sha256": "9dc167508e5f8a3e1645fa20066d6d80fb3ec77c05b00a0bd98274a8239b0114"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0001_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0001",
+    "block_id": "z384_y256_x384",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      256,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      555114,
+      1249964,
+      159911,
+      10809,
+      12416,
+      12301,
+      15993,
+      80644
+    ],
+    "array_sha256": "42b45c6f7af128b3978ca13a1b7100e1dabf26030d5a42bf9a3c1f6d020e4e25"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0009_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0009",
+    "block_id": "z384_y384_x0",
+    "split": "locked_test",
+    "origin_zyx": [
+      384,
+      384,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1700759,
+      323397,
+      59558,
+      4496,
+      921,
+      638,
+      312,
+      7071
+    ],
+    "array_sha256": "d4cdfc9815440db559072458d02adfc4b274302515e0c18e1ae3922d223b9596"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0009_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0009",
+    "block_id": "z384_y384_x0",
+    "split": "locked_test",
+    "origin_zyx": [
+      384,
+      384,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1723177,
+      322659,
+      39183,
+      4155,
+      655,
+      832,
+      508,
+      5983
+    ],
+    "array_sha256": "77553f95d55abfaef95dc8c16c4d49243dab60a87b0c311c5d69137c99947e1f"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0009_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0009",
+    "block_id": "z384_y384_x0",
+    "split": "locked_test",
+    "origin_zyx": [
+      384,
+      384,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1722628,
+      315306,
+      53761,
+      2116,
+      1052,
+      443,
+      3,
+      1843
+    ],
+    "array_sha256": "5552d9cfb3eb4a06fdcbe21a08e63703d67f064fc7c6aefc35c8eac0467c52fa"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0009_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0009",
+    "block_id": "z384_y384_x0",
+    "split": "locked_test",
+    "origin_zyx": [
+      384,
+      384,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1723801,
+      304494,
+      63495,
+      2124,
+      910,
+      490,
+      43,
+      1795
+    ],
+    "array_sha256": "63c1f0ce630722fbe8cfe428c9a72907dc111544175f77220d7ac30653e91d64"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0002_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0002",
+    "block_id": "z384_y384_x256",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      384,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      498912,
+      1240940,
+      147139,
+      6894,
+      16285,
+      33109,
+      19480,
+      134393
+    ],
+    "array_sha256": "bd78e20963dc8fed4073fd2d95122a9f6de95d7c168df9c529137e434fbc9a19"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0002_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0002",
+    "block_id": "z384_y384_x256",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      384,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      518510,
+      1260439,
+      161267,
+      10157,
+      19010,
+      36624,
+      11882,
+      79263
+    ],
+    "array_sha256": "ddefe42fe3f20acb280b4c6c259227b496ffc1be7bdf8d8d7465081e5b284b4b"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0002_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0002",
+    "block_id": "z384_y384_x256",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      384,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      528829,
+      1253557,
+      75871,
+      18179,
+      18433,
+      20597,
+      17621,
+      164065
+    ],
+    "array_sha256": "cbc2a475b49058e5272c430c480cf3340f0dce8581e69bbd4fae9761742ecac0"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0002_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0002",
+    "block_id": "z384_y384_x256",
+    "split": "train",
+    "origin_zyx": [
+      384,
+      384,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      519460,
+      1289512,
+      171403,
+      16918,
+      16128,
+      17691,
+      14807,
+      51233
+    ],
+    "array_sha256": "b0ceadd55a8e5af93b02249790c1337b4c1af1844cbaf7d6fbbb808d6e8b9051"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0010_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0010",
+    "block_id": "z384_y384_x384",
+    "split": "dev",
+    "origin_zyx": [
+      384,
+      384,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1728192,
+      270124,
+      78421,
+      1115,
+      2253,
+      7642,
+      123,
+      9282
+    ],
+    "array_sha256": "6abfade116dfec2f09e6b06f00775b72ff2d22ec92313ff0947aa577e26d22ed"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0010_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0010",
+    "block_id": "z384_y384_x384",
+    "split": "dev",
+    "origin_zyx": [
+      384,
+      384,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1741228,
+      266698,
+      67907,
+      1946,
+      3342,
+      10412,
+      2002,
+      3617
+    ],
+    "array_sha256": "3329b8a6a309082f902df7f2ed41241215984a9583aec9ae654ad43cd095f5b2"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0010_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0010",
+    "block_id": "z384_y384_x384",
+    "split": "dev",
+    "origin_zyx": [
+      384,
+      384,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1743079,
+      263707,
+      63118,
+      2836,
+      1752,
+      3454,
+      1148,
+      18058
+    ],
+    "array_sha256": "b8d9e19664312366e585e14b06c2b93d560b80c8a077b5b64eafd6f7d57b2885"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0010_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0010",
+    "block_id": "z384_y384_x384",
+    "split": "dev",
+    "origin_zyx": [
+      384,
+      384,
+      384
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      1738136,
+      256007,
+      90288,
+      2743,
+      1655,
+      4733,
+      320,
+      3270
+    ],
+    "array_sha256": "2b06c40c31cfd90db4e822451959e3ae6898e71bc1d9642474bfea49e10fc4ab"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0018_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0018",
+    "block_id": "z512_y0_x128",
+    "split": "dev",
+    "origin_zyx": [
+      512,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      496316,
+      1118012,
+      249641,
+      14463,
+      23772,
+      28797,
+      17469,
+      148682
+    ],
+    "array_sha256": "38c5a87f09aade8c26e1be369e9c4aa98248dd5b42ccf18f7471bd3e79f9863e"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0018_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0018",
+    "block_id": "z512_y0_x128",
+    "split": "dev",
+    "origin_zyx": [
+      512,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      468439,
+      1194490,
+      210352,
+      10625,
+      23351,
+      33787,
+      12658,
+      143450
+    ],
+    "array_sha256": "5080bbd565ab4a8ef14addcd5b35f15ae937dccb9b166a9f97660437a06192e6"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0018_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0018",
+    "block_id": "z512_y0_x128",
+    "split": "dev",
+    "origin_zyx": [
+      512,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      447198,
+      1178600,
+      88824,
+      25772,
+      24985,
+      17884,
+      22888,
+      291001
+    ],
+    "array_sha256": "595c3f3436e953d2a63149dce0a89e80cae9c3173c7d6c1f7fd47993db1e128d"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0018_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0018",
+    "block_id": "z512_y0_x128",
+    "split": "dev",
+    "origin_zyx": [
+      512,
+      0,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      528611,
+      1179579,
+      293047,
+      18233,
+      22731,
+      22466,
+      12460,
+      20025
+    ],
+    "array_sha256": "b259a14126dc58aa3f1d8661c05aa09936ca4953d41806e394bbbb607057ec75"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0007_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0007",
+    "block_id": "z512_y128_x0",
+    "split": "dev",
+    "origin_zyx": [
+      512,
+      128,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      430279,
+      1223118,
+      225486,
+      8251,
+      17863,
+      37434,
+      10936,
+      143785
+    ],
+    "array_sha256": "c793ba2cd07e3b26c0ea82a82f14f0d6ad766ca5e2c82a97ddf615bcb771ca8e"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0007_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0007",
+    "block_id": "z512_y128_x0",
+    "split": "dev",
+    "origin_zyx": [
+      512,
+      128,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      422714,
+      1292394,
+      127539,
+      6981,
+      17721,
+      44904,
+      23949,
+      160950
+    ],
+    "array_sha256": "319b205991633cc58a17143e4cf972dc81d2217ffc39e31b5c3bda95f8eba532"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0007_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0007",
+    "block_id": "z512_y128_x0",
+    "split": "dev",
+    "origin_zyx": [
+      512,
+      128,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      421643,
+      1273221,
+      81192,
+      22478,
+      21191,
+      15595,
+      14154,
+      247678
+    ],
+    "array_sha256": "9eb645730c26ff7096a59725aee745d083227a66f29c8fdbe1602cb3d24618bc"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0007_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0007",
+    "block_id": "z512_y128_x0",
+    "split": "dev",
+    "origin_zyx": [
+      512,
+      128,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      440557,
+      1272688,
+      267339,
+      17149,
+      19338,
+      17689,
+      17751,
+      44641
+    ],
+    "array_sha256": "17bc88730a114739748631c94f99a41243647fb47981843ab2c95f6b7882614b"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0013_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0013",
+    "block_id": "z512_y256_x256",
+    "split": "locked_test",
+    "origin_zyx": [
+      512,
+      256,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      402,
+      1695560,
+      124955,
+      14652,
+      23715,
+      34105,
+      12335,
+      191428
+    ],
+    "array_sha256": "429e928748244f4895abb26554aba027b3a4530eed569ec18f6364d653468459"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0013_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0013",
+    "block_id": "z512_y256_x256",
+    "split": "locked_test",
+    "origin_zyx": [
+      512,
+      256,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1778138,
+      136103,
+      8520,
+      26203,
+      50607,
+      8573,
+      89008
+    ],
+    "array_sha256": "a46d52e2e613b70a51e48995531970fd848ed10c4eb09401fa938bca32dd8a52"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0013_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0013",
+    "block_id": "z512_y256_x256",
+    "split": "locked_test",
+    "origin_zyx": [
+      512,
+      256,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1711743,
+      43844,
+      26522,
+      25200,
+      17434,
+      8521,
+      263888
+    ],
+    "array_sha256": "01ad14cc56eef2103c9244dcc6e69e56cd5c3eca5901a348678cae655e5172ec"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0013_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0013",
+    "block_id": "z512_y256_x256",
+    "split": "locked_test",
+    "origin_zyx": [
+      512,
+      256,
+      256
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      479,
+      1772891,
+      153887,
+      17372,
+      21086,
+      20673,
+      8008,
+      102756
+    ],
+    "array_sha256": "58aa4d94793d5faea458ecb8a1a9e54fa1d60b0490196f7bb76b3f8aea55e242"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0000_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0000",
+    "block_id": "z640_y128_x0",
+    "split": "train",
+    "origin_zyx": [
+      640,
+      128,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      435529,
+      1229003,
+      224698,
+      9081,
+      21363,
+      48515,
+      15853,
+      113110
+    ],
+    "array_sha256": "a6dbbc1a6a0970f49240228700637ec92083aaaffb931074f73cf2a13018887d"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0000_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0000",
+    "block_id": "z640_y128_x0",
+    "split": "train",
+    "origin_zyx": [
+      640,
+      128,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      428966,
+      1256904,
+      143064,
+      9856,
+      22167,
+      42913,
+      20037,
+      173245
+    ],
+    "array_sha256": "9ecd45fffed1197ba28301acfae38b7117be6fde36dc21ad5d4c097878f922d4"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0000_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0000",
+    "block_id": "z640_y128_x0",
+    "split": "train",
+    "origin_zyx": [
+      640,
+      128,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      410604,
+      1255821,
+      72725,
+      22583,
+      20641,
+      17099,
+      13542,
+      284137
+    ],
+    "array_sha256": "f43a6713c70a5f63dda80dc8817916141f8142f005259de1e504d8213b279a0a"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0000_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0000",
+    "block_id": "z640_y128_x0",
+    "split": "train",
+    "origin_zyx": [
+      640,
+      128,
+      0
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      432563,
+      1266091,
+      226358,
+      16787,
+      21453,
+      14330,
+      12349,
+      107221
+    ],
+    "array_sha256": "679754a6021619c39a9d68e38e636b41ca90c08e672a810f3b8160a6b936478c"
+  },
+  {
+    "file": "labels/NPI-006/NPI-006_subcore_0015_label_uint8.npy",
+    "stage": "NPI-006",
+    "subcore_id": "NPI-006_subcore_0015",
+    "block_id": "z640_y256_x128",
+    "split": "dev",
+    "origin_zyx": [
+      640,
+      256,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1776292,
+      91751,
+      3036,
+      15956,
+      45464,
+      19135,
+      145518
+    ],
+    "array_sha256": "c2711ab4e0d011a527972cece1c023721a89fa289c1aa82fe0f157197a2ed79d"
+  },
+  {
+    "file": "labels/NPI-012/NPI-012_subcore_0015_label_uint8.npy",
+    "stage": "NPI-012",
+    "subcore_id": "NPI-012_subcore_0015",
+    "block_id": "z640_y256_x128",
+    "split": "dev",
+    "origin_zyx": [
+      640,
+      256,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1771121,
+      55755,
+      5708,
+      19507,
+      35203,
+      23137,
+      186721
+    ],
+    "array_sha256": "d0ace85d107afd77a54c6937c34de0b2e6020c6eb984f33858991d595c76100f"
+  },
+  {
+    "file": "labels/Oil/Oil_subcore_0015_label_uint8.npy",
+    "stage": "Oil",
+    "subcore_id": "Oil_subcore_0015",
+    "block_id": "z640_y256_x128",
+    "split": "dev",
+    "origin_zyx": [
+      640,
+      256,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1806078,
+      44080,
+      23659,
+      23537,
+      21895,
+      16891,
+      161012
+    ],
+    "array_sha256": "2953fac60673bf72a6bbfda10b960b748246dea6d7f743f182d70d92fd455734"
+  },
+  {
+    "file": "labels/WI/WI_subcore_0015_label_uint8.npy",
+    "stage": "WI",
+    "subcore_id": "WI_subcore_0015",
+    "block_id": "z640_y256_x128",
+    "split": "dev",
+    "origin_zyx": [
+      640,
+      256,
+      128
+    ],
+    "shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "class_voxel_counts": [
+      0,
+      1841960,
+      102454,
+      14342,
+      19105,
+      22355,
+      11212,
+      85724
+    ],
+    "array_sha256": "d7a776c7cd1456e3a311e4a1c3a4e826b1b0f1118c1b576729df4e7f8a622d81"
+  }
+]

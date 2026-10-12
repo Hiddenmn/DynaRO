@@ -1,0 +1,6 @@
+# Additional direct dependencies for the optional saved-case 3D renderer.
+scipy==1.17.1
+scikit-image==0.26.0
+numba==0.65.1
+llvmlite==0.47.0
+psutil==7.2.2

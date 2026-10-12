@@ -1,0 +1,191 @@
+file,panel,column,type,unit,description,missing
+tables/table1.csv,Table 1,Steps,text,step index/interval,"Inclusive scored interval or terminal inventory step, as indicated by Metric.",not allowed
+tables/table1.csv,Table 1,Metric,text,identifier,Endpoint name; determines units in model columns.,not allowed
+tables/table1.csv,Table 1,DynaRO,text,10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/table1.csv,Table 1,Static front,text,10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/table1.csv,Table 1,RTU,text,10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/table1.csv,Table 1,FNO,text,10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/table1_values.csv,Table 1,steps,text,identifier,"Inclusive scored interval. A single step denotes a terminal endpoint; in Table S1 terminal_class_mae uses horizon, not the R2 scored interval.",not allowed
+tables/table1_values.csv,Table 1,metric,text,identifier,site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.,not allowed
+tables/table1_values.csv,Table 1,model,text,identifier,state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.,not allowed
+tables/table1_values.csv,Table 1,n_seeds,integer,integer/index,"Number of matched training seeds, 1 or 3.",not allowed
+tables/table1_values.csv,Table 1,raw_mean,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,not allowed
+tables/table1_values.csv,Table 1,raw_sample_sd,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,empty only for raw_sample_sd in single-seed rows
+tables/table1_values.csv,Table 1,display_multiplier,number,multiplier,"Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",not allowed
+tables/table1_values.csv,Table 1,display_mean,number,display units,Rounded raw_mean times display_multiplier.,not allowed
+tables/table1_values.csv,Table 1,display_sample_sd,number,display units,Rounded raw_sample_sd times display_multiplier.,not allowed
+tables/table2.csv,Table 2,Steps,text,step index/interval,"Inclusive scored interval or terminal inventory step, as indicated by Metric.",not allowed
+tables/table2.csv,Table 2,Metric,text,identifier,Endpoint name; determines units in model columns.,not allowed
+tables/table2.csv,Table 2,Regional-mean,text,10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/table2.csv,Table 2,DynaRO reduction,text,percent,"Rounded 100*(comparator mean-proposed mean)/comparator mean, including the % sign.",not allowed
+tables/table2_values.csv,Table 2,steps,text,identifier,"Inclusive scored interval. A single step denotes a terminal endpoint; in Table S1 terminal_class_mae uses horizon, not the R2 scored interval.",not allowed
+tables/table2_values.csv,Table 2,metric,text,identifier,site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.,not allowed
+tables/table2_values.csv,Table 2,n_seeds,integer,integer/index,"Number of matched training seeds, 1 or 3.",not allowed
+tables/table2_values.csv,Table 2,coarse_raw_mean,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,not allowed
+tables/table2_values.csv,Table 2,coarse_raw_sample_sd,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,not allowed
+tables/table2_values.csv,Table 2,fine_raw_mean,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,not allowed
+tables/table2_values.csv,Table 2,display_multiplier,number,multiplier,"Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",not allowed
+tables/table2_values.csv,Table 2,reduction_percent,number,percent,"100*(comparator mean-proposed mean)/comparator mean; Table 2 uses regional-mean exposure, Table S3 static front. Display field is rounded.",not allowed
+tables/table2_values.csv,Table 2,display_reduction_percent,number,percent,"100*(comparator mean-proposed mean)/comparator mean; Table 2 uses regional-mean exposure, Table S3 static front. Display field is rounded.",not allowed
+tables/table3.csv,Table 3,Summary,text,identifier,Three-seed mean +/- sample SD or single seed 20260811.,not allowed
+tables/table3.csv,Table 3,Training rule,text,identifier,Learning rule used with the separate static-front predictor.,not allowed
+tables/table3.csv,Table 3,Site Brier,text,10^-3 error units,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/table3.csv,Table 3,Response MSE,text,10^-3 error units,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/table3_values.csv,Table 3,group,text,identifier,three_seed or single_seed; the latter is the seed-20260811 PCGrad/state-prioritized comparison.,not allowed
+tables/table3_values.csv,Table 3,arm,text,identifier,"All are static-front predictors: response0, response50, du_gradcos, stateguard (state-prioritized), pcgrad.",not allowed
+tables/table3_values.csv,Table 3,metric,text,identifier,site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.,not allowed
+tables/table3_values.csv,Table 3,n_seeds,integer,integer/index,"Number of matched training seeds, 1 or 3.",not allowed
+tables/table3_values.csv,Table 3,seeds,text,identifier,"Semicolon-separated ordered model-training seeds, not simulator streams.",not allowed
+tables/table3_values.csv,Table 3,raw_mean,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,not allowed
+tables/table3_values.csv,Table 3,raw_sample_sd,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,empty only for raw_sample_sd in single-seed rows
+tables/table3_values.csv,Table 3,display_multiplier,number,multiplier,"Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",not allowed
+tables/table3_values.csv,Table 3,seed_values,number_list,raw metric units,Semicolon-separated unrounded scores aligned with seeds; metric defines raw units.,not allowed
+tables/tableS1.csv,Table S1,Horizon,text,step index,"Trajectory endpoint, not physical time.",not allowed
+tables/tableS1.csv,Table S1,Scored interval,text,step interval,Inclusive interval for state-error/R2 scoring; inventory is evaluated at the Horizon/Endpoint.,not allowed
+tables/tableS1.csv,Table S1,Model,text,identifier,Displayed model name; see study mapping in README.,not allowed
+tables/tableS1.csv,Table S1,Site R2,text,dimensionless R2,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/tableS1.csv,Table S1,Regional R2,text,dimensionless R2,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/tableS1.csv,Table S1,Terminal class-inventory MAE (pp),text,percentage points,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/tableS1_values.csv,Table S1,split,text,identifier,DEV/Development or TEST/Locked test; see file-specific description.,not allowed
+tables/tableS1_values.csv,Table S1,horizon,integer,integer/index,Trajectory endpoint; not necessarily the start of the scored interval.,not allowed
+tables/tableS1_values.csv,Table S1,steps,text,identifier,"Inclusive scored interval. A single step denotes a terminal endpoint; in Table S1 terminal_class_mae uses horizon, not the R2 scored interval.",not allowed
+tables/tableS1_values.csv,Table S1,model,text,identifier,state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.,not allowed
+tables/tableS1_values.csv,Table S1,metric,text,identifier,site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.,not allowed
+tables/tableS1_values.csv,Table S1,n_seeds,integer,integer/index,"Number of matched training seeds, 1 or 3.",not allowed
+tables/tableS1_values.csv,Table S1,seeds,text,identifier,"Semicolon-separated ordered model-training seeds, not simulator streams.",not allowed
+tables/tableS1_values.csv,Table S1,raw_mean,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,not allowed
+tables/tableS1_values.csv,Table S1,raw_sample_sd,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,empty only for raw_sample_sd in single-seed rows
+tables/tableS1_values.csv,Table S1,display_multiplier,number,multiplier,"Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",not allowed
+tables/tableS1_values.csv,Table S1,display_decimals,integer,integer/index,Decimal places used in the printed table.,not allowed
+tables/tableS2.csv,Table S2,Endpoint,text,step index,"Trajectory endpoint, not physical time.",not allowed
+tables/tableS2.csv,Table S2,Scored interval,text,step interval,Inclusive interval for state-error/R2 scoring; inventory is evaluated at the Horizon/Endpoint.,not allowed
+tables/tableS2.csv,Table S2,Model,text,identifier,Displayed model name; see study mapping in README.,not allowed
+tables/tableS2.csv,Table S2,Regional-state MSE (x1000),text,10^-3 error units,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/tableS2.csv,Table S2,Inventory MAE (pp),text,percentage points,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/tableS2_values.csv,Table S2,split,text,identifier,DEV/Development or TEST/Locked test; see file-specific description.,not allowed
+tables/tableS2_values.csv,Table S2,horizon,integer,integer/index,Trajectory endpoint; not necessarily the start of the scored interval.,not allowed
+tables/tableS2_values.csv,Table S2,steps,text,identifier,"Inclusive scored interval. A single step denotes a terminal endpoint; in Table S1 terminal_class_mae uses horizon, not the R2 scored interval.",not allowed
+tables/tableS2_values.csv,Table S2,model,text,identifier,state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.,not allowed
+tables/tableS2_values.csv,Table S2,metric,text,identifier,site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.,not allowed
+tables/tableS2_values.csv,Table S2,n_seeds,integer,integer/index,"Number of matched training seeds, 1 or 3.",not allowed
+tables/tableS2_values.csv,Table S2,seeds,text,identifier,"Semicolon-separated ordered model-training seeds, not simulator streams.",not allowed
+tables/tableS2_values.csv,Table S2,seed_values,number_list,raw metric units,Semicolon-separated unrounded scores aligned with seeds; metric defines raw units.,not allowed
+tables/tableS2_values.csv,Table S2,raw_mean,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,not allowed
+tables/tableS2_values.csv,Table S2,raw_sample_sd,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,empty only for raw_sample_sd in single-seed rows
+tables/tableS2_values.csv,Table S2,display_multiplier,number,multiplier,"Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",not allowed
+tables/tableS3.csv,Table S3,Interval,text,step interval,Inclusive scored interval.,not allowed
+tables/tableS3.csv,Table S3,Metric,text,identifier,Endpoint name; determines units in model columns.,not allowed
+tables/tableS3.csv,Table S3,Static front,text,10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/tableS3.csv,Table S3,DynaRO,text,10^-3 for Brier/MSE rows; percentage points for Inventory MAE rows,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/tableS3.csv,Table S3,Reduction,text,percent,"Rounded 100*(comparator mean-proposed mean)/comparator mean, including the % sign.",not allowed
+tables/tableS3_values.csv,Table S3,split,text,identifier,DEV/Development or TEST/Locked test; see file-specific description.,not allowed
+tables/tableS3_values.csv,Table S3,horizon,integer,integer/index,Trajectory endpoint; not necessarily the start of the scored interval.,not allowed
+tables/tableS3_values.csv,Table S3,steps,text,identifier,"Inclusive scored interval. A single step denotes a terminal endpoint; in Table S1 terminal_class_mae uses horizon, not the R2 scored interval.",not allowed
+tables/tableS3_values.csv,Table S3,metric,text,identifier,site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.,not allowed
+tables/tableS3_values.csv,Table S3,n_seeds,integer,integer/index,"Number of matched training seeds, 1 or 3.",not allowed
+tables/tableS3_values.csv,Table S3,static_raw_mean,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,not allowed
+tables/tableS3_values.csv,Table S3,static_raw_sample_sd,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,not allowed
+tables/tableS3_values.csv,Table S3,dynaro_raw_mean,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,not allowed
+tables/tableS3_values.csv,Table S3,dynaro_raw_sample_sd,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,not allowed
+tables/tableS3_values.csv,Table S3,display_multiplier,number,multiplier,"Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",not allowed
+tables/tableS3_values.csv,Table S3,reduction_percent,number,percent,"100*(comparator mean-proposed mean)/comparator mean; Table 2 uses regional-mean exposure, Table S3 static front. Display field is rounded.",not allowed
+tables/tableS4.csv,Table S4,Summary,text,identifier,Three-seed mean +/- sample SD or single seed 20260811.,not allowed
+tables/tableS4.csv,Table S4,Training rule,text,identifier,Learning rule used with the separate static-front predictor.,not allowed
+tables/tableS4.csv,Table S4,Site Brier (x1000),text,10^-3 error units,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/tableS4.csv,Table S4,Response MSE (x1000),text,10^-3 error units,"Printed rounded value; +/- denotes sample SD, not a confidence interval. A single value has no SD estimate.",not allowed
+tables/tableS4_values.csv,Table S4,split,text,identifier,DEV/Development or TEST/Locked test; see file-specific description.,not allowed
+tables/tableS4_values.csv,Table S4,group,text,identifier,three_seed or single_seed; the latter is the seed-20260811 PCGrad/state-prioritized comparison.,not allowed
+tables/tableS4_values.csv,Table S4,arm,text,identifier,"All are static-front predictors: response0, response50, du_gradcos, stateguard (state-prioritized), pcgrad.",not allowed
+tables/tableS4_values.csv,Table S4,metric,text,identifier,site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.,not allowed
+tables/tableS4_values.csv,Table S4,n_seeds,integer,integer/index,"Number of matched training seeds, 1 or 3.",not allowed
+tables/tableS4_values.csv,Table S4,seeds,text,identifier,"Semicolon-separated ordered model-training seeds, not simulator streams.",not allowed
+tables/tableS4_values.csv,Table S4,seed_values,number_list,raw metric units,Semicolon-separated unrounded scores aligned with seeds; metric defines raw units.,not allowed
+tables/tableS4_values.csv,Table S4,raw_mean,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,not allowed
+tables/tableS4_values.csv,Table S4,raw_sample_sd,number,raw metric units,Unrounded mean or sample SD (ddof=1) across matched seeds. Brier/MSE use dimensionless fraction-scale errors; inventory MAE is a fraction of initial class inventory; R2 is dimensionless.,empty only for raw_sample_sd in single-seed rows
+tables/tableS4_values.csv,Table S4,display_multiplier,number,multiplier,"Multiply raw value by 1000 for Brier/MSE, 100 for inventory percentage points, 1 for R2.",not allowed
+figures/figure3_ab_curves.csv,Figure 3a-b,model,text,identifier,state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.,not allowed
+figures/figure3_ab_curves.csv,Figure 3a-b,metric,text,identifier,site=Brier; response=regional schedule-contrast MSE; region=regional-state MSE; inventory/terminal_class_mae=terminal inventory MAE; site_r2/region_r2=R2.,not allowed
+figures/figure3_ab_curves.csv,Figure 3a-b,step,integer,integer/index,"Simulator state index, not calibrated physical time.",not allowed
+figures/figure3_ab_curves.csv,Figure 3a-b,mean_x1000,number,10^-3 error units,Mean error times 1000 across three matched seeds.,not allowed
+figures/figure3_ab_curves.csv,Figure 3a-b,sample_sd_x1000,number,10^-3 error units,Sample SD times 1000 across three matched seeds (ddof=1).,not allowed
+figures/figure3_c_continuation.csv,Figure 3c,model,text,identifier,state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.,not allowed
+figures/figure3_c_continuation.csv,Figure 3c,mean_percent,number,percent,"Mean or sample SD of within-seed continuation reductions against holding the model's step-50 field, over steps 51-100.",not allowed
+figures/figure3_c_continuation.csv,Figure 3c,sample_sd_percent,number,percent,"Mean or sample SD of within-seed continuation reductions against holding the model's step-50 field, over steps 51-100.",not allowed
+figures/figure3_d_blocks.csv,Figure 3d,model,text,identifier,state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.,not allowed
+figures/figure3_d_blocks.csv,Figure 3d,block,text,identifier,Spatial block's voxel-index origin zN_yN_xN; B1-B5 mapping is in README.,not allowed
+figures/figure3_d_blocks.csv,Figure 3d,site_mean_x1000,number,10^-3 Brier units,"Block-specific site Brier mean across seeds, times 1000.",not allowed
+figures/figure3_d_blocks.csv,Figure 3d,site_sample_sd_x1000,number,10^-3 Brier units,"Block-specific sample SD across seeds, times 1000.",not allowed
+figures/figure4_learning.csv,Figure 4a-b,split,text,identifier,DEV/Development or TEST/Locked test; see file-specific description.,not allowed
+figures/figure4_learning.csv,Figure 4a-b,seed,integer,integer/index,"Model-training seed: 20260811, 20260812 or 20260813.",not allowed
+figures/figure4_learning.csv,Figure 4a-b,pairs,integer,integer/index,"Number of schedule pairs: 400 DEV or 600 TEST, in five blocks.",not allowed
+figures/figure4_learning.csv,Figure 4a-b,fixed50_site,number,dimensionless squared error,"Equal-block score in the separate 25-step static-front learning study. stateguard denotes the state-prioritized rule, not the dynamic-front architecture.",not allowed
+figures/figure4_learning.csv,Figure 4a-b,stateguard_site,number,dimensionless squared error,"Equal-block score in the separate 25-step static-front learning study. stateguard denotes the state-prioritized rule, not the dynamic-front architecture.",not allowed
+figures/figure4_learning.csv,Figure 4a-b,fixed50_response,number,dimensionless squared error,"Equal-block score in the separate 25-step static-front learning study. stateguard denotes the state-prioritized rule, not the dynamic-front architecture.",not allowed
+figures/figure4_learning.csv,Figure 4a-b,stateguard_response,number,dimensionless squared error,"Equal-block score in the separate 25-step static-front learning study. stateguard denotes the state-prioritized rule, not the dynamic-front architecture.",not allowed
+figures/figure4_learning.csv,Figure 4a-b,site_reduction_pct,number,percent,100*(fixed-weight error-state-prioritized error)/fixed-weight error in the separate static-front study.,not allowed
+figures/figure4_learning.csv,Figure 4a-b,response_reduction_pct,number,percent,100*(fixed-weight error-state-prioritized error)/fixed-weight error in the separate static-front study.,not allowed
+figures/figure5_e_time.csv,Figure 5e,step,integer,integer/index,"Simulator state index, not calibrated physical time.",not allowed
+figures/figure5_e_time.csv,Figure 5e,initial_oil,integer,voxel count,Initial regional oil count; common denominator for cumulative mobilization.,not allowed
+figures/figure5_e_time.csv,Figure 5e,simulator_mobilized_voxels,integer,voxel count,Initial oil voxels converted by the saved endpoint.,not allowed
+figures/figure5_e_time.csv,Figure 5e,predicted_expected_mobilized_voxels,number,expected voxel count,"Sum of 1-p over initial oil; continuous prediction, not thresholded count.",not allowed
+figures/figure5_e_time.csv,Figure 5e,simulator_percent,number,percent,Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial regional oil.,not allowed
+figures/figure5_e_time.csv,Figure 5e,prediction_percent,number,percent,Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial regional oil.,not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,cohort,text,identifier,water_contact or no_water_contact in inlet-connected pores; not_inlet_connected is an unplotted third group. Groups use simulator oil at step 50.,not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,baseline_step,integer,integer/index,Fixed cohort definition at simulator step 50.,not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,followup_step,integer,integer/index,Follow-up simulator step 75 under unchanged S3.,not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,simulator_baseline_oil_sites,integer,voxel count,Fixed count of simulator-oil sites defining this cohort at step 50; denominator for both methods.,not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,simulator_converted_sites,integer,voxel count,Sites in the fixed cohort converted between steps 50 and 75.,not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,prediction_expected_oil_at_baseline,number,expected voxel count,Sum of p50 over the fixed simulator-oil cohort.,not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,prediction_expected_oil_at_followup,number,expected voxel count,Sum of p75 over the same fixed cohort.,not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,prediction_expected_converted_sites,number,expected voxel count,"Sum of p50-p75 over the fixed cohort, not a count from 0.5 thresholding.",not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,simulator_mobilized_percent,number,percent,Cumulative mobilization or cohort-follow-up conversion; 100*numerator/fixed simulator_baseline_oil_sites at step 50.,not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,prediction_mobilized_percent,number,percent,Cumulative mobilization or cohort-follow-up conversion; 100*numerator/fixed simulator_baseline_oil_sites at step 50.,not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,prediction_baseline_remaining_percent,number,percent,Predicted remaining amount at baseline; 100*numerator/fixed simulator_baseline_oil_sites at step 50.,not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,initial_class_3_sites,integer,voxel count,"Fixed cohort's initial class count; codes 3=Film, 4=Corner, 5=Droplet, 6=Columnar, 7=Cluster.",not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,initial_class_4_sites,integer,voxel count,"Fixed cohort's initial class count; codes 3=Film, 4=Corner, 5=Droplet, 6=Columnar, 7=Cluster.",not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,initial_class_5_sites,integer,voxel count,"Fixed cohort's initial class count; codes 3=Film, 4=Corner, 5=Droplet, 6=Columnar, 7=Cluster.",not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,initial_class_6_sites,integer,voxel count,"Fixed cohort's initial class count; codes 3=Film, 4=Corner, 5=Droplet, 6=Columnar, 7=Cluster.",not allowed
+figures/figure5_f_contact.csv,Figure 5f and auxiliary cohort,initial_class_7_sites,integer,voxel count,"Fixed cohort's initial class count; codes 3=Film, 4=Corner, 5=Droplet, 6=Columnar, 7=Cluster.",not allowed
+figures/figure5_auxiliary_depth.csv,Auxiliary to Figure 5 (not plotted),x_start,integer,integer/index,Inclusive x index in the parent grid; central crop uses 32-95.,not allowed
+figures/figure5_auxiliary_depth.csv,Auxiliary to Figure 5 (not plotted),x_stop_exclusive,integer,integer/index,Exclusive x index in the parent grid.,not allowed
+figures/figure5_auxiliary_depth.csv,Auxiliary to Figure 5 (not plotted),initial_slab_oil,integer,voxel count,Initial oil count in this central-region slab.,not allowed
+figures/figure5_auxiliary_depth.csv,Auxiliary to Figure 5 (not plotted),simulator_mobilized_voxels,integer,voxel count,Initial oil voxels converted by the saved endpoint.,not allowed
+figures/figure5_auxiliary_depth.csv,Auxiliary to Figure 5 (not plotted),predicted_expected_mobilized_voxels,number,expected voxel count,"Sum of 1-p over initial oil; continuous prediction, not thresholded count.",not allowed
+figures/figure5_auxiliary_depth.csv,Auxiliary to Figure 5 (not plotted),simulator_percent,number,percent,Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial slab oil.,not allowed
+figures/figure5_auxiliary_depth.csv,Auxiliary to Figure 5 (not plotted),prediction_percent,number,percent,Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial slab oil.,not allowed
+figures/figureS1_e_conversion.csv,Figure S1a-e counts and curve,step,integer,integer/index,"Simulator state index, not calibrated physical time.",not allowed
+figures/figureS1_e_conversion.csv,Figure S1a-e counts and curve,remaining_voxels,integer,voxel count,Simulator oil voxels remaining in the fixed TRAIN crop.,not allowed
+figures/figureS1_e_conversion.csv,Figure S1a-e counts and curve,converted_voxels,integer,voxel count,Initial oil voxels converted in the fixed TRAIN crop.,not allowed
+figures/figureS1_e_conversion.csv,Figure S1a-e counts and curve,remaining_fraction,number,fraction,remaining_voxels divided by initial crop oil; plot conversion as 100*(1-this value).,not allowed
+figures/figureS2_g_time.csv,Figure S2g,step,integer,integer/index,"Simulator state index, not calibrated physical time.",not allowed
+figures/figureS2_g_time.csv,Figure S2g,simulator_mobilized_percent,number,percent,Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial regional oil.,not allowed
+figures/figureS2_g_time.csv,Figure S2g,prediction_expected_mobilized_percent,number,percent,Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial regional oil.,not allowed
+figures/figureS2_h_depth.csv,Figure S2h,x_start_inclusive,integer,integer/index,Inclusive x index in the parent grid.,not allowed
+figures/figureS2_h_depth.csv,Figure S2h,x_stop_exclusive,integer,integer/index,Exclusive x index in the parent grid.,not allowed
+figures/figureS2_h_depth.csv,Figure S2h,x_center,number,voxel index,Center of slab indices; (inclusive_start+exclusive_stop-1)/2.,not allowed
+figures/figureS2_h_depth.csv,Figure S2h,initial_oil_voxels,integer,voxel count,Initial oil count in this full-parent slab.,not allowed
+figures/figureS2_h_depth.csv,Figure S2h,simulator_mobilized_percent,number,percent,Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial slab oil.,not allowed
+figures/figureS2_h_depth.csv,Figure S2h,prediction_expected_mobilized_percent,number,percent,Cumulative mobilization or cohort-follow-up conversion; 100*numerator/initial slab oil.,not allowed
+figures/figureS2_i_brier.csv,Figure S2i,step,integer,integer/index,"Simulator state index, not calibrated physical time.",not allowed
+figures/figureS2_i_brier.csv,Figure S2i,site_brier_raw,number,dimensionless squared error,Case-specific Brier error on initial oil sites.,not allowed
+figures/figureS2_i_brier.csv,Figure S2i,site_brier_display_x1000,number,10^-3 Brier units,site_brier_raw times 1000.,not allowed
+figures/figureS3_ab_pairs.csv,Figure S3a-b,endpoint,text,identifier,site or response; both scored over steps 51-100.,not allowed
+figures/figureS3_ab_pairs.csv,Figure S3a-b,comparator,text,identifier,"static_front, rtu or fno; all compared against DynaRO.",not allowed
+figures/figureS3_ab_pairs.csv,Figure S3a-b,pair_id,text,identifier,Stable spatial-block|stage|simulator-stream|action-pair identifier. Pairs are nested in spatial blocks.,not allowed
+figures/figureS3_ab_pairs.csv,Figure S3a-b,block_id,text,identifier,Spatial block's voxel-index origin zN_yN_xN; not an independent rock core.,not allowed
+figures/figureS3_ab_pairs.csv,Figure S3a-b,seed_count,integer,integer/index,Number of seeds averaged within this pair: 3.,not allowed
+figures/figureS3_ab_pairs.csv,Figure S3a-b,comparator_error,number,dimensionless squared error,Steps 51-100; stateguard denotes DynaRO here. gain=comparator_error-stateguard_error; multiply by 1000 for the figure. Positive gain favours DynaRO.,not allowed
+figures/figureS3_ab_pairs.csv,Figure S3a-b,stateguard_error,number,dimensionless squared error,Steps 51-100; stateguard denotes DynaRO here. gain=comparator_error-stateguard_error; multiply by 1000 for the figure. Positive gain favours DynaRO.,not allowed
+figures/figureS3_ab_pairs.csv,Figure S3a-b,gain,number,dimensionless squared error,Steps 51-100; stateguard denotes DynaRO here. gain=comparator_error-stateguard_error; multiply by 1000 for the figure. Positive gain favours DynaRO.,not allowed
+figures/figureS3_ab_seeds.csv,Figure S3a-b underlying repeats,endpoint,text,identifier,site or response; both scored over steps 51-100.,not allowed
+figures/figureS3_ab_seeds.csv,Figure S3a-b underlying repeats,comparator,text,identifier,"static_front, rtu or fno; all compared against DynaRO.",not allowed
+figures/figureS3_ab_seeds.csv,Figure S3a-b underlying repeats,seed,integer,integer/index,"Model-training seed: 20260811, 20260812 or 20260813.",not allowed
+figures/figureS3_ab_seeds.csv,Figure S3a-b underlying repeats,pair_id,text,identifier,Stable spatial-block|stage|simulator-stream|action-pair identifier. Pairs are nested in spatial blocks.,not allowed
+figures/figureS3_ab_seeds.csv,Figure S3a-b underlying repeats,block_id,text,identifier,Spatial block's voxel-index origin zN_yN_xN; not an independent rock core.,not allowed
+figures/figureS3_ab_seeds.csv,Figure S3a-b underlying repeats,comparator_error,number,dimensionless squared error,Steps 51-100; stateguard denotes DynaRO here. gain=comparator_error-stateguard_error; multiply by 1000 for the figure. Positive gain favours DynaRO.,not allowed
+figures/figureS3_ab_seeds.csv,Figure S3a-b underlying repeats,stateguard_error,number,dimensionless squared error,Steps 51-100; stateguard denotes DynaRO here. gain=comparator_error-stateguard_error; multiply by 1000 for the figure. Positive gain favours DynaRO.,not allowed
+figures/figureS3_ab_seeds.csv,Figure S3a-b underlying repeats,gain,number,dimensionless squared error,Steps 51-100; stateguard denotes DynaRO here. gain=comparator_error-stateguard_error; multiply by 1000 for the figure. Positive gain favours DynaRO.,not allowed
+figures/figureS3_c_classes.csv,Figure S3c,model,text,identifier,state_front=DynaRO; static_front=Static front; coarse_front=Regional-mean exposure; rtu=RTU; fno=FNO.,not allowed
+figures/figureS3_c_classes.csv,Figure S3c,seed,integer,integer/index,"Model-training seed: 20260811, 20260812 or 20260813.",not allowed
+figures/figureS3_c_classes.csv,Figure S3c,initial_class,text,identifier,"Film, Corner, Droplet, Columnar or Cluster; fixed initial class, not a predicted new class.",not allowed
+figures/figureS3_c_classes.csv,Figure S3c,inventory_mae_pp,number,percentage points,"Class-specific absolute remaining-amount error divided by initial class amount, times 100; already in pp.",not allowed

@@ -1,0 +1,365 @@
+{
+  "overall_equal_block_mean": {
+    "all_25": {
+      "site": 0.01844645867146028,
+      "region": 0.003782767377633718,
+      "response": 0.001139389943327842,
+      "zero_response": 0.0015932784866254223,
+      "unchanged_site": 0.032880785065790404,
+      "unchanged_region": 0.01836796019197209
+    },
+    "steps_1_5": {
+      "site": 0.005866697211313295,
+      "region": 0.0011927091803681834,
+      "response": 0.0005228088174430922,
+      "zero_response": 0.0006929822301816557,
+      "unchanged_site": 0.0071483250341407255,
+      "unchanged_region": 0.0024987454052461545
+    },
+    "steps_6_15": {
+      "site": 0.01575685292860726,
+      "region": 0.0032349207011066025,
+      "response": 0.0012343446837076043,
+      "zero_response": 0.002070701127508983,
+      "unchanged_site": 0.02553215889929561,
+      "unchanged_region": 0.013169025762472301
+    },
+    "steps_16_25": {
+      "site": 0.027425945704017067,
+      "region": 0.005625643158637104,
+      "response": 0.0013527257446253316,
+      "zero_response": 0.001566003941895815,
+      "unchanged_site": 0.053095641294494275,
+      "unchanged_region": 0.03150150144530926
+    }
+  },
+  "per_block": {
+    "z0_y256_x256": {
+      "all_25": {
+        "site": 0.004033905693722773,
+        "region": 0.0013746296132012502,
+        "response": 0.00033524168416079194,
+        "zero_response": 0.0004217767269892647,
+        "unchanged_site": 0.006000283051253064,
+        "unchanged_region": 0.004608863707107958
+      },
+      "steps_1_5": {
+        "site": 0.0010413176518341062,
+        "region": 0.00034723272715382337,
+        "response": 0.00013074740868432855,
+        "zero_response": 0.00016282177767550364,
+        "unchanged_site": 0.0012249239665834467,
+        "unchanged_region": 0.000600786980430712
+      },
+      "steps_6_15": {
+        "site": 0.003068985494610388,
+        "region": 0.0010674181105059688,
+        "response": 0.00031828232395128,
+        "zero_response": 0.0004886398936150727,
+        "unchanged_site": 0.0044746204963303175,
+        "unchanged_region": 0.0032403618126409127
+      },
+      "steps_16_25": {
+        "site": 0.006495120027830125,
+        "region": 0.0021955395724944536,
+        "response": 0.0004544481760035524,
+        "zero_response": 0.0004843910405611496,
+        "unchanged_site": 0.009913625242188574,
+        "unchanged_region": 0.007981404030579143
+      }
+    },
+    "z384_y384_x384": {
+      "all_25": {
+        "site": 0.06265128962695599,
+        "region": 0.013535461388528347,
+        "response": 0.004339089638597216,
+        "zero_response": 0.006051781216592644,
+        "unchanged_site": 0.11530356518924237,
+        "unchanged_region": 0.0685232755728066
+      },
+      "steps_1_5": {
+        "site": 0.02087022257037461,
+        "region": 0.004482785044820048,
+        "response": 0.0021413830547317046,
+        "zero_response": 0.002824180293464451,
+        "unchanged_site": 0.02562097499612719,
+        "unchanged_region": 0.009710045182146132
+      },
+      "steps_6_15": {
+        "site": 0.05449347565881908,
+        "region": 0.012000813131453469,
+        "response": 0.004805875962483696,
+        "zero_response": 0.007946436503698352,
+        "unchanged_site": 0.09015271496027707,
+        "unchanged_region": 0.050159234064631165
+      },
+      "steps_16_25": {
+        "site": 0.09169964017346502,
+        "region": 0.019596447807271034,
+        "response": 0.004971156528335996,
+        "zero_response": 0.005770926260811393,
+        "unchanged_site": 0.18529571071267129,
+        "unchanged_region": 0.11629392923787236
+      }
+    },
+    "z512_y0_x128": {
+      "all_25": {
+        "site": 0.015544897271320223,
+        "region": 0.002913134788104799,
+        "response": 0.0007313936168429791,
+        "zero_response": 0.000985956068507221,
+        "unchanged_site": 0.022296270227525384,
+        "unchanged_region": 0.009974384168162941
+      },
+      "steps_1_5": {
+        "site": 0.0033991379677900113,
+        "region": 0.0005985600084386534,
+        "response": 0.00022687359517021833,
+        "zero_response": 0.00028481576189278714,
+        "unchanged_site": 0.003845202611410059,
+        "unchanged_region": 0.001013364253230975
+      },
+      "steps_6_15": {
+        "site": 0.012111030810046941,
+        "region": 0.0020616065099602564,
+        "response": 0.0007349134479227359,
+        "zero_response": 0.001193667960978928,
+        "unchanged_site": 0.0161465055658482,
+        "unchanged_region": 0.006093090676586144
+      },
+      "steps_16_25": {
+        "site": 0.02505164333852008,
+        "region": 0.0049219504813663665,
+        "response": 0.0009801337837416213,
+        "zero_response": 0.0011288142808552949,
+        "unchanged_site": 0.03767156882677227,
+        "unchanged_region": 0.018336187402019276
+      }
+    },
+    "z512_y128_x0": {
+      "all_25": {
+        "site": 0.0,
+        "region": 0.0,
+        "response": 0.0,
+        "zero_response": 0.0,
+        "unchanged_site": 0.0,
+        "unchanged_region": 0.0
+      },
+      "steps_1_5": {
+        "site": 0.0,
+        "region": 0.0,
+        "response": 0.0,
+        "zero_response": 0.0,
+        "unchanged_site": 0.0,
+        "unchanged_region": 0.0
+      },
+      "steps_6_15": {
+        "site": 0.0,
+        "region": 0.0,
+        "response": 0.0,
+        "zero_response": 0.0,
+        "unchanged_site": 0.0,
+        "unchanged_region": 0.0
+      },
+      "steps_16_25": {
+        "site": 0.0,
+        "region": 0.0,
+        "response": 0.0,
+        "zero_response": 0.0,
+        "unchanged_site": 0.0,
+        "unchanged_region": 0.0
+      }
+    },
+    "z640_y256_x128": {
+      "all_25": {
+        "site": 0.010002200765302404,
+        "region": 0.0010906110983341932,
+        "response": 0.00029122477703822367,
+        "zero_response": 0.0005068784210379817,
+        "unchanged_site": 0.020803806860931216,
+        "unchanged_region": 0.008733277511782944
+      },
+      "steps_1_5": {
+        "site": 0.004022807866567746,
+        "region": 0.0005349681214283919,
+        "response": 0.0001150400286292097,
+        "zero_response": 0.00019309331787553674,
+        "unchanged_site": 0.0050505235965829344,
+        "unchanged_region": 0.001169530610422953
+      },
+      "steps_6_15": {
+        "site": 0.009110772679559887,
+        "region": 0.0010447657536133193,
+        "response": 0.0003126516841803095,
+        "zero_response": 0.0007247612792525615,
+        "unchanged_site": 0.01688695347402245,
+        "unchanged_region": 0.006352442258503288
+      },
+      "steps_16_25": {
+        "site": 0.013883324980270118,
+        "region": 0.0014142779320536647,
+        "response": 0.0003578902350454882,
+        "zero_response": 0.0004458881272512372,
+        "unchanged_site": 0.03259730169083923,
+        "unchanged_region": 0.014895986556075514
+      }
+    }
+  },
+  "primary_all25_relative_gain": {
+    "site_vs_unchanged": 0.43898971285049354,
+    "response_vs_zero": 0.28487709280435974
+  },
+  "favourable_block_counts": {
+    "site_vs_unchanged": 4,
+    "response_vs_zero": 4
+  },
+  "pairs_site_better_than_unchanged": 320,
+  "pairs_response_better_than_zero": 319,
+  "formal_dev_gate_pass": true,
+  "pair_count": 400,
+  "spatial_block_count": 5,
+  "status": "COMPLETE_PCGRAD_RO_FORMAL_DEV_ONLY",
+  "protocol": {
+    "status": "RUNNING_PCGRAD_RO_FORMAL_DEV_ONLY",
+    "experiment_class": "required closest-method matched comparison",
+    "question": "Does the primary-safe StateGuard-RO rule outperform symmetric two-task PCGrad on unseen remaining-oil spatial blocks?",
+    "development_iteration": "Adaptive method-selection evidence; not independent or locked test",
+    "single_changed_factor": "gradient combination rule",
+    "dev_index": "runs/patent22_conservative_dynamic_surrogate_v1_20260811/data/canonical_dev_full128/trajectory_index.jsonl",
+    "dev_index_sha256": "0adba57ef0413e56c29cb2bbef60323359d162778c7128226173b25681bd1b7d",
+    "checkpoint": "runs/pcgrad_ro_train800_e1_seed20260811_20260922/checkpoint_final.pt",
+    "checkpoint_file_sha256": "39bd06e8f04b42baeb480fed727078ee6f44361caa96523b3a10b6f5baef6d5f",
+    "checkpoint_parameter_sha256": "9ab66a9a9e3e96ff8f9aae8b2170465c4f08ccc10b5810ec5b913543cd7ff7e2",
+    "training_summary": "runs/pcgrad_ro_train800_e1_seed20260811_20260922/summary.json",
+    "training_summary_sha256": "678feef0b605a4020f9afb8fd2694e0db997202e7d10919b5b3d77231b35a46f",
+    "stateguard_reference": {
+      "summary": "runs/stateguard_ro_train800_e1_dev400_seed20260811_20260922/summary.json",
+      "summary_sha256": "7fa0f4268c6cc80f5406708f9a487ed9de944c736fec090e595e530e33af61ff",
+      "per_pair": "runs/stateguard_ro_train800_e1_dev400_seed20260811_20260922/per_pair.jsonl",
+      "per_pair_sha256": "d13249d01ec3cdca351ecf67b932cae2414c08def48758f33af3f3580c5d5c52",
+      "prior_equal_block_mean": {
+        "site": 0.017991606413779664,
+        "region": 0.0036984914254935574,
+        "response": 0.0011211288807294296,
+        "zero_response": 0.0015932784866254223,
+        "unchanged_site": 0.032880785065790404,
+        "unchanged_region": 0.01836796019197209
+      }
+    },
+    "pairs": 400,
+    "trajectories": 800,
+    "spatial_blocks": 5,
+    "horizon_steps": 25,
+    "endpoint": "exact full initial-oil-site state Brier and signed 16^3-cell/class paired-response Brier",
+    "aggregation": "25-step pair mean; 80-pair block mean; equal five-block mean",
+    "decision_rule": {
+      "minimum_stateguard_site_reduction_vs_pcgrad": 0.01,
+      "maximum_stateguard_response_degradation_vs_pcgrad": 0.01,
+      "minimum_favourable_active_site_blocks": 3,
+      "expected_active_blocks": 4,
+      "all_conditions_required": true
+    },
+    "checkpoint_selection": "single final update 200 checkpoint; no DEV selection",
+    "device": "cuda:0",
+    "gpu_memory_fraction": 0.2,
+    "maximum_peak_reserved_mib": 2200,
+    "not_measured": [
+      "locked test",
+      "external data",
+      "new training"
+    ]
+  },
+  "closest_method_comparison": {
+    "scope": "adaptive canonical DEV; not independent test",
+    "comparison": "StateGuard-RO versus symmetric two-task PCGrad-RO",
+    "pcgrad_provenance": "independent two-task PCGrad reimplementation",
+    "predeclared_rule": {
+      "minimum_site_reduction": 0.01,
+      "maximum_response_degradation": 0.01,
+      "minimum_favourable_active_site_blocks": 3,
+      "expected_active_blocks": 4,
+      "all_conditions_required": true
+    },
+    "equal_block_mean": {
+      "pcgrad": {
+        "site": 0.01844645867146028,
+        "region": 0.003782767377633718,
+        "response": 0.001139389943327842,
+        "zero_response": 0.0015932784866254223,
+        "unchanged_site": 0.032880785065790404,
+        "unchanged_region": 0.01836796019197209
+      },
+      "stateguard": {
+        "site": 0.017991606413779664,
+        "region": 0.0036984914254935574,
+        "response": 0.0011211288807294296,
+        "zero_response": 0.0015932784866254223,
+        "unchanged_site": 0.032880785065790404,
+        "unchanged_region": 0.01836796019197209
+      }
+    },
+    "stateguard_site_reduction_vs_pcgrad": 0.024657971797283018,
+    "stateguard_response_degradation_vs_pcgrad": -0.016027052639307038,
+    "active_blocks": 4,
+    "favourable_active_site_blocks": 3,
+    "conditions": {
+      "site_reduction_at_least_1pct": true,
+      "response_degradation_no_more_than_1pct": true,
+      "site_better_in_at_least_3_of_4_active_blocks": true
+    },
+    "verdict": "STATEGUARD_RO_SUPPORTED_VS_PCGRAD_ON_ADAPTIVE_DEV",
+    "per_block": {
+      "z0_y256_x256": {
+        "active_response_block": true,
+        "pcgrad_site": 0.004033905693722773,
+        "stateguard_site": 0.00409094683091098,
+        "pcgrad_response": 0.00033524168416079194,
+        "stateguard_response": 0.0003355148263722185,
+        "stateguard_site_difference": 5.704113718820684e-05,
+        "stateguard_response_difference": 2.731422114265699e-07
+      },
+      "z384_y384_x384": {
+        "active_response_block": true,
+        "pcgrad_site": 0.06265128962695599,
+        "stateguard_site": 0.06095139002427459,
+        "pcgrad_response": 0.004339089638597216,
+        "stateguard_response": 0.004254231819504639,
+        "stateguard_site_difference": -0.0016998996026813956,
+        "stateguard_response_difference": -8.485781909257657e-05
+      },
+      "z512_y0_x128": {
+        "active_response_block": true,
+        "pcgrad_site": 0.015544897271320223,
+        "stateguard_site": 0.015426467859651894,
+        "pcgrad_response": 0.0007313936168429791,
+        "stateguard_response": 0.0007175759956226102,
+        "stateguard_site_difference": -0.00011842941166832939,
+        "stateguard_response_difference": -1.3817621220368935e-05
+      },
+      "z512_y128_x0": {
+        "active_response_block": false,
+        "pcgrad_site": 0.0,
+        "stateguard_site": 0.0,
+        "pcgrad_response": 0.0,
+        "stateguard_response": 0.0,
+        "stateguard_site_difference": 0.0,
+        "stateguard_response_difference": 0.0
+      },
+      "z640_y256_x128": {
+        "active_response_block": true,
+        "pcgrad_site": 0.010002200765302404,
+        "stateguard_site": 0.009489227354060858,
+        "pcgrad_response": 0.00029122477703822367,
+        "stateguard_response": 0.0002983217621476797,
+        "stateguard_site_difference": -0.0005129734112415459,
+        "stateguard_response_difference": 7.0969851094560324e-06
+      }
+    }
+  },
+  "stateguard_supported_vs_pcgrad": true,
+  "elapsed_seconds": 1005.7509142999988,
+  "peak_cuda_allocated_mib": 373.873046875,
+  "peak_cuda_reserved_mib": 442.0,
+  "dev_trajectories_accessed": 800,
+  "locked_test_accessed": false
+}

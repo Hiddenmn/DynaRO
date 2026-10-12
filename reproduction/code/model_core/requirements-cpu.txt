@@ -1,0 +1,5 @@
+# Synthetic software checks only, not the historical CUDA experiment runtime.
+# Python 3.12. The CPU wheel index applies to PyTorch; install numpy from PyPI.
+# python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+numpy==2.3.2
+# Install torch with the command above; no automatic runtime installation occurs.

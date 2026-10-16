@@ -1,7 +1,8 @@
+# Saved-result plotting environment (not the original cloud training environment).
 numpy==2.4.6
 scipy==1.17.1
 matplotlib==3.10.9
 Pillow==12.2.0
 scikit-image==0.26.0
 numba==0.65.1
-# Install a platform-compatible PyTorch separately; recorded model runtime: 2.11.0.
+# PyTorch is separate: original new experiments 2.8.0; local saved-state checks 2.11.0.

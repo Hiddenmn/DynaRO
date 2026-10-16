@@ -166,6 +166,10 @@
       "bytes": 128,
       "sha256": "cc3b1a2ece7166916ec86c400f936c5bce011e7399493f166be7901c64f7bde1"
     },
+    "external/inference_environment.json": {
+      "bytes": 161,
+      "sha256": "c96ddc0934a75e8f5b188c943fa654761cb5195b340e773bb1ede2f9c205a5cd"
+    },
     "external/label_schema.json": {
       "bytes": 172,
       "sha256": "c7648ba50441f158906d5c2dbfe73a26a7323807a05022d8eb50e0736cb77078"
@@ -17287,8 +17291,8 @@
       "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
     },
     "README.md": {
-      "bytes": 5437,
-      "sha256": "b9bf2e8589f34f74394df62a30c32626cf82daad42a04e8ddf2f834dbf3d1af6"
+      "bytes": 5742,
+      "sha256": "d29bb512005098c8850859bce4be28a0a6d6cf0aa87815d2edf06d0b33f26848"
     },
     "reporting/fixed_cases/Bentheimer_Core1_dynaro.npz": {
       "bytes": 1474048,
@@ -17419,8 +17423,8 @@
       "sha256": "0f26ec4e986ee571d9717c4575b008c7e740aa379047110025b0f89e8157785e"
     },
     "requirements.txt": {
-      "bytes": 187,
-      "sha256": "007f019915d2f3355fdcc8913b5d3bf1affc4e9638def416071d1eb82036a43c"
+      "bytes": 275,
+      "sha256": "fa6aee8498ea60ee841f12c00dd5d82dcef13a8f47fa0b5951a57f048b882149"
     },
     "sameinfo/config/explicit_contact/20260811.json": {
       "bytes": 1197,
@@ -17632,7 +17636,7 @@
     },
     "source_provenance.json": {
       "bytes": 919919,
-      "sha256": "3cffb7e385ea2db9eb2524736b5290369a196f3ddbd4f5125521ad14fa1d8d16"
+      "sha256": "0bbd5e26574550dc68d661d93ce1490cd6883b1f60261179968d62b7e1f74a07"
     }
   }
 }

@@ -40,7 +40,7 @@
     "transformation": "byte-preserved"
   },
   "README.md": {
-    "source_sha256": "b9bf2e8589f34f74394df62a30c32626cf82daad42a04e8ddf2f834dbf3d1af6",
+    "source_sha256": "d29bb512005098c8850859bce4be28a0a6d6cf0aa87815d2edf06d0b33f26848",
     "transformation": "byte-preserved"
   },
   "code/model_core/model_configs.json": {

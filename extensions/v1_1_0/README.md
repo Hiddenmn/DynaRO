@@ -25,8 +25,12 @@ original study; saved-result reproduction of this addition is self-contained.
 
 ## Reproduce saved numbers and figures
 
-Use Python 3.12 and install `requirements.txt`. PyTorch 2.11.0 was used for the
-new experiments; install the build appropriate to your CPU/CUDA environment.
+Use Python 3.12 and install `requirements.txt` for saved-result plotting.
+Original contact-control training and external evaluation used PyTorch
+2.8.0/CUDA 12.8 on an RTX 4090. Local saved-state checks and figure preparation
+used PyTorch 2.11.0. The recorded environments are in `sameinfo/config/`,
+`external/inference_environment.json` and `external/generation_environment.json`.
+Install the PyTorch build appropriate to the operation and CPU/CUDA environment.
 
 ```sh
 python -B reproduce_saved.py --output rebuilt_numbers

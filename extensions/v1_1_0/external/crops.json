@@ -1,0 +1,554 @@
+[
+  {
+    "core_id": "WF1",
+    "segment_id": "wf1_base",
+    "block_id": "wf1_base__z0486_y0388_x0128",
+    "native_origin_zyx": [
+      486,
+      388,
+      128
+    ],
+    "native_shape_zyx": [
+      128,
+      256,
+      256
+    ],
+    "model_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "file": "labels/wf1_base__z0486_y0388_x0128.npy",
+    "array_sha256": "af0e11fb3722f513e9bc22124329a8d21b589200fae6d7a1b8edaec2bd86e0bb",
+    "file_sha256": "a533af67bbf32a305629955763239b5970d88ca1df0645099aa7196d7e9f55bb",
+    "bytes": 2097280,
+    "native_class_counts": [
+      0,
+      7116965,
+      1128139,
+      3266,
+      29290,
+      40789,
+      48394,
+      21765
+    ],
+    "model_class_counts": [
+      0,
+      1779372,
+      281852,
+      802,
+      7382,
+      10283,
+      12088,
+      5373
+    ],
+    "classes_lost_at_sampling": [],
+    "initial_oil_sites": 35928
+  },
+  {
+    "core_id": "WF1",
+    "segment_id": "wf1_base",
+    "block_id": "wf1_base__z0486_y0388_x0644",
+    "native_origin_zyx": [
+      486,
+      388,
+      644
+    ],
+    "native_shape_zyx": [
+      128,
+      256,
+      256
+    ],
+    "model_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "file": "labels/wf1_base__z0486_y0388_x0644.npy",
+    "array_sha256": "be06f99a4a53535ed314a781901f780dd2f5cf9ec351886fc7b3f89bb0ba160c",
+    "file_sha256": "b11e6e50ff39a8a85ca1bcff40f8caf7774113ebbf42c266f0cb9f4673e4f817",
+    "bytes": 2097280,
+    "native_class_counts": [
+      0,
+      7201689,
+      801686,
+      8517,
+      45237,
+      55174,
+      32527,
+      243778
+    ],
+    "model_class_counts": [
+      0,
+      1799689,
+      200380,
+      2144,
+      11378,
+      13883,
+      8199,
+      61479
+    ],
+    "classes_lost_at_sampling": [],
+    "initial_oil_sites": 97083
+  },
+  {
+    "core_id": "WF1",
+    "segment_id": "wf1_middle",
+    "block_id": "wf1_middle__z0436_y0388_x0128",
+    "native_origin_zyx": [
+      436,
+      388,
+      128
+    ],
+    "native_shape_zyx": [
+      128,
+      256,
+      256
+    ],
+    "model_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "file": "labels/wf1_middle__z0436_y0388_x0128.npy",
+    "array_sha256": "ad732607f2319b12df3efad6f487f407a2b757032a9ee053de69671af8beaf35",
+    "file_sha256": "4d348f55db029d7abbb690cc22fc929a081f0c56126dadeb7538c381b615de7f",
+    "bytes": 2097280,
+    "native_class_counts": [
+      0,
+      7126788,
+      309569,
+      5112,
+      54933,
+      116298,
+      163082,
+      612826
+    ],
+    "model_class_counts": [
+      0,
+      1782641,
+      77211,
+      1248,
+      13786,
+      29033,
+      40696,
+      152537
+    ],
+    "classes_lost_at_sampling": [],
+    "initial_oil_sites": 237300
+  },
+  {
+    "core_id": "WF1",
+    "segment_id": "wf1_middle",
+    "block_id": "wf1_middle__z0436_y0388_x0644",
+    "native_origin_zyx": [
+      436,
+      388,
+      644
+    ],
+    "native_shape_zyx": [
+      128,
+      256,
+      256
+    ],
+    "model_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "file": "labels/wf1_middle__z0436_y0388_x0644.npy",
+    "array_sha256": "912b5f167b15e74ce0c02b3bfd87ed372bf2954d0877c56ef0d7810358561fd3",
+    "file_sha256": "54356d7a52b30e4a295b0745c8f4fe1c9afe9651a97bb9b9eb2a4a423f72d9c7",
+    "bytes": 2097280,
+    "native_class_counts": [
+      0,
+      7128900,
+      724680,
+      279,
+      93210,
+      82910,
+      67882,
+      290747
+    ],
+    "model_class_counts": [
+      0,
+      1782048,
+      181235,
+      69,
+      23379,
+      20777,
+      16991,
+      72653
+    ],
+    "classes_lost_at_sampling": [],
+    "initial_oil_sites": 133869
+  },
+  {
+    "core_id": "WF1",
+    "segment_id": "wf1_top",
+    "block_id": "wf1_top__z0411_y0388_x0128",
+    "native_origin_zyx": [
+      411,
+      388,
+      128
+    ],
+    "native_shape_zyx": [
+      128,
+      256,
+      256
+    ],
+    "model_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "file": "labels/wf1_top__z0411_y0388_x0128.npy",
+    "array_sha256": "c2fbbb7ab1c54d16f5caa9fc7cc4ca21ea69f31da37021b9160ec25113e8a169",
+    "file_sha256": "dc9e0c52604c6558e8ccbfa83e22b753a43f77a9286705e9831a863fd2bdd442",
+    "bytes": 2097280,
+    "native_class_counts": [
+      0,
+      7106410,
+      654834,
+      406,
+      83025,
+      158546,
+      113047,
+      272340
+    ],
+    "model_class_counts": [
+      0,
+      1776444,
+      163865,
+      106,
+      20592,
+      39389,
+      28297,
+      68459
+    ],
+    "classes_lost_at_sampling": [],
+    "initial_oil_sites": 156843
+  },
+  {
+    "core_id": "WF1",
+    "segment_id": "wf1_top",
+    "block_id": "wf1_top__z0411_y0388_x0644",
+    "native_origin_zyx": [
+      411,
+      388,
+      644
+    ],
+    "native_shape_zyx": [
+      128,
+      256,
+      256
+    ],
+    "model_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "file": "labels/wf1_top__z0411_y0388_x0644.npy",
+    "array_sha256": "c7354e0b2652bdd82ccb28808b8767d8d6775828c0092c70b2ecb1466ea770aa",
+    "file_sha256": "e550462da0534827d87a16ac88dd8ef562833dfe6fc26fec5619a4550308fab0",
+    "bytes": 2097280,
+    "native_class_counts": [
+      0,
+      7152187,
+      511212,
+      385,
+      51916,
+      147044,
+      219293,
+      306571
+    ],
+    "model_class_counts": [
+      0,
+      1788168,
+      128285,
+      95,
+      12901,
+      36479,
+      54813,
+      76411
+    ],
+    "classes_lost_at_sampling": [],
+    "initial_oil_sites": 180699
+  },
+  {
+    "core_id": "Bentheimer_Core1",
+    "segment_id": "bentheimer_core1",
+    "block_id": "bentheimer_core1__z0136_y0378_x0120",
+    "native_origin_zyx": [
+      136,
+      378,
+      120
+    ],
+    "native_shape_zyx": [
+      128,
+      256,
+      256
+    ],
+    "model_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "file": "labels/bentheimer_core1__z0136_y0378_x0120.npy",
+    "array_sha256": "a78278ea8fbc4038135e1b18ffc3e58fd19d29ffccc0e082b343b1def187751f",
+    "file_sha256": "f757747dc422036fe0bf77bf1cf9a404cee6a27ce061988c381f46e329b55f7b",
+    "bytes": 2097280,
+    "native_class_counts": [
+      0,
+      6484583,
+      1317475,
+      404,
+      2897,
+      47587,
+      78190,
+      457472
+    ],
+    "model_class_counts": [
+      0,
+      1621339,
+      329097,
+      97,
+      717,
+      11769,
+      19642,
+      114491
+    ],
+    "classes_lost_at_sampling": [],
+    "initial_oil_sites": 146716
+  },
+  {
+    "core_id": "Bentheimer_Core1",
+    "segment_id": "bentheimer_core1",
+    "block_id": "bentheimer_core1__z0136_y0378_x0616",
+    "native_origin_zyx": [
+      136,
+      378,
+      616
+    ],
+    "native_shape_zyx": [
+      128,
+      256,
+      256
+    ],
+    "model_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "file": "labels/bentheimer_core1__z0136_y0378_x0616.npy",
+    "array_sha256": "e958c8ba0b5f1b2b12365d1004611566456c611e7330e4579350c4425a420e10",
+    "file_sha256": "c8eb17acfd20324c818ed98d4e4e79c8271376e8edfaa547e5ec8ff1bcb86cfd",
+    "bytes": 2097280,
+    "native_class_counts": [
+      0,
+      6228985,
+      1338044,
+      1067,
+      4287,
+      25879,
+      76100,
+      714246
+    ],
+    "model_class_counts": [
+      0,
+      1557239,
+      334799,
+      262,
+      1075,
+      6487,
+      19015,
+      178275
+    ],
+    "classes_lost_at_sampling": [],
+    "initial_oil_sites": 205114
+  },
+  {
+    "core_id": "Bentheimer_Core1",
+    "segment_id": "bentheimer_core1",
+    "block_id": "bentheimer_core1__z0436_y0378_x0120",
+    "native_origin_zyx": [
+      436,
+      378,
+      120
+    ],
+    "native_shape_zyx": [
+      128,
+      256,
+      256
+    ],
+    "model_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "file": "labels/bentheimer_core1__z0436_y0378_x0120.npy",
+    "array_sha256": "40479afea4a04b660476cc68d165baadd17f1c0ebb55830a109e1af4fb5bebff",
+    "file_sha256": "e436b52c5f6e89bc8d87f6d49181733326a42422afd3a381ad6913ea0447af3b",
+    "bytes": 2097280,
+    "native_class_counts": [
+      0,
+      6567765,
+      1401669,
+      377,
+      3133,
+      6136,
+      44018,
+      365510
+    ],
+    "model_class_counts": [
+      0,
+      1642024,
+      350120,
+      94,
+      785,
+      1473,
+      10996,
+      91660
+    ],
+    "classes_lost_at_sampling": [],
+    "initial_oil_sites": 105008
+  },
+  {
+    "core_id": "Bentheimer_Core1",
+    "segment_id": "bentheimer_core1",
+    "block_id": "bentheimer_core1__z0436_y0378_x0616",
+    "native_origin_zyx": [
+      436,
+      378,
+      616
+    ],
+    "native_shape_zyx": [
+      128,
+      256,
+      256
+    ],
+    "model_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "file": "labels/bentheimer_core1__z0436_y0378_x0616.npy",
+    "array_sha256": "cca98ae01ea2f3ac3fe28129ae40354bf27207fd836654b326b38547e0d42a18",
+    "file_sha256": "bb47983bea12d09e0a095459b28911f07f5cf3da3250927eec724b7dc8c8d4b2",
+    "bytes": 2097280,
+    "native_class_counts": [
+      0,
+      6222730,
+      1203200,
+      388,
+      5968,
+      3653,
+      182199,
+      770470
+    ],
+    "model_class_counts": [
+      0,
+      1555875,
+      301512,
+      99,
+      1469,
+      900,
+      45444,
+      191853
+    ],
+    "classes_lost_at_sampling": [],
+    "initial_oil_sites": 239765
+  },
+  {
+    "core_id": "Bentheimer_Core1",
+    "segment_id": "bentheimer_core1",
+    "block_id": "bentheimer_core1__z0736_y0378_x0120",
+    "native_origin_zyx": [
+      736,
+      378,
+      120
+    ],
+    "native_shape_zyx": [
+      128,
+      256,
+      256
+    ],
+    "model_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "file": "labels/bentheimer_core1__z0736_y0378_x0120.npy",
+    "array_sha256": "5bfaee80dbf1461352aec00c1a0524b53fe361187b60276c6eedc6716d077240",
+    "file_sha256": "0a4edc8716c7fe0f71815c4e338066c955b1b294b0b037f17a392c54de5bbdfd",
+    "bytes": 2097280,
+    "native_class_counts": [
+      0,
+      6357863,
+      1519667,
+      315,
+      3649,
+      18101,
+      150755,
+      338258
+    ],
+    "model_class_counts": [
+      0,
+      1588905,
+      380538,
+      75,
+      924,
+      4524,
+      37747,
+      84439
+    ],
+    "classes_lost_at_sampling": [],
+    "initial_oil_sites": 127709
+  },
+  {
+    "core_id": "Bentheimer_Core1",
+    "segment_id": "bentheimer_core1",
+    "block_id": "bentheimer_core1__z0736_y0378_x0616",
+    "native_origin_zyx": [
+      736,
+      378,
+      616
+    ],
+    "native_shape_zyx": [
+      128,
+      256,
+      256
+    ],
+    "model_shape_zyx": [
+      128,
+      128,
+      128
+    ],
+    "file": "labels/bentheimer_core1__z0736_y0378_x0616.npy",
+    "array_sha256": "6faef3abb0326efd41ead8b777fee4ff9cd57a375bd498cb312cf9cb947adbd5",
+    "file_sha256": "15f7c1640f0bdb3a31d559bf970ed4e49fd198cea6935a46f77035fdd34da89a",
+    "bytes": 2097280,
+    "native_class_counts": [
+      0,
+      6399817,
+      1367125,
+      1309,
+      4959,
+      15116,
+      125801,
+      474481
+    ],
+    "model_class_counts": [
+      0,
+      1601246,
+      340706,
+      322,
+      1232,
+      3738,
+      31608,
+      118300
+    ],
+    "classes_lost_at_sampling": [],
+    "initial_oil_sites": 155200
+  }
+]

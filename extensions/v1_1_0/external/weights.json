@@ -1,0 +1,122 @@
+[
+  {
+    "key": "mixed_horizon/dynaro/20260811",
+    "model": "dynaro",
+    "seed": 20260811,
+    "parameters": 90991,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/dynaro/20260811.pt",
+    "sha256": "21f400dee7718e341089184e20b35d6f0fe3c09281bcd73268e5eb53937b158b"
+  },
+  {
+    "key": "mixed_horizon/dynaro/20260812",
+    "model": "dynaro",
+    "seed": 20260812,
+    "parameters": 90991,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/dynaro/20260812.pt",
+    "sha256": "f0e940791026964a44d7cfe0ed2745c712ab9c4800f484c2d5fa5da0694bb27f"
+  },
+  {
+    "key": "mixed_horizon/dynaro/20260813",
+    "model": "dynaro",
+    "seed": 20260813,
+    "parameters": 90991,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/dynaro/20260813.pt",
+    "sha256": "b3d609c1989d07179e52ae0fbaf1c3e155487d657579878e32da950a686f1d67"
+  },
+  {
+    "key": "mixed_horizon/static_front/20260811",
+    "model": "static_front",
+    "seed": 20260811,
+    "parameters": 90991,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/static_front/20260811.pt",
+    "sha256": "86d04306a63adf2c39cde119564af4fe8287c9f443aa847ad76ad650e6f42c94"
+  },
+  {
+    "key": "mixed_horizon/static_front/20260812",
+    "model": "static_front",
+    "seed": 20260812,
+    "parameters": 90991,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/static_front/20260812.pt",
+    "sha256": "62e1c9ccb908754cb134acafbcd1b46a060930d29cba7c013c1fc202fd9115f2"
+  },
+  {
+    "key": "mixed_horizon/static_front/20260813",
+    "model": "static_front",
+    "seed": 20260813,
+    "parameters": 90991,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/static_front/20260813.pt",
+    "sha256": "ac5e9efad2304e9eedd2f9ae1ef7216803278b5d4f513a041816d0b2dfd31d53"
+  },
+  {
+    "key": "mixed_horizon/coarse_front/20260811",
+    "model": "coarse_front",
+    "seed": 20260811,
+    "parameters": 90991,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/coarse_front/20260811.pt",
+    "sha256": "4b27f7a9b985244b1fabdf78df5dc770fb2d54035226f543c95de9d2ab44d083"
+  },
+  {
+    "key": "mixed_horizon/coarse_front/20260812",
+    "model": "coarse_front",
+    "seed": 20260812,
+    "parameters": 90991,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/coarse_front/20260812.pt",
+    "sha256": "7362d60c6828805161e7321284620bffdf3db01ee7c25612fee72a7cf366cb54"
+  },
+  {
+    "key": "mixed_horizon/coarse_front/20260813",
+    "model": "coarse_front",
+    "seed": 20260813,
+    "parameters": 90991,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/coarse_front/20260813.pt",
+    "sha256": "2a95e54fac8e7dd6dba8500fa36a78c6f5420a8d6843fa6020fc6a32faecf69f"
+  },
+  {
+    "key": "mixed_horizon/fno/20260811",
+    "model": "fno",
+    "seed": 20260811,
+    "parameters": 4196289,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/fno/20260811.pt",
+    "sha256": "095936e275f79e43f551239f076c3799abedf491dde96d529652b062fd9e247d"
+  },
+  {
+    "key": "mixed_horizon/fno/20260812",
+    "model": "fno",
+    "seed": 20260812,
+    "parameters": 4196289,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/fno/20260812.pt",
+    "sha256": "e476745ba38f53f5a2d5142171f81e92cb229fae872bd314b92fd68c2c8893fa"
+  },
+  {
+    "key": "mixed_horizon/fno/20260813",
+    "model": "fno",
+    "seed": 20260813,
+    "parameters": 4196289,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/fno/20260813.pt",
+    "sha256": "6caaa8ac65bee5ebef4349d74a33f45927d3683910519fc10e3e2d73ccd134d5"
+  },
+  {
+    "key": "mixed_horizon/rtu/20260811",
+    "model": "rtu",
+    "seed": 20260811,
+    "parameters": 2103565,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/rtu/20260811.pt",
+    "sha256": "268e35c7c69a2ff2908224364008189568875f9fa35814e01ef685358572b8d2"
+  },
+  {
+    "key": "mixed_horizon/rtu/20260812",
+    "model": "rtu",
+    "seed": 20260812,
+    "parameters": 2103565,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/rtu/20260812.pt",
+    "sha256": "773b9b6ddf20cbb4fae80e714b9a70df846a3fe04b556db9738bd5ad8297f030"
+  },
+  {
+    "key": "mixed_horizon/rtu/20260813",
+    "model": "rtu",
+    "seed": 20260813,
+    "parameters": 2103565,
+    "path": "v1.0.0/reproduction/weights/mixed_horizon/rtu/20260813.pt",
+    "sha256": "a403c8c5b5e397f7153a554ef6149a62076b4ba4ca50ae6e8fee0676c03c6acd"
+  }
+]

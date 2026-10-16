@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite this version of the DynaRO code and research materials."
+title: "DynaRO: State-constrained 3D remaining-oil forecasting with dynamic oil-water contact"
+type: software
+authors:
+  - family-names: Zhou
+    given-names: Qisong
+  - family-names: Zhang
+    given-names: Shu
+  - family-names: Pu
+    given-names: Leijie
+  - family-names: Ma
+    given-names: Biao
+version: 1.1.0
+date-released: 2026-10-17
+repository-code: "https://github.com/Hiddenmn/DynaRO"
+url: "https://github.com/Hiddenmn/DynaRO/releases/tag/v1.1.0"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - remaining oil
+  - three-dimensional forecasting
+  - dynamic oil-water contact
+  - action-conditioned surrogate

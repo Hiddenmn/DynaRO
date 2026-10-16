@@ -1,0 +1,19 @@
+DynaRO version 1.1.0 additions
+
+Author-original software, configuration code, tests, plotting programs and
+software documentation: MIT, copyright 2026 Qisong Zhou. See LICENSE.
+
+Author-generated semantic annotations, scientific metadata, split and
+trajectory records, final and pre-update model states, numerical results
+and figure arrays: Creative Commons Attribution 4.0 International
+(CC BY 4.0). Attribute the DynaRO research team: Qisong Zhou, Shu Zhang,
+Leijie Pu and Biao Ma, and cite this versioned release. The full legal text
+is in LICENSES/CC-BY-4.0.txt.
+
+These terms do not replace third-party licences. Raw upstream CT, runtime
+dependencies, fonts and third-party artwork are not bundled. Upstream data
+attribution and transformation notes are in DATA_SOURCES.md. In particular,
+the two external CT sources retain their Open Data Commons Attribution 1.0
+terms; cite those sources when reusing the derived annotations.
+
+The v1.0.0 materials and their release terms remain unchanged.

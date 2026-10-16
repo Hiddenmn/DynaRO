@@ -7,7 +7,21 @@ semantic volume and a sequence of displacement measures. Predicted local
 oil-water contact updates the next transition. Regional and initial-class
 inventories and paired-schedule responses are read from the same oil field.
 
-## Download
+## Latest additions: v1.1.0
+
+The [v1.1.0 release](https://github.com/Hiddenmn/DynaRO/releases/tag/v1.1.0)
+adds the matched contact-mechanism controls and independent-core evaluation:
+six final control states, 3,750 expert-reviewed eight-class labels, 480 compact
+simulated trajectories, all 27 new model/seed/split result panels, and four
+revised figure scripts and inputs. Download `DynaRO-v1.1.0-additions.zip` for
+these resources; see its [instructions](extensions/v1_1_0/README.md).
+The original DynaRO checkpoints remain the main model and are unchanged.
+The addition uses the original model weights from v1.0.0 when running external
+inference. Reaggregating its saved results and plotting need no new inference.
+
+The sections below describe the preserved original study.
+
+## Original study: v1.0.0
 
 The complete reproduction package is the `DynaRO-v1.0.0.zip` asset on the
 [v1.0.0 release](https://github.com/Hiddenmn/DynaRO/releases/tag/v1.0.0).

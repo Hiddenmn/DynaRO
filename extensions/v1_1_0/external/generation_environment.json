@@ -1,0 +1,7 @@
+{
+  "python": "3.12.13",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.4.6",
+  "cpu_threads": 2,
+  "float32_tf32_off": true
+}

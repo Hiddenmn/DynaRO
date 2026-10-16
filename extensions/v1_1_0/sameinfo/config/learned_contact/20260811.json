@@ -1,0 +1,30 @@
+{
+  "scope": "same_information_contact_25_50_TRAIN_only",
+  "arm": "learned_contact",
+  "seed": 20260811,
+  "updates": 400,
+  "horizons": [
+    25,
+    50
+  ],
+  "pairs_per_horizon": 800,
+  "accumulation": 4,
+  "time_encoding": "t/(t+25)",
+  "full_chain_backpropagation": true,
+  "parameters": 91936,
+  "initial_parameter_sha256": "80f976bd866c59ff9d28bf3f469cf3cb5b4e947de795d3ac8c18dce341dd2bf5",
+  "pair_order_sha256": "5532780c999982289c36163361b851ad2f52017bef4a46560cf092445751e742",
+  "input_lock_sha256": "44283add20ded364f8f3a464371363b6b7479d7e9e8ff4fc7180deb9aa50ce23",
+  "optimizer": "AdamW lr=2e-4 weight_decay=1e-4 clip_grad_norm=1",
+  "state_loss": "site Brier + regional MSE",
+  "response_weight_before_guard": 50.0,
+  "max_auxiliary_to_primary_norm": 1.0,
+  "checkpoint_selection": "final_update_only",
+  "initialization": "from_scratch_identical_across_arms",
+  "initialization_transport": {
+    "source": "original_frozen_random_state",
+    "seed": 20260811,
+    "parameter_sha256": "80f976bd866c59ff9d28bf3f469cf3cb5b4e947de795d3ac8c18dce341dd2bf5",
+    "artifact_sha256": "727b3f5889f954220b5cebeba14337dcb479fa2b311949e71335e038e92b43f5"
+  }
+}
